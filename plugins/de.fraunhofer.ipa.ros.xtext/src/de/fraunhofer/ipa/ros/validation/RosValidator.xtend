@@ -14,9 +14,6 @@ import ros.ServiceClient
 import ros.ServiceServer
 import ros.Subscriber
 import ros.Parameter
-import ros.ParameterValue
-import ros.ParameterBase64Type
-import ros.ParameterDate
 
 /**
  * This class contains custom validation rules.
@@ -45,19 +42,21 @@ class RosValidator extends AbstractRosValidator {
       }}
   @Check
   def void checkNameConventionsPackage (Package rospackage) {
-  for (char c : rospackage.name.toCharArray){
-      if (Character.isUpperCase(c)){
-          error("The name of a package has to follow the ROS naming conventions: Capital letters are not allowed", null, INVALID_NAME);
-      }
-  }
+	  for (char c : rospackage.name.toCharArray){
+	      if (Character.isUpperCase(c)){
+	          error("The name of a package has to follow the ROS naming conventions: Capital letters are not allowed", null, INVALID_NAME);
+	      }
+	  }
   }
    @Check
   def void checkNameConventionsParameters (Parameter parameter) {
-  for (char c : parameter.name.toCharArray){
-      if (Character.isUpperCase(c)){
-          warning("The name of a parameter has to follow the ROS naming conventions: Capital letters are not recommended", null, INVALID_NAME);
-      }
-  }
+  	  if(!parameter.name.contains(".")) {
+		  for (char c : parameter.name.toCharArray) {
+		      if (Character.isUpperCase(c)){
+		          warning("The name of a parameter has to follow the ROS naming conventions: Capital letters are not recommended", null, INVALID_NAME);
+		      }
+		  }
+	  }
   }
 
   /* Customize Syntax Error Messages */
@@ -142,3 +141,4 @@ class RosValidator extends AbstractRosValidator {
 //
 
 }
+
