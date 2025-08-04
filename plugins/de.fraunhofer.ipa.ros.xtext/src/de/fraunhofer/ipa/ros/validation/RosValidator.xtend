@@ -50,12 +50,14 @@ class RosValidator extends AbstractRosValidator {
   }
    @Check
   def void checkNameConventionsParameters (Parameter parameter) {
-  	  if(!parameter.name.contains(".")) {
-		  for (char c : parameter.name.toCharArray) {
-		      if (Character.isUpperCase(c)){
-		          warning("The name of a parameter has to follow the ROS naming conventions: Capital letters are not recommended", null, INVALID_NAME);
-		      }
-		  }
+	  for (i : 0 ..< parameter.name.length) {
+	  	  val c = parameter.name.charAt(i)
+	      if (Character.isUpperCase(c)) {
+	      	  val remaining = parameter.name.substring(i)
+	      	  if (!remaining.contains(".")) {
+	          	warning("The name of a parameter has to follow the ROS naming conventions: Capital letters are not recommended", null, INVALID_NAME);	
+	          }
+	      }
 	  }
   }
 
@@ -141,4 +143,3 @@ class RosValidator extends AbstractRosValidator {
 //
 
 }
-
