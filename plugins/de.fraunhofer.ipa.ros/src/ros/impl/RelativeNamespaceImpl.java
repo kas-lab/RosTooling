@@ -16,22 +16,22 @@ import ros.RosPackage;
  */
 public class RelativeNamespaceImpl extends NamespaceImpl implements RelativeNamespace {
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     protected RelativeNamespaceImpl() {
-        super();
-    }
+		super();
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     @Override
     protected EClass eStaticClass() {
-        return RosPackage.Literals.RELATIVE_NAMESPACE;
-    }
+		return RosPackage.Literals.RELATIVE_NAMESPACE;
+	}
 
 } //RelativeNamespaceImpl

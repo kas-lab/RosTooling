@@ -169,6 +169,10 @@
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ros.ecore#//QualityOfService/Depth"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ros.ecore#//QualityOfService/Reliability"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ros.ecore#//QualityOfService/Durability"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ros.ecore#//QualityOfService/Liveliness"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ros.ecore#//QualityOfService/LeaseDuration"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ros.ecore#//QualityOfService/Lifespan"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ros.ecore#//QualityOfService/Deadline"/>
     </genClasses>
     <genClasses ecoreClass="ros.ecore#//TopicSpecMsgRef">
       <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference ros.ecore#//TopicSpecMsgRef/Reference"/>

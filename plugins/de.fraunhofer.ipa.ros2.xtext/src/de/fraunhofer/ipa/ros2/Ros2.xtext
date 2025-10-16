@@ -34,7 +34,11 @@ QualityOfService returns QualityOfService:
         ('history:' History=('keep_last'|'keep_all'))? &
         ('depth:' Depth=Integer0)? &
         ('reliability:' Reliability=('best_effort'|'reliable'))? &
-        ('durability:' Durability=('transient_local'|'volatile'))?)
+        ('durability:' Durability=('transient_local'|'volatile'))? &
+        ('lease_duration:' LeaseDuration=(EString | 'infinite'))? &
+        ('liveliness:' Liveliness=('automatic'|'manual'))? &
+        ('lifespan:' Lifespan=(EString | 'infinite'))? &
+        ('deadline:' Deadline=(EString | 'infinite'))?)
         END
     ;
 

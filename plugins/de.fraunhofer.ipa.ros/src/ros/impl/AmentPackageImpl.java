@@ -16,22 +16,22 @@ import ros.RosPackage;
  */
 public class AmentPackageImpl extends PackageImpl implements AmentPackage {
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
-    public AmentPackageImpl() {
-        super();
-    }
+	 * @generated
+	 */
+    protected AmentPackageImpl() {
+		super();
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     @Override
     protected EClass eStaticClass() {
-        return RosPackage.Literals.AMENT_PACKAGE;
-    }
+		return RosPackage.Literals.AMENT_PACKAGE;
+	}
 
 } //AmentPackageImpl

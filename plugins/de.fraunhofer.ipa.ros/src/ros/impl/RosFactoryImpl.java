@@ -68,678 +68,678 @@ import ros.TopicSpecMsgRef;
  */
 public class RosFactoryImpl extends EFactoryImpl implements RosFactory {
     /**
-     * Creates the default factory implementation.
-     * <!-- begin-user-doc -->
+	 * Creates the default factory implementation.
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     public static RosFactory init() {
-        try {
-            RosFactory theRosFactory = (RosFactory)EPackage.Registry.INSTANCE.getEFactory(RosPackage.eNS_URI);
-            if (theRosFactory != null) {
-                return theRosFactory;
-            }
-        }
-        catch (Exception exception) {
-            EcorePlugin.INSTANCE.log(exception);
-        }
-        return new RosFactoryImpl();
-    }
+		try {
+			RosFactory theRosFactory = (RosFactory)EPackage.Registry.INSTANCE.getEFactory(RosPackage.eNS_URI);
+			if (theRosFactory != null) {
+				return theRosFactory;
+			}
+		}
+		catch (Exception exception) {
+			EcorePlugin.INSTANCE.log(exception);
+		}
+		return new RosFactoryImpl();
+	}
 
     /**
-     * Creates an instance of the factory.
-     * <!-- begin-user-doc -->
+	 * Creates an instance of the factory.
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     public RosFactoryImpl() {
-        super();
-    }
+		super();
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     @Override
     public EObject create(EClass eClass) {
-        switch (eClass.getClassifierID()) {
-            case RosPackage.NODE: return createNode();
-            case RosPackage.PACKAGE: return createPackage();
-            case RosPackage.SERVICE_SPEC: return createServiceSpec();
-            case RosPackage.SERVICE_SERVER: return createServiceServer();
-            case RosPackage.TOPIC_SPEC: return createTopicSpec();
-            case RosPackage.PACKAGE_DEPENDENCY: return createPackageDependency();
-            case RosPackage.EXTERNAL_DEPENDENCY: return createExternalDependency();
-            case RosPackage.CATKIN_PACKAGE: return createCatkinPackage();
-            case RosPackage.PUBLISHER: return createPublisher();
-            case RosPackage.ARTIFACT: return createArtifact();
-            case RosPackage.SUBSCRIBER: return createSubscriber();
-            case RosPackage.SERVICE_CLIENT: return createServiceClient();
-            case RosPackage.PACKAGE_SET: return createPackageSet();
-            case RosPackage.ACTION_SPEC: return createActionSpec();
-            case RosPackage.ACTION_SERVER: return createActionServer();
-            case RosPackage.ACTION_CLIENT: return createActionClient();
-            case RosPackage.MESSAGE_DEFINITION: return createMessageDefinition();
-            case RosPackage.GLOBAL_NAMESPACE: return createGlobalNamespace();
-            case RosPackage.RELATIVE_NAMESPACE: return createRelativeNamespace();
-            case RosPackage.PRIVATE_NAMESPACE: return createPrivateNamespace();
-            case RosPackage.INTERFACE_TYPE: return createInterfaceType();
-            case RosPackage.PARAMETER_LIST_TYPE: return createParameterListType();
-            case RosPackage.PARAMETER_STRUCT_TYPE: return createParameterStructType();
-            case RosPackage.PARAMETER_INTEGER_TYPE: return createParameterIntegerType();
-            case RosPackage.PARAMETER_STRING_TYPE: return createParameterStringType();
-            case RosPackage.PARAMETER_DOUBLE_TYPE: return createParameterDoubleType();
-            case RosPackage.PARAMETER: return createParameter();
-            case RosPackage.PARAMETER_DATE_TYPE: return createParameterDateType();
-            case RosPackage.PARAMETER_BOOLEAN_TYPE: return createParameterBooleanType();
-            case RosPackage.PARAMETER_BASE64_TYPE: return createParameterBase64Type();
-            case RosPackage.PARAMETER_ANY_TYPE: return createParameterAnyType();
-            case RosPackage.PARAMETER_STRUCT_TYPE_MEMBER: return createParameterStructTypeMember();
-            case RosPackage.PARAMETER_ARRAY_TYPE: return createParameterArrayType();
-            case RosPackage.PARAMETER_ANY: return createParameterAny();
-            case RosPackage.PARAMETER_STRING: return createParameterString();
-            case RosPackage.PARAMETER_BASE64: return createParameterBase64();
-            case RosPackage.PARAMETER_INTEGER: return createParameterInteger();
-            case RosPackage.PARAMETER_DOUBLE: return createParameterDouble();
-            case RosPackage.PARAMETER_BOOLEAN: return createParameterBoolean();
-            case RosPackage.PARAMETER_SEQUENCE: return createParameterSequence();
-            case RosPackage.PARAMETER_STRUCT: return createParameterStruct();
-            case RosPackage.PARAMETER_STRUCT_MEMBER: return createParameterStructMember();
-            case RosPackage.PARAMETER_DATE: return createParameterDate();
-            case RosPackage.AMENT_PACKAGE: return createAmentPackage();
-            case RosPackage.QUALITY_OF_SERVICE: return createQualityOfService();
-            case RosPackage.TOPIC_SPEC_MSG_REF: return createTopicSpecMsgRef();
-            case RosPackage.ARRAY_TOPIC_SPEC_MSG_REF: return createArrayTopicSpecMsgRef();
-            default:
-                throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
-        }
-    }
+		switch (eClass.getClassifierID()) {
+			case RosPackage.NODE: return createNode();
+			case RosPackage.PACKAGE: return createPackage();
+			case RosPackage.SERVICE_SPEC: return createServiceSpec();
+			case RosPackage.SERVICE_SERVER: return createServiceServer();
+			case RosPackage.TOPIC_SPEC: return createTopicSpec();
+			case RosPackage.PACKAGE_DEPENDENCY: return createPackageDependency();
+			case RosPackage.EXTERNAL_DEPENDENCY: return createExternalDependency();
+			case RosPackage.CATKIN_PACKAGE: return createCatkinPackage();
+			case RosPackage.PUBLISHER: return createPublisher();
+			case RosPackage.ARTIFACT: return createArtifact();
+			case RosPackage.SUBSCRIBER: return createSubscriber();
+			case RosPackage.SERVICE_CLIENT: return createServiceClient();
+			case RosPackage.PACKAGE_SET: return createPackageSet();
+			case RosPackage.ACTION_SPEC: return createActionSpec();
+			case RosPackage.ACTION_SERVER: return createActionServer();
+			case RosPackage.ACTION_CLIENT: return createActionClient();
+			case RosPackage.MESSAGE_DEFINITION: return createMessageDefinition();
+			case RosPackage.GLOBAL_NAMESPACE: return createGlobalNamespace();
+			case RosPackage.RELATIVE_NAMESPACE: return createRelativeNamespace();
+			case RosPackage.PRIVATE_NAMESPACE: return createPrivateNamespace();
+			case RosPackage.INTERFACE_TYPE: return createInterfaceType();
+			case RosPackage.PARAMETER_LIST_TYPE: return createParameterListType();
+			case RosPackage.PARAMETER_STRUCT_TYPE: return createParameterStructType();
+			case RosPackage.PARAMETER_INTEGER_TYPE: return createParameterIntegerType();
+			case RosPackage.PARAMETER_STRING_TYPE: return createParameterStringType();
+			case RosPackage.PARAMETER_DOUBLE_TYPE: return createParameterDoubleType();
+			case RosPackage.PARAMETER: return createParameter();
+			case RosPackage.PARAMETER_DATE_TYPE: return createParameterDateType();
+			case RosPackage.PARAMETER_BOOLEAN_TYPE: return createParameterBooleanType();
+			case RosPackage.PARAMETER_BASE64_TYPE: return createParameterBase64Type();
+			case RosPackage.PARAMETER_ANY_TYPE: return createParameterAnyType();
+			case RosPackage.PARAMETER_STRUCT_TYPE_MEMBER: return createParameterStructTypeMember();
+			case RosPackage.PARAMETER_ARRAY_TYPE: return createParameterArrayType();
+			case RosPackage.PARAMETER_ANY: return createParameterAny();
+			case RosPackage.PARAMETER_STRING: return createParameterString();
+			case RosPackage.PARAMETER_BASE64: return createParameterBase64();
+			case RosPackage.PARAMETER_INTEGER: return createParameterInteger();
+			case RosPackage.PARAMETER_DOUBLE: return createParameterDouble();
+			case RosPackage.PARAMETER_BOOLEAN: return createParameterBoolean();
+			case RosPackage.PARAMETER_SEQUENCE: return createParameterSequence();
+			case RosPackage.PARAMETER_STRUCT: return createParameterStruct();
+			case RosPackage.PARAMETER_STRUCT_MEMBER: return createParameterStructMember();
+			case RosPackage.PARAMETER_DATE: return createParameterDate();
+			case RosPackage.AMENT_PACKAGE: return createAmentPackage();
+			case RosPackage.QUALITY_OF_SERVICE: return createQualityOfService();
+			case RosPackage.TOPIC_SPEC_MSG_REF: return createTopicSpecMsgRef();
+			case RosPackage.ARRAY_TOPIC_SPEC_MSG_REF: return createArrayTopicSpecMsgRef();
+			default:
+				throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
+		}
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     @Override
     public Object createFromString(EDataType eDataType, String initialValue) {
-        switch (eDataType.getClassifierID()) {
-            case RosPackage.GRAPH_NAME:
-                return createGraphNameFromString(eDataType, initialValue);
-            default:
-                throw new IllegalArgumentException("The datatype '" + eDataType.getName() + "' is not a valid classifier");
-        }
-    }
+		switch (eDataType.getClassifierID()) {
+			case RosPackage.GRAPH_NAME:
+				return createGraphNameFromString(eDataType, initialValue);
+			default:
+				throw new IllegalArgumentException("The datatype '" + eDataType.getName() + "' is not a valid classifier");
+		}
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     @Override
     public String convertToString(EDataType eDataType, Object instanceValue) {
-        switch (eDataType.getClassifierID()) {
-            case RosPackage.GRAPH_NAME:
-                return convertGraphNameToString(eDataType, instanceValue);
-            default:
-                throw new IllegalArgumentException("The datatype '" + eDataType.getName() + "' is not a valid classifier");
-        }
-    }
+		switch (eDataType.getClassifierID()) {
+			case RosPackage.GRAPH_NAME:
+				return convertGraphNameToString(eDataType, instanceValue);
+			default:
+				throw new IllegalArgumentException("The datatype '" + eDataType.getName() + "' is not a valid classifier");
+		}
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     @Override
     public Node createNode() {
-        NodeImpl node = new NodeImpl();
-        return node;
-    }
+		NodeImpl node = new NodeImpl();
+		return node;
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     @Override
     public ros.Package createPackage() {
-        PackageImpl package_ = new PackageImpl();
-        return package_;
-    }
+		PackageImpl package_ = new PackageImpl();
+		return package_;
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     @Override
     public ServiceSpec createServiceSpec() {
-        ServiceSpecImpl serviceSpec = new ServiceSpecImpl();
-        return serviceSpec;
-    }
+		ServiceSpecImpl serviceSpec = new ServiceSpecImpl();
+		return serviceSpec;
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     @Override
     public ServiceServer createServiceServer() {
-        ServiceServerImpl serviceServer = new ServiceServerImpl();
-        return serviceServer;
-    }
+		ServiceServerImpl serviceServer = new ServiceServerImpl();
+		return serviceServer;
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     @Override
     public TopicSpec createTopicSpec() {
-        TopicSpecImpl topicSpec = new TopicSpecImpl();
-        return topicSpec;
-    }
+		TopicSpecImpl topicSpec = new TopicSpecImpl();
+		return topicSpec;
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     @Override
     public Publisher createPublisher() {
-        PublisherImpl publisher = new PublisherImpl();
-        return publisher;
-    }
+		PublisherImpl publisher = new PublisherImpl();
+		return publisher;
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     @Override
     public PackageDependency createPackageDependency() {
-        PackageDependencyImpl packageDependency = new PackageDependencyImpl();
-        return packageDependency;
-    }
+		PackageDependencyImpl packageDependency = new PackageDependencyImpl();
+		return packageDependency;
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     @Override
     public ExternalDependency createExternalDependency() {
-        ExternalDependencyImpl externalDependency = new ExternalDependencyImpl();
-        return externalDependency;
-    }
+		ExternalDependencyImpl externalDependency = new ExternalDependencyImpl();
+		return externalDependency;
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     @Override
     public CatkinPackage createCatkinPackage() {
-        CatkinPackageImpl catkinPackage = new CatkinPackageImpl();
-        return catkinPackage;
-    }
+		CatkinPackageImpl catkinPackage = new CatkinPackageImpl();
+		return catkinPackage;
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     @Override
     public Artifact createArtifact() {
-        ArtifactImpl artifact = new ArtifactImpl();
-        return artifact;
-    }
+		ArtifactImpl artifact = new ArtifactImpl();
+		return artifact;
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     @Override
     public Subscriber createSubscriber() {
-        SubscriberImpl subscriber = new SubscriberImpl();
-        return subscriber;
-    }
+		SubscriberImpl subscriber = new SubscriberImpl();
+		return subscriber;
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     @Override
     public ServiceClient createServiceClient() {
-        ServiceClientImpl serviceClient = new ServiceClientImpl();
-        return serviceClient;
-    }
+		ServiceClientImpl serviceClient = new ServiceClientImpl();
+		return serviceClient;
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     @Override
     public PackageSet createPackageSet() {
-        PackageSetImpl packageSet = new PackageSetImpl();
-        return packageSet;
-    }
+		PackageSetImpl packageSet = new PackageSetImpl();
+		return packageSet;
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     @Override
     public ActionSpec createActionSpec() {
-        ActionSpecImpl actionSpec = new ActionSpecImpl();
-        return actionSpec;
-    }
+		ActionSpecImpl actionSpec = new ActionSpecImpl();
+		return actionSpec;
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     @Override
     public ActionServer createActionServer() {
-        ActionServerImpl actionServer = new ActionServerImpl();
-        return actionServer;
-    }
+		ActionServerImpl actionServer = new ActionServerImpl();
+		return actionServer;
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     @Override
     public ActionClient createActionClient() {
-        ActionClientImpl actionClient = new ActionClientImpl();
-        return actionClient;
-    }
+		ActionClientImpl actionClient = new ActionClientImpl();
+		return actionClient;
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     @Override
     public MessageDefinition createMessageDefinition() {
-        MessageDefinitionImpl messageDefinition = new MessageDefinitionImpl();
-        return messageDefinition;
-    }
+		MessageDefinitionImpl messageDefinition = new MessageDefinitionImpl();
+		return messageDefinition;
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     @Override
     public GlobalNamespace createGlobalNamespace() {
-        GlobalNamespaceImpl globalNamespace = new GlobalNamespaceImpl();
-        return globalNamespace;
-    }
+		GlobalNamespaceImpl globalNamespace = new GlobalNamespaceImpl();
+		return globalNamespace;
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     @Override
     public RelativeNamespace createRelativeNamespace() {
-        RelativeNamespaceImpl relativeNamespace = new RelativeNamespaceImpl();
-        return relativeNamespace;
-    }
+		RelativeNamespaceImpl relativeNamespace = new RelativeNamespaceImpl();
+		return relativeNamespace;
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     @Override
     public PrivateNamespace createPrivateNamespace() {
-        PrivateNamespaceImpl privateNamespace = new PrivateNamespaceImpl();
-        return privateNamespace;
-    }
+		PrivateNamespaceImpl privateNamespace = new PrivateNamespaceImpl();
+		return privateNamespace;
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     @Override
     public InterfaceType createInterfaceType() {
-        InterfaceTypeImpl interfaceType = new InterfaceTypeImpl();
-        return interfaceType;
-    }
+		InterfaceTypeImpl interfaceType = new InterfaceTypeImpl();
+		return interfaceType;
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     @Override
     public ParameterListType createParameterListType() {
-        ParameterListTypeImpl parameterListType = new ParameterListTypeImpl();
-        return parameterListType;
-    }
+		ParameterListTypeImpl parameterListType = new ParameterListTypeImpl();
+		return parameterListType;
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     @Override
     public ParameterStructType createParameterStructType() {
-        ParameterStructTypeImpl parameterStructType = new ParameterStructTypeImpl();
-        return parameterStructType;
-    }
+		ParameterStructTypeImpl parameterStructType = new ParameterStructTypeImpl();
+		return parameterStructType;
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     @Override
     public ParameterIntegerType createParameterIntegerType() {
-        ParameterIntegerTypeImpl parameterIntegerType = new ParameterIntegerTypeImpl();
-        return parameterIntegerType;
-    }
+		ParameterIntegerTypeImpl parameterIntegerType = new ParameterIntegerTypeImpl();
+		return parameterIntegerType;
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     @Override
     public ParameterStringType createParameterStringType() {
-        ParameterStringTypeImpl parameterStringType = new ParameterStringTypeImpl();
-        return parameterStringType;
-    }
+		ParameterStringTypeImpl parameterStringType = new ParameterStringTypeImpl();
+		return parameterStringType;
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     @Override
     public ParameterDoubleType createParameterDoubleType() {
-        ParameterDoubleTypeImpl parameterDoubleType = new ParameterDoubleTypeImpl();
-        return parameterDoubleType;
-    }
+		ParameterDoubleTypeImpl parameterDoubleType = new ParameterDoubleTypeImpl();
+		return parameterDoubleType;
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     @Override
     public Parameter createParameter() {
-        ParameterImpl parameter = new ParameterImpl();
-        return parameter;
-    }
+		ParameterImpl parameter = new ParameterImpl();
+		return parameter;
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     @Override
     public ParameterDateType createParameterDateType() {
-        ParameterDateTypeImpl parameterDateType = new ParameterDateTypeImpl();
-        return parameterDateType;
-    }
+		ParameterDateTypeImpl parameterDateType = new ParameterDateTypeImpl();
+		return parameterDateType;
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     @Override
     public ParameterBooleanType createParameterBooleanType() {
-        ParameterBooleanTypeImpl parameterBooleanType = new ParameterBooleanTypeImpl();
-        return parameterBooleanType;
-    }
+		ParameterBooleanTypeImpl parameterBooleanType = new ParameterBooleanTypeImpl();
+		return parameterBooleanType;
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     @Override
     public ParameterBase64Type createParameterBase64Type() {
-        ParameterBase64TypeImpl parameterBase64Type = new ParameterBase64TypeImpl();
-        return parameterBase64Type;
-    }
+		ParameterBase64TypeImpl parameterBase64Type = new ParameterBase64TypeImpl();
+		return parameterBase64Type;
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     @Override
     public ParameterAnyType createParameterAnyType() {
-        ParameterAnyTypeImpl parameterAnyType = new ParameterAnyTypeImpl();
-        return parameterAnyType;
-    }
+		ParameterAnyTypeImpl parameterAnyType = new ParameterAnyTypeImpl();
+		return parameterAnyType;
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     @Override
     public ParameterStructTypeMember createParameterStructTypeMember() {
-        ParameterStructTypeMemberImpl parameterStructTypeMember = new ParameterStructTypeMemberImpl();
-        return parameterStructTypeMember;
-    }
+		ParameterStructTypeMemberImpl parameterStructTypeMember = new ParameterStructTypeMemberImpl();
+		return parameterStructTypeMember;
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     @Override
     public ParameterArrayType createParameterArrayType() {
-        ParameterArrayTypeImpl parameterArrayType = new ParameterArrayTypeImpl();
-        return parameterArrayType;
-    }
+		ParameterArrayTypeImpl parameterArrayType = new ParameterArrayTypeImpl();
+		return parameterArrayType;
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     @Override
     public ParameterAny createParameterAny() {
-        ParameterAnyImpl parameterAny = new ParameterAnyImpl();
-        return parameterAny;
-    }
+		ParameterAnyImpl parameterAny = new ParameterAnyImpl();
+		return parameterAny;
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     @Override
     public ParameterString createParameterString() {
-        ParameterStringImpl parameterString = new ParameterStringImpl();
-        return parameterString;
-    }
+		ParameterStringImpl parameterString = new ParameterStringImpl();
+		return parameterString;
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     @Override
     public ParameterBase64 createParameterBase64() {
-        ParameterBase64Impl parameterBase64 = new ParameterBase64Impl();
-        return parameterBase64;
-    }
+		ParameterBase64Impl parameterBase64 = new ParameterBase64Impl();
+		return parameterBase64;
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     @Override
     public ParameterInteger createParameterInteger() {
-        ParameterIntegerImpl parameterInteger = new ParameterIntegerImpl();
-        return parameterInteger;
-    }
+		ParameterIntegerImpl parameterInteger = new ParameterIntegerImpl();
+		return parameterInteger;
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     @Override
     public ParameterDouble createParameterDouble() {
-        ParameterDoubleImpl parameterDouble = new ParameterDoubleImpl();
-        return parameterDouble;
-    }
+		ParameterDoubleImpl parameterDouble = new ParameterDoubleImpl();
+		return parameterDouble;
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     @Override
     public ParameterBoolean createParameterBoolean() {
-        ParameterBooleanImpl parameterBoolean = new ParameterBooleanImpl();
-        return parameterBoolean;
-    }
+		ParameterBooleanImpl parameterBoolean = new ParameterBooleanImpl();
+		return parameterBoolean;
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     @Override
     public ParameterSequence createParameterSequence() {
-        ParameterSequenceImpl parameterSequence = new ParameterSequenceImpl();
-        return parameterSequence;
-    }
+		ParameterSequenceImpl parameterSequence = new ParameterSequenceImpl();
+		return parameterSequence;
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     @Override
     public ParameterStruct createParameterStruct() {
-        ParameterStructImpl parameterStruct = new ParameterStructImpl();
-        return parameterStruct;
-    }
+		ParameterStructImpl parameterStruct = new ParameterStructImpl();
+		return parameterStruct;
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     @Override
     public ParameterStructMember createParameterStructMember() {
-        ParameterStructMemberImpl parameterStructMember = new ParameterStructMemberImpl();
-        return parameterStructMember;
-    }
+		ParameterStructMemberImpl parameterStructMember = new ParameterStructMemberImpl();
+		return parameterStructMember;
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     @Override
     public ParameterDate createParameterDate() {
-        ParameterDateImpl parameterDate = new ParameterDateImpl();
-        return parameterDate;
-    }
+		ParameterDateImpl parameterDate = new ParameterDateImpl();
+		return parameterDate;
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     @Override
     public AmentPackage createAmentPackage() {
-        AmentPackageImpl amentPackage = new AmentPackageImpl();
-        return amentPackage;
-    }
+		AmentPackageImpl amentPackage = new AmentPackageImpl();
+		return amentPackage;
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     @Override
     public QualityOfService createQualityOfService() {
-        QualityOfServiceImpl qualityOfService = new QualityOfServiceImpl();
-        return qualityOfService;
-    }
+		QualityOfServiceImpl qualityOfService = new QualityOfServiceImpl();
+		return qualityOfService;
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     @Override
     public TopicSpecMsgRef createTopicSpecMsgRef() {
-        TopicSpecMsgRefImpl topicSpecMsgRef = new TopicSpecMsgRefImpl();
-        return topicSpecMsgRef;
-    }
+		TopicSpecMsgRefImpl topicSpecMsgRef = new TopicSpecMsgRefImpl();
+		return topicSpecMsgRef;
+	}
 
                 /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     @Override
     public ArrayTopicSpecMsgRef createArrayTopicSpecMsgRef() {
-        ArrayTopicSpecMsgRefImpl arrayTopicSpecMsgRef = new ArrayTopicSpecMsgRefImpl();
-        return arrayTopicSpecMsgRef;
-    }
+		ArrayTopicSpecMsgRefImpl arrayTopicSpecMsgRef = new ArrayTopicSpecMsgRefImpl();
+		return arrayTopicSpecMsgRef;
+	}
 
                                                                 /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     public String createGraphNameFromString(EDataType eDataType, String initialValue) {
-        return (String)super.createFromString(eDataType, initialValue);
-    }
+		return (String)super.createFromString(eDataType, initialValue);
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     public String convertGraphNameToString(EDataType eDataType, Object instanceValue) {
-        return super.convertToString(eDataType, instanceValue);
-    }
+		return super.convertToString(eDataType, instanceValue);
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     @Override
     public RosPackage getRosPackage() {
-        return (RosPackage)getEPackage();
-    }
+		return (RosPackage)getEPackage();
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @deprecated
-     * @generated
-     */
+	 * @deprecated
+	 * @generated
+	 */
     @Deprecated
     public static RosPackage getPackage() {
-        return RosPackage.eINSTANCE;
-    }
+		return RosPackage.eINSTANCE;
+	}
 
 } //RosFactoryImpl

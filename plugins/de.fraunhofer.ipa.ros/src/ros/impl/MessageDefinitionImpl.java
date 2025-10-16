@@ -29,119 +29,119 @@ import ros.RosPackage;
  */
 public class MessageDefinitionImpl extends MinimalEObjectImpl.Container implements MessageDefinition {
     /**
-     * The cached value of the '{@link #getMessagePart() <em>Message Part</em>}' containment reference list.
-     * <!-- begin-user-doc -->
+	 * The cached value of the '{@link #getMessagePart() <em>Message Part</em>}' containment reference list.
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @see #getMessagePart()
-     * @generated
-     * @ordered
-     */
+	 * @see #getMessagePart()
+	 * @generated
+	 * @ordered
+	 */
     protected EList<MessagePart> messagePart;
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     protected MessageDefinitionImpl() {
-        super();
-    }
+		super();
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     @Override
     protected EClass eStaticClass() {
-        return RosPackage.Literals.MESSAGE_DEFINITION;
-    }
+		return RosPackage.Literals.MESSAGE_DEFINITION;
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     @Override
     public EList<MessagePart> getMessagePart() {
-        if (messagePart == null) {
-            messagePart = new EObjectContainmentEList<MessagePart>(MessagePart.class, this, RosPackage.MESSAGE_DEFINITION__MESSAGE_PART);
-        }
-        return messagePart;
-    }
+		if (messagePart == null) {
+			messagePart = new EObjectContainmentEList<MessagePart>(MessagePart.class, this, RosPackage.MESSAGE_DEFINITION__MESSAGE_PART);
+		}
+		return messagePart;
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     @Override
     public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
-        switch (featureID) {
-            case RosPackage.MESSAGE_DEFINITION__MESSAGE_PART:
-                return ((InternalEList<?>)getMessagePart()).basicRemove(otherEnd, msgs);
-        }
-        return super.eInverseRemove(otherEnd, featureID, msgs);
-    }
+		switch (featureID) {
+			case RosPackage.MESSAGE_DEFINITION__MESSAGE_PART:
+				return ((InternalEList<?>)getMessagePart()).basicRemove(otherEnd, msgs);
+		}
+		return super.eInverseRemove(otherEnd, featureID, msgs);
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     @Override
     public Object eGet(int featureID, boolean resolve, boolean coreType) {
-        switch (featureID) {
-            case RosPackage.MESSAGE_DEFINITION__MESSAGE_PART:
-                return getMessagePart();
-        }
-        return super.eGet(featureID, resolve, coreType);
-    }
+		switch (featureID) {
+			case RosPackage.MESSAGE_DEFINITION__MESSAGE_PART:
+				return getMessagePart();
+		}
+		return super.eGet(featureID, resolve, coreType);
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     @SuppressWarnings("unchecked")
     @Override
     public void eSet(int featureID, Object newValue) {
-        switch (featureID) {
-            case RosPackage.MESSAGE_DEFINITION__MESSAGE_PART:
-                getMessagePart().clear();
-                getMessagePart().addAll((Collection<? extends MessagePart>)newValue);
-                return;
-        }
-        super.eSet(featureID, newValue);
-    }
+		switch (featureID) {
+			case RosPackage.MESSAGE_DEFINITION__MESSAGE_PART:
+				getMessagePart().clear();
+				getMessagePart().addAll((Collection<? extends MessagePart>)newValue);
+				return;
+		}
+		super.eSet(featureID, newValue);
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     @Override
     public void eUnset(int featureID) {
-        switch (featureID) {
-            case RosPackage.MESSAGE_DEFINITION__MESSAGE_PART:
-                getMessagePart().clear();
-                return;
-        }
-        super.eUnset(featureID);
-    }
+		switch (featureID) {
+			case RosPackage.MESSAGE_DEFINITION__MESSAGE_PART:
+				getMessagePart().clear();
+				return;
+		}
+		super.eUnset(featureID);
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     @Override
     public boolean eIsSet(int featureID) {
-        switch (featureID) {
-            case RosPackage.MESSAGE_DEFINITION__MESSAGE_PART:
-                return messagePart != null && !messagePart.isEmpty();
-        }
-        return super.eIsSet(featureID);
-    }
+		switch (featureID) {
+			case RosPackage.MESSAGE_DEFINITION__MESSAGE_PART:
+				return messagePart != null && !messagePart.isEmpty();
+		}
+		return super.eIsSet(featureID);
+	}
 
 } //MessageDefinitionImpl

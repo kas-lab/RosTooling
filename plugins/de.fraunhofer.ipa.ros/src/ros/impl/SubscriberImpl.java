@@ -28,13 +28,13 @@ import ros.TopicSpec;
  */
 public class SubscriberImpl extends InterfaceTypeImpl implements Subscriber {
     /**
-     * The cached value of the '{@link #getMessage() <em>Message</em>}' reference.
-     * <!-- begin-user-doc -->
+	 * The cached value of the '{@link #getMessage() <em>Message</em>}' reference.
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @see #getMessage()
-     * @generated
-     * @ordered
-     */
+	 * @see #getMessage()
+	 * @generated
+	 * @ordered
+	 */
     protected TopicSpec message;
 
     /**
@@ -47,112 +47,112 @@ public class SubscriberImpl extends InterfaceTypeImpl implements Subscriber {
     }
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     @Override
     protected EClass eStaticClass() {
-        return RosPackage.Literals.SUBSCRIBER;
-    }
+		return RosPackage.Literals.SUBSCRIBER;
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     @Override
     public TopicSpec getMessage() {
-        if (message != null && message.eIsProxy()) {
-            InternalEObject oldMessage = (InternalEObject)message;
-            message = (TopicSpec)eResolveProxy(oldMessage);
-            if (message != oldMessage) {
-                if (eNotificationRequired())
-                    eNotify(new ENotificationImpl(this, Notification.RESOLVE, RosPackage.SUBSCRIBER__MESSAGE, oldMessage, message));
-            }
-        }
-        return message;
-    }
+		if (message != null && message.eIsProxy()) {
+			InternalEObject oldMessage = (InternalEObject)message;
+			message = (TopicSpec)eResolveProxy(oldMessage);
+			if (message != oldMessage) {
+				if (eNotificationRequired())
+					eNotify(new ENotificationImpl(this, Notification.RESOLVE, RosPackage.SUBSCRIBER__MESSAGE, oldMessage, message));
+			}
+		}
+		return message;
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     public TopicSpec basicGetMessage() {
-        return message;
-    }
+		return message;
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     @Override
     public void setMessage(TopicSpec newMessage) {
-        TopicSpec oldMessage = message;
-        message = newMessage;
-        if (eNotificationRequired())
-            eNotify(new ENotificationImpl(this, Notification.SET, RosPackage.SUBSCRIBER__MESSAGE, oldMessage, message));
-    }
+		TopicSpec oldMessage = message;
+		message = newMessage;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, RosPackage.SUBSCRIBER__MESSAGE, oldMessage, message));
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     @Override
     public Object eGet(int featureID, boolean resolve, boolean coreType) {
-        switch (featureID) {
-            case RosPackage.SUBSCRIBER__MESSAGE:
-                if (resolve) return getMessage();
-                return basicGetMessage();
-        }
-        return super.eGet(featureID, resolve, coreType);
-    }
+		switch (featureID) {
+			case RosPackage.SUBSCRIBER__MESSAGE:
+				if (resolve) return getMessage();
+				return basicGetMessage();
+		}
+		return super.eGet(featureID, resolve, coreType);
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     @Override
     public void eSet(int featureID, Object newValue) {
-        switch (featureID) {
-            case RosPackage.SUBSCRIBER__MESSAGE:
-                setMessage((TopicSpec)newValue);
-                return;
-        }
-        super.eSet(featureID, newValue);
-    }
+		switch (featureID) {
+			case RosPackage.SUBSCRIBER__MESSAGE:
+				setMessage((TopicSpec)newValue);
+				return;
+		}
+		super.eSet(featureID, newValue);
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     @Override
     public void eUnset(int featureID) {
-        switch (featureID) {
-            case RosPackage.SUBSCRIBER__MESSAGE:
-                setMessage((TopicSpec)null);
-                return;
-        }
-        super.eUnset(featureID);
-    }
+		switch (featureID) {
+			case RosPackage.SUBSCRIBER__MESSAGE:
+				setMessage((TopicSpec)null);
+				return;
+		}
+		super.eUnset(featureID);
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     @Override
     public boolean eIsSet(int featureID) {
-        switch (featureID) {
-            case RosPackage.SUBSCRIBER__MESSAGE:
-                return message != null;
-        }
-        return super.eIsSet(featureID);
-    }
+		switch (featureID) {
+			case RosPackage.SUBSCRIBER__MESSAGE:
+				return message != null;
+		}
+		return super.eIsSet(featureID);
+	}
 
 } //SubscriberImpl

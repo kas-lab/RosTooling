@@ -14,6 +14,7 @@ import ros.ServiceClient
 import ros.ServiceServer
 import ros.Subscriber
 import ros.Parameter
+import ros.QualityOfService
 
 /**
  * This class contains custom validation rules.
@@ -141,5 +142,25 @@ class RosValidator extends AbstractRosValidator {
 //  // allow the use only of the symbol: "_"
 //  // allow the use of numbers
 //
+
+  public static val INVALID_VALUE = 'invalidValue'
+  @Check
+  def void CheckQoS (QualityOfService qos){
+  	CheckDuration(qos.leaseDuration)
+  	CheckDuration(qos.lifespan)
+  	CheckDuration(qos.deadline)
+  }
+  
+  def void CheckDuration(String duration)
+  {
+  	if(duration != 'infinite' && duration !== null){
+  		try{
+  			Integer.parseInt(duration)
+  		}
+  		catch (NumberFormatException e){
+  			error("Durations of lease_duration, lifespan, deadline should be specified as a string of nanoseconds which can convert to int, or as infinite", null, INVALID_VALUE)
+  		}
+  	}
+  }
 
 }

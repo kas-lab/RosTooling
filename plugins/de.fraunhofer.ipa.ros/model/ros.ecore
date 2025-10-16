@@ -221,6 +221,10 @@
         defaultValueLiteral="reliable"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="Durability" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"
         defaultValueLiteral="transient_local"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="Liveliness" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="LeaseDuration" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="Lifespan" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="Deadline" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="TopicSpecMsgRef" eSuperTypes="PrimitivesTypes.ecore#//AbstractType">
     <eStructuralFeatures xsi:type="ecore:EReference" name="Reference" lowerBound="1"
