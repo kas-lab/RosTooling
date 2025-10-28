@@ -18,22 +18,22 @@ import ros.RosPackage;
  */
 public abstract class ParameterTypeImpl extends MinimalEObjectImpl.Container implements ParameterType {
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     protected ParameterTypeImpl() {
-        super();
-    }
+		super();
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     @Override
     protected EClass eStaticClass() {
-        return RosPackage.Literals.PARAMETER_TYPE;
-    }
+		return RosPackage.Literals.PARAMETER_TYPE;
+	}
 
 } //ParameterTypeImpl

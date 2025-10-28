@@ -14,9 +14,7 @@ import ros.ServiceClient
 import ros.ServiceServer
 import ros.Subscriber
 import ros.Parameter
-import ros.ParameterValue
-import ros.ParameterBase64Type
-import ros.ParameterDate
+import ros.QualityOfService
 
 /**
  * This class contains custom validation rules.
@@ -45,19 +43,23 @@ class RosValidator extends AbstractRosValidator {
       }}
   @Check
   def void checkNameConventionsPackage (Package rospackage) {
-  for (char c : rospackage.name.toCharArray){
-      if (Character.isUpperCase(c)){
-          error("The name of a package has to follow the ROS naming conventions: Capital letters are not allowed", null, INVALID_NAME);
-      }
-  }
+	  for (char c : rospackage.name.toCharArray){
+	      if (Character.isUpperCase(c)){
+	          error("The name of a package has to follow the ROS naming conventions: Capital letters are not allowed", null, INVALID_NAME);
+	      }
+	  }
   }
    @Check
   def void checkNameConventionsParameters (Parameter parameter) {
-  for (char c : parameter.name.toCharArray){
-      if (Character.isUpperCase(c)){
-          warning("The name of a parameter has to follow the ROS naming conventions: Capital letters are not recommended", null, INVALID_NAME);
-      }
-  }
+	  for (i : 0 ..< parameter.name.length) {
+	  	  val c = parameter.name.charAt(i)
+	      if (Character.isUpperCase(c)) {
+	      	  val remaining = parameter.name.substring(i)
+	      	  if (!remaining.contains(".")) {
+	          	warning("The name of a parameter has to follow the ROS naming conventions: Capital letters are not recommended", null, INVALID_NAME);	
+	          }
+	      }
+	  }
   }
 
   /* Customize Syntax Error Messages */
@@ -140,5 +142,25 @@ class RosValidator extends AbstractRosValidator {
 //  // allow the use only of the symbol: "_"
 //  // allow the use of numbers
 //
+
+  public static val INVALID_VALUE = 'invalidValue'
+  @Check
+  def void CheckQoS (QualityOfService qos){
+  	CheckDuration(qos.leaseDuration)
+  	CheckDuration(qos.lifespan)
+  	CheckDuration(qos.deadline)
+  }
+  
+  def void CheckDuration(String duration)
+  {
+  	if(duration != 'infinite' && duration !== null){
+  		try{
+  			Integer.parseInt(duration)
+  		}
+  		catch (NumberFormatException e){
+  			error("Durations of lease_duration, lifespan, deadline should be specified as a string of nanoseconds which can convert to int, or as infinite", null, INVALID_VALUE)
+  		}
+  	}
+  }
 
 }
