@@ -52,8 +52,10 @@ class GeneratorHelpers {
     def boolean generate_yaml(RosNode component){
         var yaml_gen=false
         for(param:component.rosparameters){
-            if(param.eContents.get(0).eClass.name.contains("ParameterStruct")){
-                yaml_gen=true
+        	if(!param.eContents.empty) {
+	            if(param.eContents.get(0).eClass.name.contains("ParameterStruct")){
+	                yaml_gen=true
+	            }
             }
         }
         if(component.rosparameters.length>5){
