@@ -22,25 +22,25 @@ import primitives.AbstractType;
  */
 public interface ArrayTopicSpecMsgRef extends AbstractType {
     /**
-     * Returns the value of the '<em><b>Reference</b></em>' reference.
-     * <!-- begin-user-doc -->
+	 * Returns the value of the '<em><b>Reference</b></em>' reference.
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @return the value of the '<em>Reference</em>' reference.
-     * @see #setReference(SpecBase)
-     * @see ros.RosPackage#getArrayTopicSpecMsgRef_Reference()
-     * @model required="true"
-     * @generated
-     */
+	 * @return the value of the '<em>Reference</em>' reference.
+	 * @see #setReference(SpecBase)
+	 * @see ros.RosPackage#getArrayTopicSpecMsgRef_Reference()
+	 * @model required="true"
+	 * @generated
+	 */
     SpecBase getReference();
 
     /**
-     * Sets the value of the '{@link ros.ArrayTopicSpecMsgRef#getReference <em>Reference</em>}' reference.
-     * <!-- begin-user-doc -->
+	 * Sets the value of the '{@link ros.ArrayTopicSpecMsgRef#getReference <em>Reference</em>}' reference.
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @param value the new value of the '<em>Reference</em>' reference.
-     * @see #getReference()
-     * @generated
-     */
+	 * @param value the new value of the '<em>Reference</em>' reference.
+	 * @see #getReference()
+	 * @generated
+	 */
     void setReference(SpecBase value);
 
 } // ArrayTopicSpecMsgRef

@@ -34,13 +34,13 @@ import ros.RosPackage;
  */
 public class PackageSetImpl extends MinimalEObjectImpl.Container implements PackageSet {
     /**
-     * The cached value of the '{@link #getPackage() <em>Package</em>}' containment reference list.
-     * <!-- begin-user-doc -->
+	 * The cached value of the '{@link #getPackage() <em>Package</em>}' containment reference list.
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @see #getPackage()
-     * @generated
-     * @ordered
-     */
+	 * @see #getPackage()
+	 * @generated
+	 * @ordered
+	 */
     protected EList<ros.Package> package_;
 
     /**
@@ -53,100 +53,100 @@ public class PackageSetImpl extends MinimalEObjectImpl.Container implements Pack
     }
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     @Override
     protected EClass eStaticClass() {
-        return RosPackage.Literals.PACKAGE_SET;
-    }
+		return RosPackage.Literals.PACKAGE_SET;
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     @Override
     public EList<ros.Package> getPackage() {
-        if (package_ == null) {
-            package_ = new EObjectContainmentEList<ros.Package>(ros.Package.class, this, RosPackage.PACKAGE_SET__PACKAGE);
-        }
-        return package_;
-    }
+		if (package_ == null) {
+			package_ = new EObjectContainmentEList<ros.Package>(ros.Package.class, this, RosPackage.PACKAGE_SET__PACKAGE);
+		}
+		return package_;
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     @Override
     public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
-        switch (featureID) {
-            case RosPackage.PACKAGE_SET__PACKAGE:
-                return ((InternalEList<?>)getPackage()).basicRemove(otherEnd, msgs);
-        }
-        return super.eInverseRemove(otherEnd, featureID, msgs);
-    }
+		switch (featureID) {
+			case RosPackage.PACKAGE_SET__PACKAGE:
+				return ((InternalEList<?>)getPackage()).basicRemove(otherEnd, msgs);
+		}
+		return super.eInverseRemove(otherEnd, featureID, msgs);
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     @Override
     public Object eGet(int featureID, boolean resolve, boolean coreType) {
-        switch (featureID) {
-            case RosPackage.PACKAGE_SET__PACKAGE:
-                return getPackage();
-        }
-        return super.eGet(featureID, resolve, coreType);
-    }
+		switch (featureID) {
+			case RosPackage.PACKAGE_SET__PACKAGE:
+				return getPackage();
+		}
+		return super.eGet(featureID, resolve, coreType);
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     @SuppressWarnings("unchecked")
     @Override
     public void eSet(int featureID, Object newValue) {
-        switch (featureID) {
-            case RosPackage.PACKAGE_SET__PACKAGE:
-                getPackage().clear();
-                getPackage().addAll((Collection<? extends ros.Package>)newValue);
-                return;
-        }
-        super.eSet(featureID, newValue);
-    }
+		switch (featureID) {
+			case RosPackage.PACKAGE_SET__PACKAGE:
+				getPackage().clear();
+				getPackage().addAll((Collection<? extends ros.Package>)newValue);
+				return;
+		}
+		super.eSet(featureID, newValue);
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     @Override
     public void eUnset(int featureID) {
-        switch (featureID) {
-            case RosPackage.PACKAGE_SET__PACKAGE:
-                getPackage().clear();
-                return;
-        }
-        super.eUnset(featureID);
-    }
+		switch (featureID) {
+			case RosPackage.PACKAGE_SET__PACKAGE:
+				getPackage().clear();
+				return;
+		}
+		super.eUnset(featureID);
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     @Override
     public boolean eIsSet(int featureID) {
-        switch (featureID) {
-            case RosPackage.PACKAGE_SET__PACKAGE:
-                return package_ != null && !package_.isEmpty();
-        }
-        return super.eIsSet(featureID);
-    }
+		switch (featureID) {
+			case RosPackage.PACKAGE_SET__PACKAGE:
+				return package_ != null && !package_.isEmpty();
+		}
+		return super.eIsSet(featureID);
+	}
 
 } //PackageSetImpl

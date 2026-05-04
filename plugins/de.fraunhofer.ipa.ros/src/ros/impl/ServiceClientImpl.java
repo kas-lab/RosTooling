@@ -28,131 +28,131 @@ import ros.ServiceSpec;
  */
 public class ServiceClientImpl extends InterfaceTypeImpl implements ServiceClient {
     /**
-     * The cached value of the '{@link #getService() <em>Service</em>}' reference.
-     * <!-- begin-user-doc -->
+	 * The cached value of the '{@link #getService() <em>Service</em>}' reference.
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @see #getService()
-     * @generated
-     * @ordered
-     */
+	 * @see #getService()
+	 * @generated
+	 * @ordered
+	 */
     protected ServiceSpec service;
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     protected ServiceClientImpl() {
-        super();
-    }
+		super();
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     @Override
     protected EClass eStaticClass() {
-        return RosPackage.Literals.SERVICE_CLIENT;
-    }
+		return RosPackage.Literals.SERVICE_CLIENT;
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     @Override
     public ServiceSpec getService() {
-        if (service != null && service.eIsProxy()) {
-            InternalEObject oldService = (InternalEObject)service;
-            service = (ServiceSpec)eResolveProxy(oldService);
-            if (service != oldService) {
-                if (eNotificationRequired())
-                    eNotify(new ENotificationImpl(this, Notification.RESOLVE, RosPackage.SERVICE_CLIENT__SERVICE, oldService, service));
-            }
-        }
-        return service;
-    }
+		if (service != null && service.eIsProxy()) {
+			InternalEObject oldService = (InternalEObject)service;
+			service = (ServiceSpec)eResolveProxy(oldService);
+			if (service != oldService) {
+				if (eNotificationRequired())
+					eNotify(new ENotificationImpl(this, Notification.RESOLVE, RosPackage.SERVICE_CLIENT__SERVICE, oldService, service));
+			}
+		}
+		return service;
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     public ServiceSpec basicGetService() {
-        return service;
-    }
+		return service;
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     @Override
     public void setService(ServiceSpec newService) {
-        ServiceSpec oldService = service;
-        service = newService;
-        if (eNotificationRequired())
-            eNotify(new ENotificationImpl(this, Notification.SET, RosPackage.SERVICE_CLIENT__SERVICE, oldService, service));
-    }
+		ServiceSpec oldService = service;
+		service = newService;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, RosPackage.SERVICE_CLIENT__SERVICE, oldService, service));
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     @Override
     public Object eGet(int featureID, boolean resolve, boolean coreType) {
-        switch (featureID) {
-            case RosPackage.SERVICE_CLIENT__SERVICE:
-                if (resolve) return getService();
-                return basicGetService();
-        }
-        return super.eGet(featureID, resolve, coreType);
-    }
+		switch (featureID) {
+			case RosPackage.SERVICE_CLIENT__SERVICE:
+				if (resolve) return getService();
+				return basicGetService();
+		}
+		return super.eGet(featureID, resolve, coreType);
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     @Override
     public void eSet(int featureID, Object newValue) {
-        switch (featureID) {
-            case RosPackage.SERVICE_CLIENT__SERVICE:
-                setService((ServiceSpec)newValue);
-                return;
-        }
-        super.eSet(featureID, newValue);
-    }
+		switch (featureID) {
+			case RosPackage.SERVICE_CLIENT__SERVICE:
+				setService((ServiceSpec)newValue);
+				return;
+		}
+		super.eSet(featureID, newValue);
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     @Override
     public void eUnset(int featureID) {
-        switch (featureID) {
-            case RosPackage.SERVICE_CLIENT__SERVICE:
-                setService((ServiceSpec)null);
-                return;
-        }
-        super.eUnset(featureID);
-    }
+		switch (featureID) {
+			case RosPackage.SERVICE_CLIENT__SERVICE:
+				setService((ServiceSpec)null);
+				return;
+		}
+		super.eUnset(featureID);
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     @Override
     public boolean eIsSet(int featureID) {
-        switch (featureID) {
-            case RosPackage.SERVICE_CLIENT__SERVICE:
-                return service != null;
-        }
-        return super.eIsSet(featureID);
-    }
+		switch (featureID) {
+			case RosPackage.SERVICE_CLIENT__SERVICE:
+				return service != null;
+		}
+		return super.eIsSet(featureID);
+	}
 
 } //ServiceClientImpl

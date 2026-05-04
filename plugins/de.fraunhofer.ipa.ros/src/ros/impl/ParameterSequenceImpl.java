@@ -33,119 +33,119 @@ import ros.RosPackage;
  */
 public class ParameterSequenceImpl extends ParameterValueImpl implements ParameterSequence {
     /**
-     * The cached value of the '{@link #getValue() <em>Value</em>}' containment reference list.
-     * <!-- begin-user-doc -->
+	 * The cached value of the '{@link #getValue() <em>Value</em>}' containment reference list.
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @see #getValue()
-     * @generated
-     * @ordered
-     */
+	 * @see #getValue()
+	 * @generated
+	 * @ordered
+	 */
     protected EList<ParameterValue> value;
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     protected ParameterSequenceImpl() {
-        super();
-    }
+		super();
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     @Override
     protected EClass eStaticClass() {
-        return RosPackage.Literals.PARAMETER_SEQUENCE;
-    }
+		return RosPackage.Literals.PARAMETER_SEQUENCE;
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     @Override
     public EList<ParameterValue> getValue() {
-        if (value == null) {
-            value = new EObjectContainmentEList<ParameterValue>(ParameterValue.class, this, RosPackage.PARAMETER_SEQUENCE__VALUE);
-        }
-        return value;
-    }
+		if (value == null) {
+			value = new EObjectContainmentEList<ParameterValue>(ParameterValue.class, this, RosPackage.PARAMETER_SEQUENCE__VALUE);
+		}
+		return value;
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     @Override
     public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
-        switch (featureID) {
-            case RosPackage.PARAMETER_SEQUENCE__VALUE:
-                return ((InternalEList<?>)getValue()).basicRemove(otherEnd, msgs);
-        }
-        return super.eInverseRemove(otherEnd, featureID, msgs);
-    }
+		switch (featureID) {
+			case RosPackage.PARAMETER_SEQUENCE__VALUE:
+				return ((InternalEList<?>)getValue()).basicRemove(otherEnd, msgs);
+		}
+		return super.eInverseRemove(otherEnd, featureID, msgs);
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     @Override
     public Object eGet(int featureID, boolean resolve, boolean coreType) {
-        switch (featureID) {
-            case RosPackage.PARAMETER_SEQUENCE__VALUE:
-                return getValue();
-        }
-        return super.eGet(featureID, resolve, coreType);
-    }
+		switch (featureID) {
+			case RosPackage.PARAMETER_SEQUENCE__VALUE:
+				return getValue();
+		}
+		return super.eGet(featureID, resolve, coreType);
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     @SuppressWarnings("unchecked")
     @Override
     public void eSet(int featureID, Object newValue) {
-        switch (featureID) {
-            case RosPackage.PARAMETER_SEQUENCE__VALUE:
-                getValue().clear();
-                getValue().addAll((Collection<? extends ParameterValue>)newValue);
-                return;
-        }
-        super.eSet(featureID, newValue);
-    }
+		switch (featureID) {
+			case RosPackage.PARAMETER_SEQUENCE__VALUE:
+				getValue().clear();
+				getValue().addAll((Collection<? extends ParameterValue>)newValue);
+				return;
+		}
+		super.eSet(featureID, newValue);
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     @Override
     public void eUnset(int featureID) {
-        switch (featureID) {
-            case RosPackage.PARAMETER_SEQUENCE__VALUE:
-                getValue().clear();
-                return;
-        }
-        super.eUnset(featureID);
-    }
+		switch (featureID) {
+			case RosPackage.PARAMETER_SEQUENCE__VALUE:
+				getValue().clear();
+				return;
+		}
+		super.eUnset(featureID);
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     @Override
     public boolean eIsSet(int featureID) {
-        switch (featureID) {
-            case RosPackage.PARAMETER_SEQUENCE__VALUE:
-                return value != null && !value.isEmpty();
-        }
-        return super.eIsSet(featureID);
-    }
+		switch (featureID) {
+			case RosPackage.PARAMETER_SEQUENCE__VALUE:
+				return value != null && !value.isEmpty();
+		}
+		return super.eIsSet(featureID);
+	}
 
 } //ParameterSequenceImpl

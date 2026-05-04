@@ -146,21 +146,21 @@ class RosValidator extends AbstractRosValidator {
   public static val INVALID_VALUE = 'invalidValue'
   @Check
   def void CheckQoS (QualityOfService qos){
-    CheckDuration(qos.leaseDuration)
-    CheckDuration(qos.lifespan)
-    CheckDuration(qos.deadline)
+  	CheckDuration(qos.leaseDuration)
+  	CheckDuration(qos.lifespan)
+  	CheckDuration(qos.deadline)
   }
 
   def void CheckDuration(String duration)
   {
-    if(duration != 'infinite' && duration !== null){
-        try{
-            Integer.parseInt(duration)
-        }
-        catch (NumberFormatException e){
-            error("Durations of lease_duration, lifespan, deadline should be specified as a string of nanoseconds which can convert to int, or as infinite", null, INVALID_VALUE)
-        }
-    }
+  	if(duration != 'infinite' && duration !== null){
+  		try{
+  			Integer.parseInt(duration)
+  		}
+  		catch (NumberFormatException e){
+  			error("Durations of lease_duration, lifespan, deadline should be specified as a string of nanoseconds which can convert to int, or as infinite", null, INVALID_VALUE)
+  		}
+  	}
   }
 
 }

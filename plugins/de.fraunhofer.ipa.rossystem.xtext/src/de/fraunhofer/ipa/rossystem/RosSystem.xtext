@@ -71,6 +71,9 @@ RosNode returns RosNode:
         BEGIN
             rosparameters+=RosParameter*
         END)?
+    ('parent_node:'
+    	parent=[ros::Node|EString]
+    )?
     END
 ;
 

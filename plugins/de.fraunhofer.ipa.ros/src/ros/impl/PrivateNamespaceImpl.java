@@ -16,22 +16,22 @@ import ros.RosPackage;
  */
 public class PrivateNamespaceImpl extends RelativeNamespaceImpl implements PrivateNamespace {
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     protected PrivateNamespaceImpl() {
-        super();
-    }
+		super();
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     @Override
     protected EClass eStaticClass() {
-        return RosPackage.Literals.PRIVATE_NAMESPACE;
-    }
+		return RosPackage.Literals.PRIVATE_NAMESPACE;
+	}
 
 } //PrivateNamespaceImpl

@@ -18,22 +18,22 @@ import system.RossystemPackage;
  */
 public abstract class ComponentImpl extends MinimalEObjectImpl.Container implements Component {
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     protected ComponentImpl() {
-        super();
-    }
+		super();
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     @Override
     protected EClass eStaticClass() {
-        return RossystemPackage.Literals.COMPONENT;
-    }
+		return RossystemPackage.Literals.COMPONENT;
+	}
 
 } //ComponentImpl

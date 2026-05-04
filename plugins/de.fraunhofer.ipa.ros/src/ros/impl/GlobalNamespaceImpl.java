@@ -16,22 +16,22 @@ import ros.RosPackage;
  */
 public class GlobalNamespaceImpl extends NamespaceImpl implements GlobalNamespace {
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     protected GlobalNamespaceImpl() {
-        super();
-    }
+		super();
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     @Override
     protected EClass eStaticClass() {
-        return RosPackage.Literals.GLOBAL_NAMESPACE;
-    }
+		return RosPackage.Literals.GLOBAL_NAMESPACE;
+	}
 
 } //GlobalNamespaceImpl

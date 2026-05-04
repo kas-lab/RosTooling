@@ -22,25 +22,25 @@ import primitives.AbstractType;
  */
 public interface TopicSpecMsgRef extends AbstractType {
     /**
-     * Returns the value of the '<em><b>Reference</b></em>' reference.
-     * <!-- begin-user-doc -->
+	 * Returns the value of the '<em><b>Reference</b></em>' reference.
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @return the value of the '<em>Reference</em>' reference.
-     * @see #setReference(TopicSpec)
-     * @see ros.RosPackage#getTopicSpecMsgRef_Reference()
-     * @model required="true"
-     * @generated
-     */
+	 * @return the value of the '<em>Reference</em>' reference.
+	 * @see #setReference(TopicSpec)
+	 * @see ros.RosPackage#getTopicSpecMsgRef_Reference()
+	 * @model required="true"
+	 * @generated
+	 */
     TopicSpec getReference();
 
     /**
-     * Sets the value of the '{@link ros.TopicSpecMsgRef#getReference <em>Reference</em>}' reference.
-     * <!-- begin-user-doc -->
+	 * Sets the value of the '{@link ros.TopicSpecMsgRef#getReference <em>Reference</em>}' reference.
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @param value the new value of the '<em>Reference</em>' reference.
-     * @see #getReference()
-     * @generated
-     */
+	 * @param value the new value of the '<em>Reference</em>' reference.
+	 * @see #getReference()
+	 * @generated
+	 */
     void setReference(TopicSpec value);
 
 } // TopicSpecMsgRef

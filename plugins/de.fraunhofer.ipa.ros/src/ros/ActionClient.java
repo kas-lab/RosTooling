@@ -21,29 +21,29 @@ package ros;
  */
 public interface ActionClient extends InterfaceType {
     /**
-     * Returns the value of the '<em><b>Action</b></em>' reference.
-     * <!-- begin-user-doc -->
+	 * Returns the value of the '<em><b>Action</b></em>' reference.
+	 * <!-- begin-user-doc -->
      * <p>
      * If the meaning of the '<em>Action</em>' reference isn't clear,
      * there really should be more of a description here...
      * </p>
      * <!-- end-user-doc -->
-     * @return the value of the '<em>Action</em>' reference.
-     * @see #setAction(ActionSpec)
-     * @see ros.RosPackage#getActionClient_Action()
-     * @model required="true"
-     * @generated
-     */
+	 * @return the value of the '<em>Action</em>' reference.
+	 * @see #setAction(ActionSpec)
+	 * @see ros.RosPackage#getActionClient_Action()
+	 * @model required="true"
+	 * @generated
+	 */
     ActionSpec getAction();
 
     /**
-     * Sets the value of the '{@link ros.ActionClient#getAction <em>Action</em>}' reference.
-     * <!-- begin-user-doc -->
+	 * Sets the value of the '{@link ros.ActionClient#getAction <em>Action</em>}' reference.
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @param value the new value of the '<em>Action</em>' reference.
-     * @see #getAction()
-     * @generated
-     */
+	 * @param value the new value of the '<em>Action</em>' reference.
+	 * @see #getAction()
+	 * @generated
+	 */
     void setAction(ActionSpec value);
 
 } // ActionClient
