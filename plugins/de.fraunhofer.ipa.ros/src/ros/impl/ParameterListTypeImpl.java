@@ -37,74 +37,74 @@ import ros.RosPackage;
  * @generated
  */
 public class ParameterListTypeImpl extends ParameterTypeImpl implements ParameterListType {
-    /**
+	/**
 	 * The cached value of the '{@link #getSequence() <em>Sequence</em>}' containment reference list.
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @see #getSequence()
 	 * @generated
 	 * @ordered
 	 */
-    protected EList<ParameterType> sequence;
+	protected EList<ParameterType> sequence;
 
-    /**
+	/**
 	 * The cached value of the '{@link #getDefault() <em>Default</em>}' containment reference.
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @see #getDefault()
 	 * @generated
 	 * @ordered
 	 */
-    protected ParameterSequence default_;
+	protected ParameterSequence default_;
 
-    /**
+	/**
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-    protected ParameterListTypeImpl() {
+	protected ParameterListTypeImpl() {
 		super();
 	}
 
-    /**
+	/**
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-    @Override
-    protected EClass eStaticClass() {
+	@Override
+	protected EClass eStaticClass() {
 		return RosPackage.Literals.PARAMETER_LIST_TYPE;
 	}
 
-    /**
+	/**
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-    @Override
-    public EList<ParameterType> getSequence() {
+	@Override
+	public EList<ParameterType> getSequence() {
 		if (sequence == null) {
 			sequence = new EObjectContainmentEList<ParameterType>(ParameterType.class, this, RosPackage.PARAMETER_LIST_TYPE__SEQUENCE);
 		}
 		return sequence;
 	}
 
-    /**
+	/**
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-    @Override
-    public ParameterSequence getDefault() {
+	@Override
+	public ParameterSequence getDefault() {
 		return default_;
 	}
 
-    /**
+	/**
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-    public NotificationChain basicSetDefault(ParameterSequence newDefault, NotificationChain msgs) {
+	public NotificationChain basicSetDefault(ParameterSequence newDefault, NotificationChain msgs) {
 		ParameterSequence oldDefault = default_;
 		default_ = newDefault;
 		if (eNotificationRequired()) {
@@ -114,13 +114,13 @@ public class ParameterListTypeImpl extends ParameterTypeImpl implements Paramete
 		return msgs;
 	}
 
-    /**
+	/**
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-    @Override
-    public void setDefault(ParameterSequence newDefault) {
+	@Override
+	public void setDefault(ParameterSequence newDefault) {
 		if (newDefault != default_) {
 			NotificationChain msgs = null;
 			if (default_ != null)
@@ -134,13 +134,13 @@ public class ParameterListTypeImpl extends ParameterTypeImpl implements Paramete
 			eNotify(new ENotificationImpl(this, Notification.SET, RosPackage.PARAMETER_LIST_TYPE__DEFAULT, newDefault, newDefault));
 	}
 
-    /**
+	/**
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-    @Override
-    public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+	@Override
+	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
 			case RosPackage.PARAMETER_LIST_TYPE__SEQUENCE:
 				return ((InternalEList<?>)getSequence()).basicRemove(otherEnd, msgs);
@@ -150,13 +150,13 @@ public class ParameterListTypeImpl extends ParameterTypeImpl implements Paramete
 		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
-    /**
+	/**
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-    @Override
-    public Object eGet(int featureID, boolean resolve, boolean coreType) {
+	@Override
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
 			case RosPackage.PARAMETER_LIST_TYPE__SEQUENCE:
 				return getSequence();
@@ -166,14 +166,14 @@ public class ParameterListTypeImpl extends ParameterTypeImpl implements Paramete
 		return super.eGet(featureID, resolve, coreType);
 	}
 
-    /**
+	/**
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-    @SuppressWarnings("unchecked")
-    @Override
-    public void eSet(int featureID, Object newValue) {
+	@SuppressWarnings("unchecked")
+	@Override
+	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
 			case RosPackage.PARAMETER_LIST_TYPE__SEQUENCE:
 				getSequence().clear();
@@ -186,13 +186,13 @@ public class ParameterListTypeImpl extends ParameterTypeImpl implements Paramete
 		super.eSet(featureID, newValue);
 	}
 
-    /**
+	/**
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-    @Override
-    public void eUnset(int featureID) {
+	@Override
+	public void eUnset(int featureID) {
 		switch (featureID) {
 			case RosPackage.PARAMETER_LIST_TYPE__SEQUENCE:
 				getSequence().clear();
@@ -204,13 +204,13 @@ public class ParameterListTypeImpl extends ParameterTypeImpl implements Paramete
 		super.eUnset(featureID);
 	}
 
-    /**
+	/**
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-    @Override
-    public boolean eIsSet(int featureID) {
+	@Override
+	public boolean eIsSet(int featureID) {
 		switch (featureID) {
 			case RosPackage.PARAMETER_LIST_TYPE__SEQUENCE:
 				return sequence != null && !sequence.isEmpty();

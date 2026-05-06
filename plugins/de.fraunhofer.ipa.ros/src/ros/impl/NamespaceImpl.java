@@ -29,55 +29,55 @@ import ros.RosPackage;
  * @generated
  */
 public abstract class NamespaceImpl extends MinimalEObjectImpl.Container implements Namespace {
-    /**
+	/**
 	 * The cached value of the '{@link #getParts() <em>Parts</em>}' attribute list.
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @see #getParts()
 	 * @generated
 	 * @ordered
 	 */
-    protected EList<String> parts;
+	protected EList<String> parts;
 
-    /**
+	/**
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-    protected NamespaceImpl() {
+	protected NamespaceImpl() {
 		super();
 	}
 
-    /**
+	/**
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-    @Override
-    protected EClass eStaticClass() {
+	@Override
+	protected EClass eStaticClass() {
 		return RosPackage.Literals.NAMESPACE;
 	}
 
-    /**
+	/**
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-    @Override
-    public EList<String> getParts() {
+	@Override
+	public EList<String> getParts() {
 		if (parts == null) {
 			parts = new EDataTypeEList<String>(String.class, this, RosPackage.NAMESPACE__PARTS);
 		}
 		return parts;
 	}
 
-    /**
+	/**
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-    @Override
-    public Object eGet(int featureID, boolean resolve, boolean coreType) {
+	@Override
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
 			case RosPackage.NAMESPACE__PARTS:
 				return getParts();
@@ -85,14 +85,14 @@ public abstract class NamespaceImpl extends MinimalEObjectImpl.Container impleme
 		return super.eGet(featureID, resolve, coreType);
 	}
 
-    /**
+	/**
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-    @SuppressWarnings("unchecked")
-    @Override
-    public void eSet(int featureID, Object newValue) {
+	@SuppressWarnings("unchecked")
+	@Override
+	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
 			case RosPackage.NAMESPACE__PARTS:
 				getParts().clear();
@@ -102,13 +102,13 @@ public abstract class NamespaceImpl extends MinimalEObjectImpl.Container impleme
 		super.eSet(featureID, newValue);
 	}
 
-    /**
+	/**
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-    @Override
-    public void eUnset(int featureID) {
+	@Override
+	public void eUnset(int featureID) {
 		switch (featureID) {
 			case RosPackage.NAMESPACE__PARTS:
 				getParts().clear();
@@ -117,13 +117,13 @@ public abstract class NamespaceImpl extends MinimalEObjectImpl.Container impleme
 		super.eUnset(featureID);
 	}
 
-    /**
+	/**
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-    @Override
-    public boolean eIsSet(int featureID) {
+	@Override
+	public boolean eIsSet(int featureID) {
 		switch (featureID) {
 			case RosPackage.NAMESPACE__PARTS:
 				return parts != null && !parts.isEmpty();
@@ -131,13 +131,13 @@ public abstract class NamespaceImpl extends MinimalEObjectImpl.Container impleme
 		return super.eIsSet(featureID);
 	}
 
-    /**
+	/**
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-    @Override
-    public String toString() {
+	@Override
+	public String toString() {
 		if (eIsProxy()) return super.toString();
 
 		StringBuilder result = new StringBuilder(super.toString());

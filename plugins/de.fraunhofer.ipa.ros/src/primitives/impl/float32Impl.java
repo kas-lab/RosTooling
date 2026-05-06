@@ -15,22 +15,22 @@ import primitives.float32;
  * @generated
  */
 public class float32Impl extends AbstractTypeImpl implements float32 {
-    /**
+	/**
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-    protected float32Impl() {
+	protected float32Impl() {
 		super();
 	}
 
-    /**
+	/**
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-    @Override
-    protected EClass eStaticClass() {
+	@Override
+	protected EClass eStaticClass() {
 		return PrimitivesPackage.Literals.FLOAT32;
 	}
 

@@ -17,22 +17,22 @@ import ros.RosPackage;
  * @generated
  */
 public abstract class ParameterValueImpl extends MinimalEObjectImpl.Container implements ParameterValue {
-    /**
+	/**
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-    protected ParameterValueImpl() {
+	protected ParameterValueImpl() {
 		super();
 	}
 
-    /**
+	/**
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-    @Override
-    protected EClass eStaticClass() {
+	@Override
+	protected EClass eStaticClass() {
 		return RosPackage.Literals.PARAMETER_VALUE;
 	}
 

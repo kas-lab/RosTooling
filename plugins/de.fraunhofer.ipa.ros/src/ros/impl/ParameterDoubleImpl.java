@@ -25,75 +25,75 @@ import ros.RosPackage;
  * @generated
  */
 public class ParameterDoubleImpl extends ParameterValueImpl implements ParameterDouble {
-    /**
+	/**
 	 * The default value of the '{@link #getValue() <em>Value</em>}' attribute.
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @see #getValue()
 	 * @generated
 	 * @ordered
 	 */
-    protected static final double VALUE_EDEFAULT = 0.0;
+	protected static final double VALUE_EDEFAULT = 0.0;
 
-    /**
+	/**
 	 * The cached value of the '{@link #getValue() <em>Value</em>}' attribute.
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @see #getValue()
 	 * @generated
 	 * @ordered
 	 */
-    protected double value = VALUE_EDEFAULT;
+	protected double value = VALUE_EDEFAULT;
 
-    /**
+	/**
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-    protected ParameterDoubleImpl() {
+	protected ParameterDoubleImpl() {
 		super();
 	}
 
-    /**
+	/**
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-    @Override
-    protected EClass eStaticClass() {
+	@Override
+	protected EClass eStaticClass() {
 		return RosPackage.Literals.PARAMETER_DOUBLE;
 	}
 
-    /**
+	/**
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-    @Override
-    public double getValue() {
+	@Override
+	public double getValue() {
 		return value;
 	}
 
-    /**
+	/**
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-    @Override
-    public void setValue(double newValue) {
+	@Override
+	public void setValue(double newValue) {
 		double oldValue = value;
 		value = newValue;
 		if (eNotificationRequired())
 			eNotify(new ENotificationImpl(this, Notification.SET, RosPackage.PARAMETER_DOUBLE__VALUE, oldValue, value));
 	}
 
-    /**
+	/**
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-    @Override
-    public Object eGet(int featureID, boolean resolve, boolean coreType) {
+	@Override
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
 			case RosPackage.PARAMETER_DOUBLE__VALUE:
 				return getValue();
@@ -101,13 +101,13 @@ public class ParameterDoubleImpl extends ParameterValueImpl implements Parameter
 		return super.eGet(featureID, resolve, coreType);
 	}
 
-    /**
+	/**
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-    @Override
-    public void eSet(int featureID, Object newValue) {
+	@Override
+	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
 			case RosPackage.PARAMETER_DOUBLE__VALUE:
 				setValue((Double)newValue);
@@ -116,13 +116,13 @@ public class ParameterDoubleImpl extends ParameterValueImpl implements Parameter
 		super.eSet(featureID, newValue);
 	}
 
-    /**
+	/**
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-    @Override
-    public void eUnset(int featureID) {
+	@Override
+	public void eUnset(int featureID) {
 		switch (featureID) {
 			case RosPackage.PARAMETER_DOUBLE__VALUE:
 				setValue(VALUE_EDEFAULT);
@@ -131,13 +131,13 @@ public class ParameterDoubleImpl extends ParameterValueImpl implements Parameter
 		super.eUnset(featureID);
 	}
 
-    /**
+	/**
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-    @Override
-    public boolean eIsSet(int featureID) {
+	@Override
+	public boolean eIsSet(int featureID) {
 		switch (featureID) {
 			case RosPackage.PARAMETER_DOUBLE__VALUE:
 				return value != VALUE_EDEFAULT;
@@ -145,13 +145,13 @@ public class ParameterDoubleImpl extends ParameterValueImpl implements Parameter
 		return super.eIsSet(featureID);
 	}
 
-    /**
+	/**
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-    @Override
-    public String toString() {
+	@Override
+	public String toString() {
 		if (eIsProxy()) return super.toString();
 
 		StringBuilder result = new StringBuilder(super.toString());

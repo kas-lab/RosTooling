@@ -14,7 +14,6 @@ import ros.ServiceServer
 import ros.ServiceClient
 import ros.ActionServer
 import ros.ActionClient
-import ros.NamespacedElement
 import ros.Parameter
 
 class RosQNP extends DefaultDeclarativeQualifiedNameProvider{

@@ -29,42 +29,42 @@ import ros.SpecBase;
  * @generated
  */
 public class ArrayTopicSpecMsgRefImpl extends AbstractTypeImpl implements ArrayTopicSpecMsgRef {
-    /**
+	/**
 	 * The cached value of the '{@link #getReference() <em>Reference</em>}' reference.
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @see #getReference()
 	 * @generated
 	 * @ordered
 	 */
-    protected SpecBase reference;
+	protected SpecBase reference;
 
-    /**
+	/**
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-    protected ArrayTopicSpecMsgRefImpl() {
+	protected ArrayTopicSpecMsgRefImpl() {
 		super();
 	}
 
-    /**
+	/**
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-    @Override
-    protected EClass eStaticClass() {
+	@Override
+	protected EClass eStaticClass() {
 		return RosPackage.Literals.ARRAY_TOPIC_SPEC_MSG_REF;
 	}
 
-    /**
+	/**
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-    @Override
-    public SpecBase getReference() {
+	@Override
+	public SpecBase getReference() {
 		if (reference != null && reference.eIsProxy()) {
 			InternalEObject oldReference = (InternalEObject)reference;
 			reference = (SpecBase)eResolveProxy(oldReference);
@@ -76,35 +76,35 @@ public class ArrayTopicSpecMsgRefImpl extends AbstractTypeImpl implements ArrayT
 		return reference;
 	}
 
-    /**
+	/**
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-    public SpecBase basicGetReference() {
+	public SpecBase basicGetReference() {
 		return reference;
 	}
 
-    /**
+	/**
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-    @Override
-    public void setReference(SpecBase newReference) {
+	@Override
+	public void setReference(SpecBase newReference) {
 		SpecBase oldReference = reference;
 		reference = newReference;
 		if (eNotificationRequired())
 			eNotify(new ENotificationImpl(this, Notification.SET, RosPackage.ARRAY_TOPIC_SPEC_MSG_REF__REFERENCE, oldReference, reference));
 	}
 
-    /**
+	/**
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-    @Override
-    public Object eGet(int featureID, boolean resolve, boolean coreType) {
+	@Override
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
 			case RosPackage.ARRAY_TOPIC_SPEC_MSG_REF__REFERENCE:
 				if (resolve) return getReference();
@@ -113,13 +113,13 @@ public class ArrayTopicSpecMsgRefImpl extends AbstractTypeImpl implements ArrayT
 		return super.eGet(featureID, resolve, coreType);
 	}
 
-    /**
+	/**
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-    @Override
-    public void eSet(int featureID, Object newValue) {
+	@Override
+	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
 			case RosPackage.ARRAY_TOPIC_SPEC_MSG_REF__REFERENCE:
 				setReference((SpecBase)newValue);
@@ -128,13 +128,13 @@ public class ArrayTopicSpecMsgRefImpl extends AbstractTypeImpl implements ArrayT
 		super.eSet(featureID, newValue);
 	}
 
-    /**
+	/**
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-    @Override
-    public void eUnset(int featureID) {
+	@Override
+	public void eUnset(int featureID) {
 		switch (featureID) {
 			case RosPackage.ARRAY_TOPIC_SPEC_MSG_REF__REFERENCE:
 				setReference((SpecBase)null);
@@ -143,13 +143,13 @@ public class ArrayTopicSpecMsgRefImpl extends AbstractTypeImpl implements ArrayT
 		super.eUnset(featureID);
 	}
 
-    /**
+	/**
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-    @Override
-    public boolean eIsSet(int featureID) {
+	@Override
+	public boolean eIsSet(int featureID) {
 		switch (featureID) {
 			case RosPackage.ARRAY_TOPIC_SPEC_MSG_REF__REFERENCE:
 				return reference != null;

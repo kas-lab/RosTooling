@@ -49,236 +49,236 @@ import ros.Subscriber;
  * @generated
  */
 public class NodeImpl extends MinimalEObjectImpl.Container implements Node {
-    /**
+	/**
 	 * The cached value of the '{@link #getServiceserver() <em>Serviceserver</em>}' containment reference list.
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @see #getServiceserver()
 	 * @generated
 	 * @ordered
 	 */
-    protected EList<ServiceServer> serviceserver;
+	protected EList<ServiceServer> serviceserver;
 
-    /**
+	/**
 	 * The cached value of the '{@link #getPublisher() <em>Publisher</em>}' containment reference list.
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @see #getPublisher()
 	 * @generated
 	 * @ordered
 	 */
-    protected EList<Publisher> publisher;
+	protected EList<Publisher> publisher;
 
-    /**
+	/**
 	 * The cached value of the '{@link #getSubscriber() <em>Subscriber</em>}' containment reference list.
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @see #getSubscriber()
 	 * @generated
 	 * @ordered
 	 */
-    protected EList<Subscriber> subscriber;
+	protected EList<Subscriber> subscriber;
 
-    /**
+	/**
 	 * The cached value of the '{@link #getServiceclient() <em>Serviceclient</em>}' containment reference list.
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @see #getServiceclient()
 	 * @generated
 	 * @ordered
 	 */
-    protected EList<ServiceClient> serviceclient;
+	protected EList<ServiceClient> serviceclient;
 
-    /**
+	/**
 	 * The cached value of the '{@link #getActionserver() <em>Actionserver</em>}' containment reference list.
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @see #getActionserver()
 	 * @generated
 	 * @ordered
 	 */
-    protected EList<ActionServer> actionserver;
+	protected EList<ActionServer> actionserver;
 
-    /**
+	/**
 	 * The cached value of the '{@link #getActionclient() <em>Actionclient</em>}' containment reference list.
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @see #getActionclient()
 	 * @generated
 	 * @ordered
 	 */
-    protected EList<ActionClient> actionclient;
+	protected EList<ActionClient> actionclient;
 
-    /**
+	/**
 	 * The default value of the '{@link #getName() <em>Name</em>}' attribute.
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @see #getName()
 	 * @generated
 	 * @ordered
 	 */
-    protected static final String NAME_EDEFAULT = null;
+	protected static final String NAME_EDEFAULT = null;
 
-    /**
+	/**
 	 * The cached value of the '{@link #getName() <em>Name</em>}' attribute.
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @see #getName()
 	 * @generated
 	 * @ordered
 	 */
-    protected String name = NAME_EDEFAULT;
+	protected String name = NAME_EDEFAULT;
 
-    /**
+	/**
 	 * The cached value of the '{@link #getParameter() <em>Parameter</em>}' containment reference list.
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @see #getParameter()
 	 * @generated
 	 * @ordered
 	 */
-    protected EList<Parameter> parameter;
+	protected EList<Parameter> parameter;
 
-    /**
+	/**
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-    protected NodeImpl() {
+	protected NodeImpl() {
 		super();
 	}
 
-    /**
+	/**
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-    @Override
-    protected EClass eStaticClass() {
+	@Override
+	protected EClass eStaticClass() {
 		return RosPackage.Literals.NODE;
 	}
 
-    /**
+	/**
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-    @Override
-    public EList<ServiceServer> getServiceserver() {
+	@Override
+	public EList<ServiceServer> getServiceserver() {
 		if (serviceserver == null) {
 			serviceserver = new EObjectContainmentEList<ServiceServer>(ServiceServer.class, this, RosPackage.NODE__SERVICESERVER);
 		}
 		return serviceserver;
 	}
 
-    /**
+	/**
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-    @Override
-    public EList<Publisher> getPublisher() {
+	@Override
+	public EList<Publisher> getPublisher() {
 		if (publisher == null) {
 			publisher = new EObjectContainmentEList<Publisher>(Publisher.class, this, RosPackage.NODE__PUBLISHER);
 		}
 		return publisher;
 	}
 
-    /**
+	/**
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-    @Override
-    public EList<Subscriber> getSubscriber() {
+	@Override
+	public EList<Subscriber> getSubscriber() {
 		if (subscriber == null) {
 			subscriber = new EObjectContainmentEList<Subscriber>(Subscriber.class, this, RosPackage.NODE__SUBSCRIBER);
 		}
 		return subscriber;
 	}
 
-    /**
+	/**
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-    @Override
-    public EList<ServiceClient> getServiceclient() {
+	@Override
+	public EList<ServiceClient> getServiceclient() {
 		if (serviceclient == null) {
 			serviceclient = new EObjectContainmentEList<ServiceClient>(ServiceClient.class, this, RosPackage.NODE__SERVICECLIENT);
 		}
 		return serviceclient;
 	}
 
-    /**
+	/**
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-    @Override
-    public EList<ActionServer> getActionserver() {
+	@Override
+	public EList<ActionServer> getActionserver() {
 		if (actionserver == null) {
 			actionserver = new EObjectContainmentEList<ActionServer>(ActionServer.class, this, RosPackage.NODE__ACTIONSERVER);
 		}
 		return actionserver;
 	}
 
-    /**
+	/**
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-    @Override
-    public EList<ActionClient> getActionclient() {
+	@Override
+	public EList<ActionClient> getActionclient() {
 		if (actionclient == null) {
 			actionclient = new EObjectContainmentEList<ActionClient>(ActionClient.class, this, RosPackage.NODE__ACTIONCLIENT);
 		}
 		return actionclient;
 	}
 
-    /**
+	/**
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-    @Override
-    public String getName() {
+	@Override
+	public String getName() {
 		return name;
 	}
 
-    /**
+	/**
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-    @Override
-    public void setName(String newName) {
+	@Override
+	public void setName(String newName) {
 		String oldName = name;
 		name = newName;
 		if (eNotificationRequired())
 			eNotify(new ENotificationImpl(this, Notification.SET, RosPackage.NODE__NAME, oldName, name));
 	}
 
-    /**
+	/**
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-    @Override
-    public EList<Parameter> getParameter() {
+	@Override
+	public EList<Parameter> getParameter() {
 		if (parameter == null) {
 			parameter = new EObjectContainmentEList<Parameter>(Parameter.class, this, RosPackage.NODE__PARAMETER);
 		}
 		return parameter;
 	}
 
-    /**
+	/**
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-    @Override
-    public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+	@Override
+	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
 			case RosPackage.NODE__SERVICESERVER:
 				return ((InternalEList<?>)getServiceserver()).basicRemove(otherEnd, msgs);
@@ -298,13 +298,13 @@ public class NodeImpl extends MinimalEObjectImpl.Container implements Node {
 		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
-    /**
+	/**
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-    @Override
-    public Object eGet(int featureID, boolean resolve, boolean coreType) {
+	@Override
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
 			case RosPackage.NODE__SERVICESERVER:
 				return getServiceserver();
@@ -326,14 +326,14 @@ public class NodeImpl extends MinimalEObjectImpl.Container implements Node {
 		return super.eGet(featureID, resolve, coreType);
 	}
 
-    /**
+	/**
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-    @SuppressWarnings("unchecked")
-    @Override
-    public void eSet(int featureID, Object newValue) {
+	@SuppressWarnings("unchecked")
+	@Override
+	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
 			case RosPackage.NODE__SERVICESERVER:
 				getServiceserver().clear();
@@ -370,13 +370,13 @@ public class NodeImpl extends MinimalEObjectImpl.Container implements Node {
 		super.eSet(featureID, newValue);
 	}
 
-    /**
+	/**
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-    @Override
-    public void eUnset(int featureID) {
+	@Override
+	public void eUnset(int featureID) {
 		switch (featureID) {
 			case RosPackage.NODE__SERVICESERVER:
 				getServiceserver().clear();
@@ -406,13 +406,13 @@ public class NodeImpl extends MinimalEObjectImpl.Container implements Node {
 		super.eUnset(featureID);
 	}
 
-    /**
+	/**
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-    @Override
-    public boolean eIsSet(int featureID) {
+	@Override
+	public boolean eIsSet(int featureID) {
 		switch (featureID) {
 			case RosPackage.NODE__SERVICESERVER:
 				return serviceserver != null && !serviceserver.isEmpty();
@@ -434,13 +434,13 @@ public class NodeImpl extends MinimalEObjectImpl.Container implements Node {
 		return super.eIsSet(featureID);
 	}
 
-    /**
+	/**
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-    @Override
-    public String toString() {
+	@Override
+	public String toString() {
 		if (eIsProxy()) return super.toString();
 
 		StringBuilder result = new StringBuilder(super.toString());

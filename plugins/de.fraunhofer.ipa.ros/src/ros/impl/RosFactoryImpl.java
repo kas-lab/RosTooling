@@ -67,13 +67,13 @@ import ros.TopicSpecMsgRef;
  * @generated
  */
 public class RosFactoryImpl extends EFactoryImpl implements RosFactory {
-    /**
+	/**
 	 * Creates the default factory implementation.
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-    public static RosFactory init() {
+	public static RosFactory init() {
 		try {
 			RosFactory theRosFactory = (RosFactory)EPackage.Registry.INSTANCE.getEFactory(RosPackage.eNS_URI);
 			if (theRosFactory != null) {
@@ -86,23 +86,23 @@ public class RosFactoryImpl extends EFactoryImpl implements RosFactory {
 		return new RosFactoryImpl();
 	}
 
-    /**
+	/**
 	 * Creates an instance of the factory.
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-    public RosFactoryImpl() {
+	public RosFactoryImpl() {
 		super();
 	}
 
-    /**
+	/**
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-    @Override
-    public EObject create(EClass eClass) {
+	@Override
+	public EObject create(EClass eClass) {
 		switch (eClass.getClassifierID()) {
 			case RosPackage.NODE: return createNode();
 			case RosPackage.PACKAGE: return createPackage();
@@ -156,13 +156,13 @@ public class RosFactoryImpl extends EFactoryImpl implements RosFactory {
 		}
 	}
 
-    /**
+	/**
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-    @Override
-    public Object createFromString(EDataType eDataType, String initialValue) {
+	@Override
+	public Object createFromString(EDataType eDataType, String initialValue) {
 		switch (eDataType.getClassifierID()) {
 			case RosPackage.GRAPH_NAME:
 				return createGraphNameFromString(eDataType, initialValue);
@@ -171,13 +171,13 @@ public class RosFactoryImpl extends EFactoryImpl implements RosFactory {
 		}
 	}
 
-    /**
+	/**
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-    @Override
-    public String convertToString(EDataType eDataType, Object instanceValue) {
+	@Override
+	public String convertToString(EDataType eDataType, Object instanceValue) {
 		switch (eDataType.getClassifierID()) {
 			case RosPackage.GRAPH_NAME:
 				return convertGraphNameToString(eDataType, instanceValue);
@@ -186,559 +186,559 @@ public class RosFactoryImpl extends EFactoryImpl implements RosFactory {
 		}
 	}
 
-    /**
+	/**
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-    @Override
-    public Node createNode() {
+	@Override
+	public Node createNode() {
 		NodeImpl node = new NodeImpl();
 		return node;
 	}
 
-    /**
+	/**
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-    @Override
-    public ros.Package createPackage() {
+	@Override
+	public ros.Package createPackage() {
 		PackageImpl package_ = new PackageImpl();
 		return package_;
 	}
 
-    /**
+	/**
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-    @Override
-    public ServiceSpec createServiceSpec() {
+	@Override
+	public ServiceSpec createServiceSpec() {
 		ServiceSpecImpl serviceSpec = new ServiceSpecImpl();
 		return serviceSpec;
 	}
 
-    /**
+	/**
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-    @Override
-    public ServiceServer createServiceServer() {
+	@Override
+	public ServiceServer createServiceServer() {
 		ServiceServerImpl serviceServer = new ServiceServerImpl();
 		return serviceServer;
 	}
 
-    /**
+	/**
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-    @Override
-    public TopicSpec createTopicSpec() {
+	@Override
+	public TopicSpec createTopicSpec() {
 		TopicSpecImpl topicSpec = new TopicSpecImpl();
 		return topicSpec;
 	}
 
-    /**
+	/**
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-    @Override
-    public Publisher createPublisher() {
-		PublisherImpl publisher = new PublisherImpl();
-		return publisher;
-	}
-
-    /**
-	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-	 * @generated
-	 */
-    @Override
-    public PackageDependency createPackageDependency() {
+	@Override
+	public PackageDependency createPackageDependency() {
 		PackageDependencyImpl packageDependency = new PackageDependencyImpl();
 		return packageDependency;
 	}
 
-    /**
+	/**
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-    @Override
-    public ExternalDependency createExternalDependency() {
+	@Override
+	public ExternalDependency createExternalDependency() {
 		ExternalDependencyImpl externalDependency = new ExternalDependencyImpl();
 		return externalDependency;
 	}
 
-    /**
+	/**
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-    @Override
-    public CatkinPackage createCatkinPackage() {
+	@Override
+	public CatkinPackage createCatkinPackage() {
 		CatkinPackageImpl catkinPackage = new CatkinPackageImpl();
 		return catkinPackage;
 	}
 
-    /**
+	/**
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-    @Override
-    public Artifact createArtifact() {
+	@Override
+	public Publisher createPublisher() {
+		PublisherImpl publisher = new PublisherImpl();
+		return publisher;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Artifact createArtifact() {
 		ArtifactImpl artifact = new ArtifactImpl();
 		return artifact;
 	}
 
-    /**
+	/**
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-    @Override
-    public Subscriber createSubscriber() {
+	@Override
+	public Subscriber createSubscriber() {
 		SubscriberImpl subscriber = new SubscriberImpl();
 		return subscriber;
 	}
 
-    /**
+	/**
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-    @Override
-    public ServiceClient createServiceClient() {
+	@Override
+	public ServiceClient createServiceClient() {
 		ServiceClientImpl serviceClient = new ServiceClientImpl();
 		return serviceClient;
 	}
 
-    /**
+	/**
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-    @Override
-    public PackageSet createPackageSet() {
+	@Override
+	public PackageSet createPackageSet() {
 		PackageSetImpl packageSet = new PackageSetImpl();
 		return packageSet;
 	}
 
-    /**
+	/**
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-    @Override
-    public ActionSpec createActionSpec() {
+	@Override
+	public ActionSpec createActionSpec() {
 		ActionSpecImpl actionSpec = new ActionSpecImpl();
 		return actionSpec;
 	}
 
-    /**
+	/**
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-    @Override
-    public ActionServer createActionServer() {
+	@Override
+	public ActionServer createActionServer() {
 		ActionServerImpl actionServer = new ActionServerImpl();
 		return actionServer;
 	}
 
-    /**
+	/**
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-    @Override
-    public ActionClient createActionClient() {
+	@Override
+	public ActionClient createActionClient() {
 		ActionClientImpl actionClient = new ActionClientImpl();
 		return actionClient;
 	}
 
-    /**
+	/**
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-    @Override
-    public MessageDefinition createMessageDefinition() {
+	@Override
+	public MessageDefinition createMessageDefinition() {
 		MessageDefinitionImpl messageDefinition = new MessageDefinitionImpl();
 		return messageDefinition;
 	}
 
-    /**
+	/**
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-    @Override
-    public GlobalNamespace createGlobalNamespace() {
+	@Override
+	public GlobalNamespace createGlobalNamespace() {
 		GlobalNamespaceImpl globalNamespace = new GlobalNamespaceImpl();
 		return globalNamespace;
 	}
 
-    /**
+	/**
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-    @Override
-    public RelativeNamespace createRelativeNamespace() {
+	@Override
+	public RelativeNamespace createRelativeNamespace() {
 		RelativeNamespaceImpl relativeNamespace = new RelativeNamespaceImpl();
 		return relativeNamespace;
 	}
 
-    /**
+	/**
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-    @Override
-    public PrivateNamespace createPrivateNamespace() {
+	@Override
+	public PrivateNamespace createPrivateNamespace() {
 		PrivateNamespaceImpl privateNamespace = new PrivateNamespaceImpl();
 		return privateNamespace;
 	}
 
-    /**
+	/**
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-    @Override
-    public InterfaceType createInterfaceType() {
+	@Override
+	public InterfaceType createInterfaceType() {
 		InterfaceTypeImpl interfaceType = new InterfaceTypeImpl();
 		return interfaceType;
 	}
 
-    /**
+	/**
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-    @Override
-    public ParameterListType createParameterListType() {
+	@Override
+	public ParameterListType createParameterListType() {
 		ParameterListTypeImpl parameterListType = new ParameterListTypeImpl();
 		return parameterListType;
 	}
 
-    /**
+	/**
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-    @Override
-    public ParameterStructType createParameterStructType() {
+	@Override
+	public ParameterStructType createParameterStructType() {
 		ParameterStructTypeImpl parameterStructType = new ParameterStructTypeImpl();
 		return parameterStructType;
 	}
 
-    /**
+	/**
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-    @Override
-    public ParameterIntegerType createParameterIntegerType() {
+	@Override
+	public ParameterIntegerType createParameterIntegerType() {
 		ParameterIntegerTypeImpl parameterIntegerType = new ParameterIntegerTypeImpl();
 		return parameterIntegerType;
 	}
 
-    /**
+	/**
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-    @Override
-    public ParameterStringType createParameterStringType() {
+	@Override
+	public ParameterStringType createParameterStringType() {
 		ParameterStringTypeImpl parameterStringType = new ParameterStringTypeImpl();
 		return parameterStringType;
 	}
 
-    /**
+	/**
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-    @Override
-    public ParameterDoubleType createParameterDoubleType() {
+	@Override
+	public ParameterDoubleType createParameterDoubleType() {
 		ParameterDoubleTypeImpl parameterDoubleType = new ParameterDoubleTypeImpl();
 		return parameterDoubleType;
 	}
 
-    /**
+	/**
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-    @Override
-    public Parameter createParameter() {
+	@Override
+	public Parameter createParameter() {
 		ParameterImpl parameter = new ParameterImpl();
 		return parameter;
 	}
 
-    /**
+	/**
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-    @Override
-    public ParameterDateType createParameterDateType() {
+	@Override
+	public ParameterDateType createParameterDateType() {
 		ParameterDateTypeImpl parameterDateType = new ParameterDateTypeImpl();
 		return parameterDateType;
 	}
 
-    /**
+	/**
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-    @Override
-    public ParameterBooleanType createParameterBooleanType() {
+	@Override
+	public ParameterBooleanType createParameterBooleanType() {
 		ParameterBooleanTypeImpl parameterBooleanType = new ParameterBooleanTypeImpl();
 		return parameterBooleanType;
 	}
 
-    /**
+	/**
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-    @Override
-    public ParameterBase64Type createParameterBase64Type() {
+	@Override
+	public ParameterBase64Type createParameterBase64Type() {
 		ParameterBase64TypeImpl parameterBase64Type = new ParameterBase64TypeImpl();
 		return parameterBase64Type;
 	}
 
-    /**
+	/**
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-    @Override
-    public ParameterAnyType createParameterAnyType() {
+	@Override
+	public ParameterAnyType createParameterAnyType() {
 		ParameterAnyTypeImpl parameterAnyType = new ParameterAnyTypeImpl();
 		return parameterAnyType;
 	}
 
-    /**
+	/**
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-    @Override
-    public ParameterStructTypeMember createParameterStructTypeMember() {
+	@Override
+	public ParameterStructTypeMember createParameterStructTypeMember() {
 		ParameterStructTypeMemberImpl parameterStructTypeMember = new ParameterStructTypeMemberImpl();
 		return parameterStructTypeMember;
 	}
 
-    /**
+	/**
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-    @Override
-    public ParameterArrayType createParameterArrayType() {
+	@Override
+	public ParameterArrayType createParameterArrayType() {
 		ParameterArrayTypeImpl parameterArrayType = new ParameterArrayTypeImpl();
 		return parameterArrayType;
 	}
 
-    /**
+	/**
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-    @Override
-    public ParameterAny createParameterAny() {
+	@Override
+	public ParameterAny createParameterAny() {
 		ParameterAnyImpl parameterAny = new ParameterAnyImpl();
 		return parameterAny;
 	}
 
-    /**
+	/**
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-    @Override
-    public ParameterString createParameterString() {
+	@Override
+	public ParameterString createParameterString() {
 		ParameterStringImpl parameterString = new ParameterStringImpl();
 		return parameterString;
 	}
 
-    /**
+	/**
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-    @Override
-    public ParameterBase64 createParameterBase64() {
+	@Override
+	public ParameterBase64 createParameterBase64() {
 		ParameterBase64Impl parameterBase64 = new ParameterBase64Impl();
 		return parameterBase64;
 	}
 
-    /**
+	/**
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-    @Override
-    public ParameterInteger createParameterInteger() {
+	@Override
+	public ParameterInteger createParameterInteger() {
 		ParameterIntegerImpl parameterInteger = new ParameterIntegerImpl();
 		return parameterInteger;
 	}
 
-    /**
+	/**
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-    @Override
-    public ParameterDouble createParameterDouble() {
+	@Override
+	public ParameterDouble createParameterDouble() {
 		ParameterDoubleImpl parameterDouble = new ParameterDoubleImpl();
 		return parameterDouble;
 	}
 
-    /**
+	/**
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-    @Override
-    public ParameterBoolean createParameterBoolean() {
+	@Override
+	public ParameterBoolean createParameterBoolean() {
 		ParameterBooleanImpl parameterBoolean = new ParameterBooleanImpl();
 		return parameterBoolean;
 	}
 
-    /**
+	/**
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-    @Override
-    public ParameterSequence createParameterSequence() {
+	@Override
+	public ParameterSequence createParameterSequence() {
 		ParameterSequenceImpl parameterSequence = new ParameterSequenceImpl();
 		return parameterSequence;
 	}
 
-    /**
+	/**
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-    @Override
-    public ParameterStruct createParameterStruct() {
+	@Override
+	public ParameterStruct createParameterStruct() {
 		ParameterStructImpl parameterStruct = new ParameterStructImpl();
 		return parameterStruct;
 	}
 
-    /**
+	/**
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-    @Override
-    public ParameterStructMember createParameterStructMember() {
+	@Override
+	public ParameterStructMember createParameterStructMember() {
 		ParameterStructMemberImpl parameterStructMember = new ParameterStructMemberImpl();
 		return parameterStructMember;
 	}
 
-    /**
+	/**
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-    @Override
-    public ParameterDate createParameterDate() {
+	@Override
+	public ParameterDate createParameterDate() {
 		ParameterDateImpl parameterDate = new ParameterDateImpl();
 		return parameterDate;
 	}
 
-    /**
+	/**
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-    @Override
-    public AmentPackage createAmentPackage() {
+	@Override
+	public AmentPackage createAmentPackage() {
 		AmentPackageImpl amentPackage = new AmentPackageImpl();
 		return amentPackage;
 	}
 
-    /**
+	/**
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-    @Override
-    public QualityOfService createQualityOfService() {
+	@Override
+	public QualityOfService createQualityOfService() {
 		QualityOfServiceImpl qualityOfService = new QualityOfServiceImpl();
 		return qualityOfService;
 	}
 
-    /**
+	/**
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-    @Override
-    public TopicSpecMsgRef createTopicSpecMsgRef() {
+	@Override
+	public TopicSpecMsgRef createTopicSpecMsgRef() {
 		TopicSpecMsgRefImpl topicSpecMsgRef = new TopicSpecMsgRefImpl();
 		return topicSpecMsgRef;
 	}
 
-                /**
+	/**
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-    @Override
-    public ArrayTopicSpecMsgRef createArrayTopicSpecMsgRef() {
+	@Override
+	public ArrayTopicSpecMsgRef createArrayTopicSpecMsgRef() {
 		ArrayTopicSpecMsgRefImpl arrayTopicSpecMsgRef = new ArrayTopicSpecMsgRefImpl();
 		return arrayTopicSpecMsgRef;
 	}
 
-                                                                /**
+	/**
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-    public String createGraphNameFromString(EDataType eDataType, String initialValue) {
+	public String createGraphNameFromString(EDataType eDataType, String initialValue) {
 		return (String)super.createFromString(eDataType, initialValue);
 	}
 
-    /**
+	/**
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-    public String convertGraphNameToString(EDataType eDataType, Object instanceValue) {
+	public String convertGraphNameToString(EDataType eDataType, Object instanceValue) {
 		return super.convertToString(eDataType, instanceValue);
 	}
 
-    /**
+	/**
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-    @Override
-    public RosPackage getRosPackage() {
+	@Override
+	public RosPackage getRosPackage() {
 		return (RosPackage)getEPackage();
 	}
 
-    /**
+	/**
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @deprecated
 	 * @generated
 	 */
-    @Deprecated
-    public static RosPackage getPackage() {
+	@Deprecated
+	public static RosPackage getPackage() {
 		return RosPackage.eINSTANCE;
 	}
 

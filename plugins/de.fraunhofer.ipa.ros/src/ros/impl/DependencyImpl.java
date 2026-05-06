@@ -17,22 +17,22 @@ import ros.RosPackage;
  * @generated
  */
 public abstract class DependencyImpl extends MinimalEObjectImpl.Container implements Dependency {
-    /**
+	/**
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-    protected DependencyImpl() {
+	protected DependencyImpl() {
 		super();
 	}
 
-    /**
+	/**
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-    @Override
-    protected EClass eStaticClass() {
+	@Override
+	protected EClass eStaticClass() {
 		return RosPackage.Literals.DEPENDENCY;
 	}
 

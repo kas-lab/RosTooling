@@ -15,22 +15,22 @@ import primitives.uint64Array;
  * @generated
  */
 public class uint64ArrayImpl extends AbstractTypeImpl implements uint64Array {
-    /**
+	/**
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-    protected uint64ArrayImpl() {
+	protected uint64ArrayImpl() {
 		super();
 	}
 
-    /**
+	/**
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-    @Override
-    protected EClass eStaticClass() {
+	@Override
+	protected EClass eStaticClass() {
 		return PrimitivesPackage.Literals.UINT64_ARRAY;
 	}
 

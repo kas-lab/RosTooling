@@ -27,42 +27,42 @@ import ros.ServiceSpec;
  * @generated
  */
 public class ServiceServerImpl extends InterfaceTypeImpl implements ServiceServer {
-    /**
+	/**
 	 * The cached value of the '{@link #getService() <em>Service</em>}' reference.
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @see #getService()
 	 * @generated
 	 * @ordered
 	 */
-    protected ServiceSpec service;
+	protected ServiceSpec service;
 
-    /**
+	/**
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-    protected ServiceServerImpl() {
+	protected ServiceServerImpl() {
 		super();
 	}
 
-    /**
+	/**
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-    @Override
-    protected EClass eStaticClass() {
+	@Override
+	protected EClass eStaticClass() {
 		return RosPackage.Literals.SERVICE_SERVER;
 	}
 
-    /**
+	/**
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-    @Override
-    public ServiceSpec getService() {
+	@Override
+	public ServiceSpec getService() {
 		if (service != null && service.eIsProxy()) {
 			InternalEObject oldService = (InternalEObject)service;
 			service = (ServiceSpec)eResolveProxy(oldService);
@@ -74,35 +74,35 @@ public class ServiceServerImpl extends InterfaceTypeImpl implements ServiceServe
 		return service;
 	}
 
-    /**
+	/**
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-    public ServiceSpec basicGetService() {
+	public ServiceSpec basicGetService() {
 		return service;
 	}
 
-    /**
+	/**
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-    @Override
-    public void setService(ServiceSpec newService) {
+	@Override
+	public void setService(ServiceSpec newService) {
 		ServiceSpec oldService = service;
 		service = newService;
 		if (eNotificationRequired())
 			eNotify(new ENotificationImpl(this, Notification.SET, RosPackage.SERVICE_SERVER__SERVICE, oldService, service));
 	}
 
-    /**
+	/**
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-    @Override
-    public Object eGet(int featureID, boolean resolve, boolean coreType) {
+	@Override
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
 			case RosPackage.SERVICE_SERVER__SERVICE:
 				if (resolve) return getService();
@@ -111,13 +111,13 @@ public class ServiceServerImpl extends InterfaceTypeImpl implements ServiceServe
 		return super.eGet(featureID, resolve, coreType);
 	}
 
-    /**
+	/**
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-    @Override
-    public void eSet(int featureID, Object newValue) {
+	@Override
+	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
 			case RosPackage.SERVICE_SERVER__SERVICE:
 				setService((ServiceSpec)newValue);
@@ -126,13 +126,13 @@ public class ServiceServerImpl extends InterfaceTypeImpl implements ServiceServe
 		super.eSet(featureID, newValue);
 	}
 
-    /**
+	/**
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-    @Override
-    public void eUnset(int featureID) {
+	@Override
+	public void eUnset(int featureID) {
 		switch (featureID) {
 			case RosPackage.SERVICE_SERVER__SERVICE:
 				setService((ServiceSpec)null);
@@ -141,13 +141,13 @@ public class ServiceServerImpl extends InterfaceTypeImpl implements ServiceServe
 		super.eUnset(featureID);
 	}
 
-    /**
+	/**
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-    @Override
-    public boolean eIsSet(int featureID) {
+	@Override
+	public boolean eIsSet(int featureID) {
 		switch (featureID) {
 			case RosPackage.SERVICE_SERVER__SERVICE:
 				return service != null;

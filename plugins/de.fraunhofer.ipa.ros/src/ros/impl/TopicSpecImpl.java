@@ -28,51 +28,51 @@ import ros.TopicSpec;
  * @generated
  */
 public class TopicSpecImpl extends SpecBaseImpl implements TopicSpec {
-    /**
+	/**
 	 * The cached value of the '{@link #getMessage() <em>Message</em>}' containment reference.
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @see #getMessage()
 	 * @generated
 	 * @ordered
 	 */
-    protected MessageDefinition message;
+	protected MessageDefinition message;
 
-    /**
+	/**
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-    protected TopicSpecImpl() {
+	protected TopicSpecImpl() {
 		super();
 	}
 
-    /**
+	/**
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-    @Override
-    protected EClass eStaticClass() {
+	@Override
+	protected EClass eStaticClass() {
 		return RosPackage.Literals.TOPIC_SPEC;
 	}
 
-    /**
+	/**
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-    @Override
-    public MessageDefinition getMessage() {
+	@Override
+	public MessageDefinition getMessage() {
 		return message;
 	}
 
-    /**
+	/**
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-    public NotificationChain basicSetMessage(MessageDefinition newMessage, NotificationChain msgs) {
+	public NotificationChain basicSetMessage(MessageDefinition newMessage, NotificationChain msgs) {
 		MessageDefinition oldMessage = message;
 		message = newMessage;
 		if (eNotificationRequired()) {
@@ -82,13 +82,13 @@ public class TopicSpecImpl extends SpecBaseImpl implements TopicSpec {
 		return msgs;
 	}
 
-    /**
+	/**
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-    @Override
-    public void setMessage(MessageDefinition newMessage) {
+	@Override
+	public void setMessage(MessageDefinition newMessage) {
 		if (newMessage != message) {
 			NotificationChain msgs = null;
 			if (message != null)
@@ -102,13 +102,13 @@ public class TopicSpecImpl extends SpecBaseImpl implements TopicSpec {
 			eNotify(new ENotificationImpl(this, Notification.SET, RosPackage.TOPIC_SPEC__MESSAGE, newMessage, newMessage));
 	}
 
-    /**
+	/**
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-    @Override
-    public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+	@Override
+	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
 			case RosPackage.TOPIC_SPEC__MESSAGE:
 				return basicSetMessage(null, msgs);
@@ -116,13 +116,13 @@ public class TopicSpecImpl extends SpecBaseImpl implements TopicSpec {
 		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
-    /**
+	/**
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-    @Override
-    public Object eGet(int featureID, boolean resolve, boolean coreType) {
+	@Override
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
 			case RosPackage.TOPIC_SPEC__MESSAGE:
 				return getMessage();
@@ -130,13 +130,13 @@ public class TopicSpecImpl extends SpecBaseImpl implements TopicSpec {
 		return super.eGet(featureID, resolve, coreType);
 	}
 
-    /**
+	/**
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-    @Override
-    public void eSet(int featureID, Object newValue) {
+	@Override
+	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
 			case RosPackage.TOPIC_SPEC__MESSAGE:
 				setMessage((MessageDefinition)newValue);
@@ -145,13 +145,13 @@ public class TopicSpecImpl extends SpecBaseImpl implements TopicSpec {
 		super.eSet(featureID, newValue);
 	}
 
-    /**
+	/**
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-    @Override
-    public void eUnset(int featureID) {
+	@Override
+	public void eUnset(int featureID) {
 		switch (featureID) {
 			case RosPackage.TOPIC_SPEC__MESSAGE:
 				setMessage((MessageDefinition)null);
@@ -160,13 +160,13 @@ public class TopicSpecImpl extends SpecBaseImpl implements TopicSpec {
 		super.eUnset(featureID);
 	}
 
-    /**
+	/**
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-    @Override
-    public boolean eIsSet(int featureID) {
+	@Override
+	public boolean eIsSet(int featureID) {
 		switch (featureID) {
 			case RosPackage.TOPIC_SPEC__MESSAGE:
 				return message != null;

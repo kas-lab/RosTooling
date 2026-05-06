@@ -28,51 +28,51 @@ import ros.RosPackage;
  * @generated
  */
 public class ParameterAnyTypeImpl extends ParameterTypeImpl implements ParameterAnyType {
-    /**
+	/**
 	 * The cached value of the '{@link #getDefault() <em>Default</em>}' containment reference.
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @see #getDefault()
 	 * @generated
 	 * @ordered
 	 */
-    protected ParameterAny default_;
+	protected ParameterAny default_;
 
-    /**
+	/**
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-    protected ParameterAnyTypeImpl() {
+	protected ParameterAnyTypeImpl() {
 		super();
 	}
 
-    /**
+	/**
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-    @Override
-    protected EClass eStaticClass() {
+	@Override
+	protected EClass eStaticClass() {
 		return RosPackage.Literals.PARAMETER_ANY_TYPE;
 	}
 
-    /**
+	/**
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-    @Override
-    public ParameterAny getDefault() {
+	@Override
+	public ParameterAny getDefault() {
 		return default_;
 	}
 
-    /**
+	/**
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-    public NotificationChain basicSetDefault(ParameterAny newDefault, NotificationChain msgs) {
+	public NotificationChain basicSetDefault(ParameterAny newDefault, NotificationChain msgs) {
 		ParameterAny oldDefault = default_;
 		default_ = newDefault;
 		if (eNotificationRequired()) {
@@ -82,13 +82,13 @@ public class ParameterAnyTypeImpl extends ParameterTypeImpl implements Parameter
 		return msgs;
 	}
 
-    /**
+	/**
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-    @Override
-    public void setDefault(ParameterAny newDefault) {
+	@Override
+	public void setDefault(ParameterAny newDefault) {
 		if (newDefault != default_) {
 			NotificationChain msgs = null;
 			if (default_ != null)
@@ -102,13 +102,13 @@ public class ParameterAnyTypeImpl extends ParameterTypeImpl implements Parameter
 			eNotify(new ENotificationImpl(this, Notification.SET, RosPackage.PARAMETER_ANY_TYPE__DEFAULT, newDefault, newDefault));
 	}
 
-    /**
+	/**
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-    @Override
-    public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+	@Override
+	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
 			case RosPackage.PARAMETER_ANY_TYPE__DEFAULT:
 				return basicSetDefault(null, msgs);
@@ -116,13 +116,13 @@ public class ParameterAnyTypeImpl extends ParameterTypeImpl implements Parameter
 		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
-    /**
+	/**
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-    @Override
-    public Object eGet(int featureID, boolean resolve, boolean coreType) {
+	@Override
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
 			case RosPackage.PARAMETER_ANY_TYPE__DEFAULT:
 				return getDefault();
@@ -130,13 +130,13 @@ public class ParameterAnyTypeImpl extends ParameterTypeImpl implements Parameter
 		return super.eGet(featureID, resolve, coreType);
 	}
 
-    /**
+	/**
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-    @Override
-    public void eSet(int featureID, Object newValue) {
+	@Override
+	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
 			case RosPackage.PARAMETER_ANY_TYPE__DEFAULT:
 				setDefault((ParameterAny)newValue);
@@ -145,13 +145,13 @@ public class ParameterAnyTypeImpl extends ParameterTypeImpl implements Parameter
 		super.eSet(featureID, newValue);
 	}
 
-    /**
+	/**
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-    @Override
-    public void eUnset(int featureID) {
+	@Override
+	public void eUnset(int featureID) {
 		switch (featureID) {
 			case RosPackage.PARAMETER_ANY_TYPE__DEFAULT:
 				setDefault((ParameterAny)null);
@@ -160,13 +160,13 @@ public class ParameterAnyTypeImpl extends ParameterTypeImpl implements Parameter
 		super.eUnset(featureID);
 	}
 
-    /**
+	/**
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-    @Override
-    public boolean eIsSet(int featureID) {
+	@Override
+	public boolean eIsSet(int featureID) {
 		switch (featureID) {
 			case RosPackage.PARAMETER_ANY_TYPE__DEFAULT:
 				return default_ != null;

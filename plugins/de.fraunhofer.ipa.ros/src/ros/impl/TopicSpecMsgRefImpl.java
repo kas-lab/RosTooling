@@ -8,7 +8,9 @@ import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.InternalEObject;
 
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
+
 import primitives.impl.AbstractTypeImpl;
+
 import ros.RosPackage;
 import ros.TopicSpec;
 import ros.TopicSpecMsgRef;
@@ -27,42 +29,42 @@ import ros.TopicSpecMsgRef;
  * @generated
  */
 public class TopicSpecMsgRefImpl extends AbstractTypeImpl implements TopicSpecMsgRef {
-    /**
+	/**
 	 * The cached value of the '{@link #getReference() <em>Reference</em>}' reference.
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @see #getReference()
 	 * @generated
 	 * @ordered
 	 */
-    protected TopicSpec reference;
+	protected TopicSpec reference;
 
-    /**
+	/**
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-    protected TopicSpecMsgRefImpl() {
+	protected TopicSpecMsgRefImpl() {
 		super();
 	}
 
-    /**
+	/**
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-    @Override
-    protected EClass eStaticClass() {
+	@Override
+	protected EClass eStaticClass() {
 		return RosPackage.Literals.TOPIC_SPEC_MSG_REF;
 	}
 
-    /**
+	/**
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-    @Override
-    public TopicSpec getReference() {
+	@Override
+	public TopicSpec getReference() {
 		if (reference != null && reference.eIsProxy()) {
 			InternalEObject oldReference = (InternalEObject)reference;
 			reference = (TopicSpec)eResolveProxy(oldReference);
@@ -74,35 +76,35 @@ public class TopicSpecMsgRefImpl extends AbstractTypeImpl implements TopicSpecMs
 		return reference;
 	}
 
-    /**
+	/**
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-    public TopicSpec basicGetReference() {
+	public TopicSpec basicGetReference() {
 		return reference;
 	}
 
-    /**
+	/**
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-    @Override
-    public void setReference(TopicSpec newReference) {
+	@Override
+	public void setReference(TopicSpec newReference) {
 		TopicSpec oldReference = reference;
 		reference = newReference;
 		if (eNotificationRequired())
 			eNotify(new ENotificationImpl(this, Notification.SET, RosPackage.TOPIC_SPEC_MSG_REF__REFERENCE, oldReference, reference));
 	}
 
-    /**
+	/**
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-    @Override
-    public Object eGet(int featureID, boolean resolve, boolean coreType) {
+	@Override
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
 			case RosPackage.TOPIC_SPEC_MSG_REF__REFERENCE:
 				if (resolve) return getReference();
@@ -111,13 +113,13 @@ public class TopicSpecMsgRefImpl extends AbstractTypeImpl implements TopicSpecMs
 		return super.eGet(featureID, resolve, coreType);
 	}
 
-    /**
+	/**
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-    @Override
-    public void eSet(int featureID, Object newValue) {
+	@Override
+	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
 			case RosPackage.TOPIC_SPEC_MSG_REF__REFERENCE:
 				setReference((TopicSpec)newValue);
@@ -126,13 +128,13 @@ public class TopicSpecMsgRefImpl extends AbstractTypeImpl implements TopicSpecMs
 		super.eSet(featureID, newValue);
 	}
 
-    /**
+	/**
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-    @Override
-    public void eUnset(int featureID) {
+	@Override
+	public void eUnset(int featureID) {
 		switch (featureID) {
 			case RosPackage.TOPIC_SPEC_MSG_REF__REFERENCE:
 				setReference((TopicSpec)null);
@@ -141,13 +143,13 @@ public class TopicSpecMsgRefImpl extends AbstractTypeImpl implements TopicSpecMs
 		super.eUnset(featureID);
 	}
 
-    /**
+	/**
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-    @Override
-    public boolean eIsSet(int featureID) {
+	@Override
+	public boolean eIsSet(int featureID) {
 		switch (featureID) {
 			case RosPackage.TOPIC_SPEC_MSG_REF__REFERENCE:
 				return reference != null;

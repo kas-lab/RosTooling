@@ -15,22 +15,22 @@ import primitives.int32Array;
  * @generated
  */
 public class int32ArrayImpl extends AbstractTypeImpl implements int32Array {
-    /**
+	/**
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-    protected int32ArrayImpl() {
+	protected int32ArrayImpl() {
 		super();
 	}
 
-    /**
+	/**
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-    @Override
-    protected EClass eStaticClass() {
+	@Override
+	protected EClass eStaticClass() {
 		return PrimitivesPackage.Literals.INT32_ARRAY;
 	}
 

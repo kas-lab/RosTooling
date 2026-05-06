@@ -32,104 +32,104 @@ import ros.RosPackage;
  * @generated
  */
 public class ParameterStructTypeMemberImpl extends MinimalEObjectImpl.Container implements ParameterStructTypeMember {
-    /**
+	/**
 	 * The default value of the '{@link #getName() <em>Name</em>}' attribute.
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @see #getName()
 	 * @generated
 	 * @ordered
 	 */
-    protected static final String NAME_EDEFAULT = null;
+	protected static final String NAME_EDEFAULT = null;
 
-    /**
+	/**
 	 * The cached value of the '{@link #getName() <em>Name</em>}' attribute.
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @see #getName()
 	 * @generated
 	 * @ordered
 	 */
-    protected String name = NAME_EDEFAULT;
+	protected String name = NAME_EDEFAULT;
 
-    /**
+	/**
 	 * The cached value of the '{@link #getType() <em>Type</em>}' containment reference.
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @see #getType()
 	 * @generated
 	 * @ordered
 	 */
-    protected ParameterType type;
+	protected ParameterType type;
 
-    /**
+	/**
 	 * The cached value of the '{@link #getDefault() <em>Default</em>}' containment reference.
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @see #getDefault()
 	 * @generated
 	 * @ordered
 	 */
-    protected ParameterStruct default_;
+	protected ParameterStruct default_;
 
-    /**
+	/**
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-    protected ParameterStructTypeMemberImpl() {
+	protected ParameterStructTypeMemberImpl() {
 		super();
 	}
 
-    /**
+	/**
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-    @Override
-    protected EClass eStaticClass() {
+	@Override
+	protected EClass eStaticClass() {
 		return RosPackage.Literals.PARAMETER_STRUCT_TYPE_MEMBER;
 	}
 
-    /**
+	/**
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-    @Override
-    public String getName() {
+	@Override
+	public String getName() {
 		return name;
 	}
 
-    /**
+	/**
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-    @Override
-    public void setName(String newName) {
+	@Override
+	public void setName(String newName) {
 		String oldName = name;
 		name = newName;
 		if (eNotificationRequired())
 			eNotify(new ENotificationImpl(this, Notification.SET, RosPackage.PARAMETER_STRUCT_TYPE_MEMBER__NAME, oldName, name));
 	}
 
-    /**
+	/**
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-    @Override
-    public ParameterType getType() {
+	@Override
+	public ParameterType getType() {
 		return type;
 	}
 
-    /**
+	/**
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-    public NotificationChain basicSetType(ParameterType newType, NotificationChain msgs) {
+	public NotificationChain basicSetType(ParameterType newType, NotificationChain msgs) {
 		ParameterType oldType = type;
 		type = newType;
 		if (eNotificationRequired()) {
@@ -139,13 +139,13 @@ public class ParameterStructTypeMemberImpl extends MinimalEObjectImpl.Container 
 		return msgs;
 	}
 
-    /**
+	/**
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-    @Override
-    public void setType(ParameterType newType) {
+	@Override
+	public void setType(ParameterType newType) {
 		if (newType != type) {
 			NotificationChain msgs = null;
 			if (type != null)
@@ -159,22 +159,22 @@ public class ParameterStructTypeMemberImpl extends MinimalEObjectImpl.Container 
 			eNotify(new ENotificationImpl(this, Notification.SET, RosPackage.PARAMETER_STRUCT_TYPE_MEMBER__TYPE, newType, newType));
 	}
 
-    /**
+	/**
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-    @Override
-    public ParameterStruct getDefault() {
+	@Override
+	public ParameterStruct getDefault() {
 		return default_;
 	}
 
-    /**
+	/**
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-    public NotificationChain basicSetDefault(ParameterStruct newDefault, NotificationChain msgs) {
+	public NotificationChain basicSetDefault(ParameterStruct newDefault, NotificationChain msgs) {
 		ParameterStruct oldDefault = default_;
 		default_ = newDefault;
 		if (eNotificationRequired()) {
@@ -184,13 +184,13 @@ public class ParameterStructTypeMemberImpl extends MinimalEObjectImpl.Container 
 		return msgs;
 	}
 
-    /**
+	/**
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-    @Override
-    public void setDefault(ParameterStruct newDefault) {
+	@Override
+	public void setDefault(ParameterStruct newDefault) {
 		if (newDefault != default_) {
 			NotificationChain msgs = null;
 			if (default_ != null)
@@ -204,13 +204,13 @@ public class ParameterStructTypeMemberImpl extends MinimalEObjectImpl.Container 
 			eNotify(new ENotificationImpl(this, Notification.SET, RosPackage.PARAMETER_STRUCT_TYPE_MEMBER__DEFAULT, newDefault, newDefault));
 	}
 
-    /**
+	/**
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-    @Override
-    public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+	@Override
+	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
 			case RosPackage.PARAMETER_STRUCT_TYPE_MEMBER__TYPE:
 				return basicSetType(null, msgs);
@@ -220,13 +220,13 @@ public class ParameterStructTypeMemberImpl extends MinimalEObjectImpl.Container 
 		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
-    /**
+	/**
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-    @Override
-    public Object eGet(int featureID, boolean resolve, boolean coreType) {
+	@Override
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
 			case RosPackage.PARAMETER_STRUCT_TYPE_MEMBER__NAME:
 				return getName();
@@ -238,13 +238,13 @@ public class ParameterStructTypeMemberImpl extends MinimalEObjectImpl.Container 
 		return super.eGet(featureID, resolve, coreType);
 	}
 
-    /**
+	/**
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-    @Override
-    public void eSet(int featureID, Object newValue) {
+	@Override
+	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
 			case RosPackage.PARAMETER_STRUCT_TYPE_MEMBER__NAME:
 				setName((String)newValue);
@@ -259,13 +259,13 @@ public class ParameterStructTypeMemberImpl extends MinimalEObjectImpl.Container 
 		super.eSet(featureID, newValue);
 	}
 
-    /**
+	/**
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-    @Override
-    public void eUnset(int featureID) {
+	@Override
+	public void eUnset(int featureID) {
 		switch (featureID) {
 			case RosPackage.PARAMETER_STRUCT_TYPE_MEMBER__NAME:
 				setName(NAME_EDEFAULT);
@@ -280,13 +280,13 @@ public class ParameterStructTypeMemberImpl extends MinimalEObjectImpl.Container 
 		super.eUnset(featureID);
 	}
 
-    /**
+	/**
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-    @Override
-    public boolean eIsSet(int featureID) {
+	@Override
+	public boolean eIsSet(int featureID) {
 		switch (featureID) {
 			case RosPackage.PARAMETER_STRUCT_TYPE_MEMBER__NAME:
 				return NAME_EDEFAULT == null ? name != null : !NAME_EDEFAULT.equals(name);
@@ -298,13 +298,13 @@ public class ParameterStructTypeMemberImpl extends MinimalEObjectImpl.Container 
 		return super.eIsSet(featureID);
 	}
 
-    /**
+	/**
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-    @Override
-    public String toString() {
+	@Override
+	public String toString() {
 		if (eIsProxy()) return super.toString();
 
 		StringBuilder result = new StringBuilder(super.toString());

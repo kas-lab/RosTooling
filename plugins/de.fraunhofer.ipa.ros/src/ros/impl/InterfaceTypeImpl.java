@@ -32,81 +32,81 @@ import ros.RosPackage;
  * @generated
  */
 public class InterfaceTypeImpl extends MinimalEObjectImpl.Container implements InterfaceType {
-    /**
+	/**
 	 * The cached value of the '{@link #getNamespace() <em>Namespace</em>}' containment reference.
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @see #getNamespace()
 	 * @generated
 	 * @ordered
 	 */
-    protected Namespace namespace;
+	protected Namespace namespace;
 
-    /**
+	/**
 	 * The default value of the '{@link #getName() <em>Name</em>}' attribute.
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @see #getName()
 	 * @generated
 	 * @ordered
 	 */
-    protected static final String NAME_EDEFAULT = null;
+	protected static final String NAME_EDEFAULT = null;
 
-    /**
+	/**
 	 * The cached value of the '{@link #getName() <em>Name</em>}' attribute.
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @see #getName()
 	 * @generated
 	 * @ordered
 	 */
-    protected String name = NAME_EDEFAULT;
+	protected String name = NAME_EDEFAULT;
 
-    /**
+	/**
 	 * The cached value of the '{@link #getQos() <em>Qos</em>}' containment reference.
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @see #getQos()
 	 * @generated
 	 * @ordered
 	 */
-    protected QualityOfService qos;
+	protected QualityOfService qos;
 
-    /**
+	/**
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-    protected InterfaceTypeImpl() {
+	protected InterfaceTypeImpl() {
 		super();
 	}
 
-    /**
+	/**
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-    @Override
-    protected EClass eStaticClass() {
+	@Override
+	protected EClass eStaticClass() {
 		return RosPackage.Literals.INTERFACE_TYPE;
 	}
 
-    /**
+	/**
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-    @Override
-    public Namespace getNamespace() {
+	@Override
+	public Namespace getNamespace() {
 		return namespace;
 	}
 
-    /**
+	/**
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-    public NotificationChain basicSetNamespace(Namespace newNamespace, NotificationChain msgs) {
+	public NotificationChain basicSetNamespace(Namespace newNamespace, NotificationChain msgs) {
 		Namespace oldNamespace = namespace;
 		namespace = newNamespace;
 		if (eNotificationRequired()) {
@@ -116,13 +116,13 @@ public class InterfaceTypeImpl extends MinimalEObjectImpl.Container implements I
 		return msgs;
 	}
 
-    /**
+	/**
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-    @Override
-    public void setNamespace(Namespace newNamespace) {
+	@Override
+	public void setNamespace(Namespace newNamespace) {
 		if (newNamespace != namespace) {
 			NotificationChain msgs = null;
 			if (namespace != null)
@@ -136,45 +136,45 @@ public class InterfaceTypeImpl extends MinimalEObjectImpl.Container implements I
 			eNotify(new ENotificationImpl(this, Notification.SET, RosPackage.INTERFACE_TYPE__NAMESPACE, newNamespace, newNamespace));
 	}
 
-    /**
+	/**
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-    @Override
-    public String getName() {
+	@Override
+	public String getName() {
 		return name;
 	}
 
-    /**
+	/**
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-    @Override
-    public void setName(String newName) {
+	@Override
+	public void setName(String newName) {
 		String oldName = name;
 		name = newName;
 		if (eNotificationRequired())
 			eNotify(new ENotificationImpl(this, Notification.SET, RosPackage.INTERFACE_TYPE__NAME, oldName, name));
 	}
 
-    /**
+	/**
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-    @Override
-    public QualityOfService getQos() {
+	@Override
+	public QualityOfService getQos() {
 		return qos;
 	}
 
-    /**
+	/**
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-    public NotificationChain basicSetQos(QualityOfService newQos, NotificationChain msgs) {
+	public NotificationChain basicSetQos(QualityOfService newQos, NotificationChain msgs) {
 		QualityOfService oldQos = qos;
 		qos = newQos;
 		if (eNotificationRequired()) {
@@ -184,13 +184,13 @@ public class InterfaceTypeImpl extends MinimalEObjectImpl.Container implements I
 		return msgs;
 	}
 
-    /**
+	/**
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-    @Override
-    public void setQos(QualityOfService newQos) {
+	@Override
+	public void setQos(QualityOfService newQos) {
 		if (newQos != qos) {
 			NotificationChain msgs = null;
 			if (qos != null)
@@ -204,13 +204,13 @@ public class InterfaceTypeImpl extends MinimalEObjectImpl.Container implements I
 			eNotify(new ENotificationImpl(this, Notification.SET, RosPackage.INTERFACE_TYPE__QOS, newQos, newQos));
 	}
 
-    /**
+	/**
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-    @Override
-    public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+	@Override
+	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
 			case RosPackage.INTERFACE_TYPE__NAMESPACE:
 				return basicSetNamespace(null, msgs);
@@ -220,13 +220,13 @@ public class InterfaceTypeImpl extends MinimalEObjectImpl.Container implements I
 		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
-    /**
+	/**
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-    @Override
-    public Object eGet(int featureID, boolean resolve, boolean coreType) {
+	@Override
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
 			case RosPackage.INTERFACE_TYPE__NAMESPACE:
 				return getNamespace();
@@ -238,13 +238,13 @@ public class InterfaceTypeImpl extends MinimalEObjectImpl.Container implements I
 		return super.eGet(featureID, resolve, coreType);
 	}
 
-    /**
+	/**
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-    @Override
-    public void eSet(int featureID, Object newValue) {
+	@Override
+	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
 			case RosPackage.INTERFACE_TYPE__NAMESPACE:
 				setNamespace((Namespace)newValue);
@@ -259,13 +259,13 @@ public class InterfaceTypeImpl extends MinimalEObjectImpl.Container implements I
 		super.eSet(featureID, newValue);
 	}
 
-    /**
+	/**
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-    @Override
-    public void eUnset(int featureID) {
+	@Override
+	public void eUnset(int featureID) {
 		switch (featureID) {
 			case RosPackage.INTERFACE_TYPE__NAMESPACE:
 				setNamespace((Namespace)null);
@@ -280,13 +280,13 @@ public class InterfaceTypeImpl extends MinimalEObjectImpl.Container implements I
 		super.eUnset(featureID);
 	}
 
-    /**
+	/**
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-    @Override
-    public boolean eIsSet(int featureID) {
+	@Override
+	public boolean eIsSet(int featureID) {
 		switch (featureID) {
 			case RosPackage.INTERFACE_TYPE__NAMESPACE:
 				return namespace != null;
@@ -298,13 +298,13 @@ public class InterfaceTypeImpl extends MinimalEObjectImpl.Container implements I
 		return super.eIsSet(featureID);
 	}
 
-    /**
+	/**
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-    @Override
-    public String toString() {
+	@Override
+	public String toString() {
 		if (eIsProxy()) return super.toString();
 
 		StringBuilder result = new StringBuilder(super.toString());

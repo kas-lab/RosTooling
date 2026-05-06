@@ -27,42 +27,42 @@ import ros.RosPackage;
  * @generated
  */
 public class ActionServerImpl extends InterfaceTypeImpl implements ActionServer {
-    /**
+	/**
 	 * The cached value of the '{@link #getAction() <em>Action</em>}' reference.
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @see #getAction()
 	 * @generated
 	 * @ordered
 	 */
-    protected ActionSpec action;
+	protected ActionSpec action;
 
-    /**
+	/**
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-    protected ActionServerImpl() {
+	protected ActionServerImpl() {
 		super();
 	}
 
-    /**
+	/**
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-    @Override
-    protected EClass eStaticClass() {
+	@Override
+	protected EClass eStaticClass() {
 		return RosPackage.Literals.ACTION_SERVER;
 	}
 
-    /**
+	/**
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-    @Override
-    public ActionSpec getAction() {
+	@Override
+	public ActionSpec getAction() {
 		if (action != null && action.eIsProxy()) {
 			InternalEObject oldAction = (InternalEObject)action;
 			action = (ActionSpec)eResolveProxy(oldAction);
@@ -74,35 +74,35 @@ public class ActionServerImpl extends InterfaceTypeImpl implements ActionServer 
 		return action;
 	}
 
-    /**
+	/**
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-    public ActionSpec basicGetAction() {
+	public ActionSpec basicGetAction() {
 		return action;
 	}
 
-    /**
+	/**
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-    @Override
-    public void setAction(ActionSpec newAction) {
+	@Override
+	public void setAction(ActionSpec newAction) {
 		ActionSpec oldAction = action;
 		action = newAction;
 		if (eNotificationRequired())
 			eNotify(new ENotificationImpl(this, Notification.SET, RosPackage.ACTION_SERVER__ACTION, oldAction, action));
 	}
 
-    /**
+	/**
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-    @Override
-    public Object eGet(int featureID, boolean resolve, boolean coreType) {
+	@Override
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
 			case RosPackage.ACTION_SERVER__ACTION:
 				if (resolve) return getAction();
@@ -111,13 +111,13 @@ public class ActionServerImpl extends InterfaceTypeImpl implements ActionServer 
 		return super.eGet(featureID, resolve, coreType);
 	}
 
-    /**
+	/**
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-    @Override
-    public void eSet(int featureID, Object newValue) {
+	@Override
+	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
 			case RosPackage.ACTION_SERVER__ACTION:
 				setAction((ActionSpec)newValue);
@@ -126,13 +126,13 @@ public class ActionServerImpl extends InterfaceTypeImpl implements ActionServer 
 		super.eSet(featureID, newValue);
 	}
 
-    /**
+	/**
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-    @Override
-    public void eUnset(int featureID) {
+	@Override
+	public void eUnset(int featureID) {
 		switch (featureID) {
 			case RosPackage.ACTION_SERVER__ACTION:
 				setAction((ActionSpec)null);
@@ -141,13 +141,13 @@ public class ActionServerImpl extends InterfaceTypeImpl implements ActionServer 
 		super.eUnset(featureID);
 	}
 
-    /**
+	/**
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-    @Override
-    public boolean eIsSet(int featureID) {
+	@Override
+	public boolean eIsSet(int featureID) {
 		switch (featureID) {
 			case RosPackage.ACTION_SERVER__ACTION:
 				return action != null;

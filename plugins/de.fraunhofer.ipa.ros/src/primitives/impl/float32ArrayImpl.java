@@ -15,22 +15,22 @@ import primitives.float32Array;
  * @generated
  */
 public class float32ArrayImpl extends AbstractTypeImpl implements float32Array {
-    /**
+	/**
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-    protected float32ArrayImpl() {
+	protected float32ArrayImpl() {
 		super();
 	}
 
-    /**
+	/**
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-    @Override
-    protected EClass eStaticClass() {
+	@Override
+	protected EClass eStaticClass() {
 		return PrimitivesPackage.Literals.FLOAT32_ARRAY;
 	}
 

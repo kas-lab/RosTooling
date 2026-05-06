@@ -3,9 +3,12 @@
 package ros.impl;
 
 import org.eclipse.emf.common.notify.Notification;
+
 import org.eclipse.emf.ecore.EClass;
+
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
 import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
+
 import ros.QualityOfService;
 import ros.RosPackage;
 
@@ -31,107 +34,107 @@ import ros.RosPackage;
  * @generated
  */
 public class QualityOfServiceImpl extends MinimalEObjectImpl.Container implements QualityOfService {
-    /**
+	/**
 	 * The default value of the '{@link #getQoSProfile() <em>Qo SProfile</em>}' attribute.
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @see #getQoSProfile()
 	 * @generated
 	 * @ordered
 	 */
-    protected static final String QO_SPROFILE_EDEFAULT = "default_qos";
+	protected static final String QO_SPROFILE_EDEFAULT = "default_qos";
 
-    /**
+	/**
 	 * The cached value of the '{@link #getQoSProfile() <em>Qo SProfile</em>}' attribute.
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @see #getQoSProfile()
 	 * @generated
 	 * @ordered
 	 */
-    protected String qoSProfile = QO_SPROFILE_EDEFAULT;
+	protected String qoSProfile = QO_SPROFILE_EDEFAULT;
 
-    /**
+	/**
 	 * The default value of the '{@link #getHistory() <em>History</em>}' attribute.
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @see #getHistory()
 	 * @generated
 	 * @ordered
 	 */
-    protected static final String HISTORY_EDEFAULT = "keep_all";
+	protected static final String HISTORY_EDEFAULT = "keep_all";
 
-    /**
+	/**
 	 * The cached value of the '{@link #getHistory() <em>History</em>}' attribute.
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @see #getHistory()
 	 * @generated
 	 * @ordered
 	 */
-    protected String history = HISTORY_EDEFAULT;
+	protected String history = HISTORY_EDEFAULT;
 
-    /**
+	/**
 	 * The default value of the '{@link #getDepth() <em>Depth</em>}' attribute.
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @see #getDepth()
 	 * @generated
 	 * @ordered
 	 */
-    protected static final int DEPTH_EDEFAULT = 0;
+	protected static final int DEPTH_EDEFAULT = 0;
 
-    /**
+	/**
 	 * The cached value of the '{@link #getDepth() <em>Depth</em>}' attribute.
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @see #getDepth()
 	 * @generated
 	 * @ordered
 	 */
-    protected int depth = DEPTH_EDEFAULT;
+	protected int depth = DEPTH_EDEFAULT;
 
-    /**
+	/**
 	 * The default value of the '{@link #getReliability() <em>Reliability</em>}' attribute.
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @see #getReliability()
 	 * @generated
 	 * @ordered
 	 */
-    protected static final String RELIABILITY_EDEFAULT = "reliable";
+	protected static final String RELIABILITY_EDEFAULT = "reliable";
 
-    /**
+	/**
 	 * The cached value of the '{@link #getReliability() <em>Reliability</em>}' attribute.
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @see #getReliability()
 	 * @generated
 	 * @ordered
 	 */
-    protected String reliability = RELIABILITY_EDEFAULT;
+	protected String reliability = RELIABILITY_EDEFAULT;
 
-    /**
+	/**
 	 * The default value of the '{@link #getDurability() <em>Durability</em>}' attribute.
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @see #getDurability()
 	 * @generated
 	 * @ordered
 	 */
-    protected static final String DURABILITY_EDEFAULT = "transient_local";
+	protected static final String DURABILITY_EDEFAULT = "transient_local";
 
-    /**
+	/**
 	 * The cached value of the '{@link #getDurability() <em>Durability</em>}' attribute.
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @see #getDurability()
 	 * @generated
 	 * @ordered
 	 */
-    protected String durability = DURABILITY_EDEFAULT;
+	protected String durability = DURABILITY_EDEFAULT;
 
-    /**
+	/**
 	 * The default value of the '{@link #getLiveliness() <em>Liveliness</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -141,7 +144,7 @@ public class QualityOfServiceImpl extends MinimalEObjectImpl.Container implement
 	 */
 	protected static final String LIVELINESS_EDEFAULT = null;
 
-				/**
+	/**
 	 * The cached value of the '{@link #getLiveliness() <em>Liveliness</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -151,7 +154,7 @@ public class QualityOfServiceImpl extends MinimalEObjectImpl.Container implement
 	 */
 	protected String liveliness = LIVELINESS_EDEFAULT;
 
-				/**
+	/**
 	 * The default value of the '{@link #getLeaseDuration() <em>Lease Duration</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -161,7 +164,7 @@ public class QualityOfServiceImpl extends MinimalEObjectImpl.Container implement
 	 */
 	protected static final String LEASE_DURATION_EDEFAULT = null;
 
-				/**
+	/**
 	 * The cached value of the '{@link #getLeaseDuration() <em>Lease Duration</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -171,7 +174,7 @@ public class QualityOfServiceImpl extends MinimalEObjectImpl.Container implement
 	 */
 	protected String leaseDuration = LEASE_DURATION_EDEFAULT;
 
-				/**
+	/**
 	 * The default value of the '{@link #getLifespan() <em>Lifespan</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -181,7 +184,7 @@ public class QualityOfServiceImpl extends MinimalEObjectImpl.Container implement
 	 */
 	protected static final String LIFESPAN_EDEFAULT = null;
 
-				/**
+	/**
 	 * The cached value of the '{@link #getLifespan() <em>Lifespan</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -191,7 +194,7 @@ public class QualityOfServiceImpl extends MinimalEObjectImpl.Container implement
 	 */
 	protected String lifespan = LIFESPAN_EDEFAULT;
 
-				/**
+	/**
 	 * The default value of the '{@link #getDeadline() <em>Deadline</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -201,7 +204,7 @@ public class QualityOfServiceImpl extends MinimalEObjectImpl.Container implement
 	 */
 	protected static final String DEADLINE_EDEFAULT = null;
 
-				/**
+	/**
 	 * The cached value of the '{@link #getDeadline() <em>Deadline</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -211,164 +214,141 @@ public class QualityOfServiceImpl extends MinimalEObjectImpl.Container implement
 	 */
 	protected String deadline = DEADLINE_EDEFAULT;
 
-				/**
+	/**
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-    protected QualityOfServiceImpl() {
+	protected QualityOfServiceImpl() {
 		super();
 	}
 
-    /**
+	/**
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-    @Override
-    protected EClass eStaticClass() {
+	@Override
+	protected EClass eStaticClass() {
 		return RosPackage.Literals.QUALITY_OF_SERVICE;
 	}
 
-    /**
+	/**
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-    @Override
-    public String getQoSProfile() {
+	@Override
+	public String getQoSProfile() {
 		return qoSProfile;
 	}
 
-    /**
+	/**
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-    @Override
-    public void setQoSProfile(String newQoSProfile) {
+	@Override
+	public void setQoSProfile(String newQoSProfile) {
 		String oldQoSProfile = qoSProfile;
 		qoSProfile = newQoSProfile;
 		if (eNotificationRequired())
 			eNotify(new ENotificationImpl(this, Notification.SET, RosPackage.QUALITY_OF_SERVICE__QO_SPROFILE, oldQoSProfile, qoSProfile));
 	}
 
-    /**
+	/**
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-    @Override
-    public String getHistory() {
+	@Override
+	public String getHistory() {
 		return history;
 	}
 
-    /**
+	/**
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-    @Override
-    public void setHistory(String newHistory) {
+	@Override
+	public void setHistory(String newHistory) {
 		String oldHistory = history;
 		history = newHistory;
 		if (eNotificationRequired())
 			eNotify(new ENotificationImpl(this, Notification.SET, RosPackage.QUALITY_OF_SERVICE__HISTORY, oldHistory, history));
 	}
 
-    /**
+	/**
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-    @Override
-    public int getDepth() {
+	@Override
+	public int getDepth() {
 		return depth;
 	}
 
-    /**
+	/**
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-    @Override
-    public void setDepth(int newDepth) {
+	@Override
+	public void setDepth(int newDepth) {
 		int oldDepth = depth;
 		depth = newDepth;
 		if (eNotificationRequired())
 			eNotify(new ENotificationImpl(this, Notification.SET, RosPackage.QUALITY_OF_SERVICE__DEPTH, oldDepth, depth));
 	}
 
-    /**
+	/**
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-    @Override
-    public String getReliability() {
+	@Override
+	public String getReliability() {
 		return reliability;
 	}
 
-    /**
+	/**
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-    @Override
-    public void setReliability(String newReliability) {
+	@Override
+	public void setReliability(String newReliability) {
 		String oldReliability = reliability;
 		reliability = newReliability;
 		if (eNotificationRequired())
 			eNotify(new ENotificationImpl(this, Notification.SET, RosPackage.QUALITY_OF_SERVICE__RELIABILITY, oldReliability, reliability));
 	}
 
-    /**
+	/**
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-    @Override
-    public String getDurability() {
+	@Override
+	public String getDurability() {
 		return durability;
 	}
 
-    /**
+	/**
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-    @Override
-    public void setDurability(String newDurability) {
+	@Override
+	public void setDurability(String newDurability) {
 		String oldDurability = durability;
 		durability = newDurability;
 		if (eNotificationRequired())
 			eNotify(new ENotificationImpl(this, Notification.SET, RosPackage.QUALITY_OF_SERVICE__DURABILITY, oldDurability, durability));
 	}
 
-    /**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public String getLeaseDuration() {
-		return leaseDuration;
-	}
-
-				/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setLeaseDuration(String newLeaseDuration) {
-		String oldLeaseDuration = leaseDuration;
-		leaseDuration = newLeaseDuration;
-		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, RosPackage.QUALITY_OF_SERVICE__LEASE_DURATION, oldLeaseDuration, leaseDuration));
-	}
-
-				/**
+	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -378,7 +358,7 @@ public class QualityOfServiceImpl extends MinimalEObjectImpl.Container implement
 		return liveliness;
 	}
 
-				/**
+	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -391,7 +371,30 @@ public class QualityOfServiceImpl extends MinimalEObjectImpl.Container implement
 			eNotify(new ENotificationImpl(this, Notification.SET, RosPackage.QUALITY_OF_SERVICE__LIVELINESS, oldLiveliness, liveliness));
 	}
 
-				/**
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public String getLeaseDuration() {
+		return leaseDuration;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setLeaseDuration(String newLeaseDuration) {
+		String oldLeaseDuration = leaseDuration;
+		leaseDuration = newLeaseDuration;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, RosPackage.QUALITY_OF_SERVICE__LEASE_DURATION, oldLeaseDuration, leaseDuration));
+	}
+
+	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -401,7 +404,7 @@ public class QualityOfServiceImpl extends MinimalEObjectImpl.Container implement
 		return lifespan;
 	}
 
-				/**
+	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -414,7 +417,7 @@ public class QualityOfServiceImpl extends MinimalEObjectImpl.Container implement
 			eNotify(new ENotificationImpl(this, Notification.SET, RosPackage.QUALITY_OF_SERVICE__LIFESPAN, oldLifespan, lifespan));
 	}
 
-				/**
+	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -424,7 +427,7 @@ public class QualityOfServiceImpl extends MinimalEObjectImpl.Container implement
 		return deadline;
 	}
 
-				/**
+	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -437,105 +440,13 @@ public class QualityOfServiceImpl extends MinimalEObjectImpl.Container implement
 			eNotify(new ENotificationImpl(this, Notification.SET, RosPackage.QUALITY_OF_SERVICE__DEADLINE, oldDeadline, deadline));
 	}
 
-				/**
+	/**
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-    @Override
-    public String getLeaseDuration() {
-        return leaseDuration;
-    }
-
-                /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    @Override
-    public void setLeaseDuration(String newLeaseDuration) {
-        String oldLeaseDuration = leaseDuration;
-        leaseDuration = newLeaseDuration;
-        if (eNotificationRequired())
-            eNotify(new ENotificationImpl(this, Notification.SET, RosPackage.QUALITY_OF_SERVICE__LEASE_DURATION, oldLeaseDuration, leaseDuration));
-    }
-
-                /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    @Override
-    public String getLiveliness() {
-        return liveliness;
-    }
-
-                /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    @Override
-    public void setLiveliness(String newLiveliness) {
-        String oldLiveliness = liveliness;
-        liveliness = newLiveliness;
-        if (eNotificationRequired())
-            eNotify(new ENotificationImpl(this, Notification.SET, RosPackage.QUALITY_OF_SERVICE__LIVELINESS, oldLiveliness, liveliness));
-    }
-
-                /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    @Override
-    public String getLifespan() {
-        return lifespan;
-    }
-
-                /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    @Override
-    public void setLifespan(String newLifespan) {
-        String oldLifespan = lifespan;
-        lifespan = newLifespan;
-        if (eNotificationRequired())
-            eNotify(new ENotificationImpl(this, Notification.SET, RosPackage.QUALITY_OF_SERVICE__LIFESPAN, oldLifespan, lifespan));
-    }
-
-                /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    @Override
-    public String getDeadline() {
-        return deadline;
-    }
-
-                /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    @Override
-    public void setDeadline(String newDeadline) {
-        String oldDeadline = deadline;
-        deadline = newDeadline;
-        if (eNotificationRequired())
-            eNotify(new ENotificationImpl(this, Notification.SET, RosPackage.QUALITY_OF_SERVICE__DEADLINE, oldDeadline, deadline));
-    }
-
-                /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    @Override
-    public Object eGet(int featureID, boolean resolve, boolean coreType) {
+	@Override
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
 			case RosPackage.QUALITY_OF_SERVICE__QO_SPROFILE:
 				return getQoSProfile();
@@ -559,13 +470,13 @@ public class QualityOfServiceImpl extends MinimalEObjectImpl.Container implement
 		return super.eGet(featureID, resolve, coreType);
 	}
 
-    /**
+	/**
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-    @Override
-    public void eSet(int featureID, Object newValue) {
+	@Override
+	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
 			case RosPackage.QUALITY_OF_SERVICE__QO_SPROFILE:
 				setQoSProfile((String)newValue);
@@ -598,13 +509,13 @@ public class QualityOfServiceImpl extends MinimalEObjectImpl.Container implement
 		super.eSet(featureID, newValue);
 	}
 
-    /**
+	/**
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-    @Override
-    public void eUnset(int featureID) {
+	@Override
+	public void eUnset(int featureID) {
 		switch (featureID) {
 			case RosPackage.QUALITY_OF_SERVICE__QO_SPROFILE:
 				setQoSProfile(QO_SPROFILE_EDEFAULT);
@@ -637,13 +548,13 @@ public class QualityOfServiceImpl extends MinimalEObjectImpl.Container implement
 		super.eUnset(featureID);
 	}
 
-    /**
+	/**
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-    @Override
-    public boolean eIsSet(int featureID) {
+	@Override
+	public boolean eIsSet(int featureID) {
 		switch (featureID) {
 			case RosPackage.QUALITY_OF_SERVICE__QO_SPROFILE:
 				return QO_SPROFILE_EDEFAULT == null ? qoSProfile != null : !QO_SPROFILE_EDEFAULT.equals(qoSProfile);
@@ -667,13 +578,13 @@ public class QualityOfServiceImpl extends MinimalEObjectImpl.Container implement
 		return super.eIsSet(featureID);
 	}
 
-    /**
+	/**
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-    @Override
-    public String toString() {
+	@Override
+	public String toString() {
 		if (eIsProxy()) return super.toString();
 
 		StringBuilder result = new StringBuilder(super.toString());

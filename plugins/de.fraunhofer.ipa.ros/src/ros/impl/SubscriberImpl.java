@@ -27,42 +27,42 @@ import ros.TopicSpec;
  * @generated
  */
 public class SubscriberImpl extends InterfaceTypeImpl implements Subscriber {
-    /**
+	/**
 	 * The cached value of the '{@link #getMessage() <em>Message</em>}' reference.
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @see #getMessage()
 	 * @generated
 	 * @ordered
 	 */
-    protected TopicSpec message;
+	protected TopicSpec message;
 
-    /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated NOT
-     */
-    public SubscriberImpl() {
-        super();
-    }
-
-    /**
+	/**
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-    @Override
-    protected EClass eStaticClass() {
+	protected SubscriberImpl() {
+		super();
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	protected EClass eStaticClass() {
 		return RosPackage.Literals.SUBSCRIBER;
 	}
 
-    /**
+	/**
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-    @Override
-    public TopicSpec getMessage() {
+	@Override
+	public TopicSpec getMessage() {
 		if (message != null && message.eIsProxy()) {
 			InternalEObject oldMessage = (InternalEObject)message;
 			message = (TopicSpec)eResolveProxy(oldMessage);
@@ -74,35 +74,35 @@ public class SubscriberImpl extends InterfaceTypeImpl implements Subscriber {
 		return message;
 	}
 
-    /**
+	/**
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-    public TopicSpec basicGetMessage() {
+	public TopicSpec basicGetMessage() {
 		return message;
 	}
 
-    /**
+	/**
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-    @Override
-    public void setMessage(TopicSpec newMessage) {
+	@Override
+	public void setMessage(TopicSpec newMessage) {
 		TopicSpec oldMessage = message;
 		message = newMessage;
 		if (eNotificationRequired())
 			eNotify(new ENotificationImpl(this, Notification.SET, RosPackage.SUBSCRIBER__MESSAGE, oldMessage, message));
 	}
 
-    /**
+	/**
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-    @Override
-    public Object eGet(int featureID, boolean resolve, boolean coreType) {
+	@Override
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
 			case RosPackage.SUBSCRIBER__MESSAGE:
 				if (resolve) return getMessage();
@@ -111,13 +111,13 @@ public class SubscriberImpl extends InterfaceTypeImpl implements Subscriber {
 		return super.eGet(featureID, resolve, coreType);
 	}
 
-    /**
+	/**
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-    @Override
-    public void eSet(int featureID, Object newValue) {
+	@Override
+	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
 			case RosPackage.SUBSCRIBER__MESSAGE:
 				setMessage((TopicSpec)newValue);
@@ -126,13 +126,13 @@ public class SubscriberImpl extends InterfaceTypeImpl implements Subscriber {
 		super.eSet(featureID, newValue);
 	}
 
-    /**
+	/**
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-    @Override
-    public void eUnset(int featureID) {
+	@Override
+	public void eUnset(int featureID) {
 		switch (featureID) {
 			case RosPackage.SUBSCRIBER__MESSAGE:
 				setMessage((TopicSpec)null);
@@ -141,13 +141,13 @@ public class SubscriberImpl extends InterfaceTypeImpl implements Subscriber {
 		super.eUnset(featureID);
 	}
 
-    /**
+	/**
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-    @Override
-    public boolean eIsSet(int featureID) {
+	@Override
+	public boolean eIsSet(int featureID) {
 		switch (featureID) {
 			case RosPackage.SUBSCRIBER__MESSAGE:
 				return message != null;

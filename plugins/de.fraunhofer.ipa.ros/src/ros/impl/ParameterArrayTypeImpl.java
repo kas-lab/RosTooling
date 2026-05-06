@@ -30,61 +30,61 @@ import ros.RosPackage;
  * @generated
  */
 public class ParameterArrayTypeImpl extends ParameterTypeImpl implements ParameterArrayType {
-    /**
+	/**
 	 * The cached value of the '{@link #getType() <em>Type</em>}' containment reference.
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @see #getType()
 	 * @generated
 	 * @ordered
 	 */
-    protected ParameterType type;
+	protected ParameterType type;
 
-    /**
+	/**
 	 * The cached value of the '{@link #getDefault() <em>Default</em>}' containment reference.
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @see #getDefault()
 	 * @generated
 	 * @ordered
 	 */
-    protected ParameterSequence default_;
+	protected ParameterSequence default_;
 
-    /**
+	/**
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-    protected ParameterArrayTypeImpl() {
+	protected ParameterArrayTypeImpl() {
 		super();
 	}
 
-    /**
+	/**
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-    @Override
-    protected EClass eStaticClass() {
+	@Override
+	protected EClass eStaticClass() {
 		return RosPackage.Literals.PARAMETER_ARRAY_TYPE;
 	}
 
-    /**
+	/**
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-    @Override
-    public ParameterType getType() {
+	@Override
+	public ParameterType getType() {
 		return type;
 	}
 
-    /**
+	/**
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-    public NotificationChain basicSetType(ParameterType newType, NotificationChain msgs) {
+	public NotificationChain basicSetType(ParameterType newType, NotificationChain msgs) {
 		ParameterType oldType = type;
 		type = newType;
 		if (eNotificationRequired()) {
@@ -94,13 +94,13 @@ public class ParameterArrayTypeImpl extends ParameterTypeImpl implements Paramet
 		return msgs;
 	}
 
-    /**
+	/**
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-    @Override
-    public void setType(ParameterType newType) {
+	@Override
+	public void setType(ParameterType newType) {
 		if (newType != type) {
 			NotificationChain msgs = null;
 			if (type != null)
@@ -114,22 +114,22 @@ public class ParameterArrayTypeImpl extends ParameterTypeImpl implements Paramet
 			eNotify(new ENotificationImpl(this, Notification.SET, RosPackage.PARAMETER_ARRAY_TYPE__TYPE, newType, newType));
 	}
 
-    /**
+	/**
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-    @Override
-    public ParameterSequence getDefault() {
+	@Override
+	public ParameterSequence getDefault() {
 		return default_;
 	}
 
-    /**
+	/**
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-    public NotificationChain basicSetDefault(ParameterSequence newDefault, NotificationChain msgs) {
+	public NotificationChain basicSetDefault(ParameterSequence newDefault, NotificationChain msgs) {
 		ParameterSequence oldDefault = default_;
 		default_ = newDefault;
 		if (eNotificationRequired()) {
@@ -139,13 +139,13 @@ public class ParameterArrayTypeImpl extends ParameterTypeImpl implements Paramet
 		return msgs;
 	}
 
-    /**
+	/**
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-    @Override
-    public void setDefault(ParameterSequence newDefault) {
+	@Override
+	public void setDefault(ParameterSequence newDefault) {
 		if (newDefault != default_) {
 			NotificationChain msgs = null;
 			if (default_ != null)
@@ -159,13 +159,13 @@ public class ParameterArrayTypeImpl extends ParameterTypeImpl implements Paramet
 			eNotify(new ENotificationImpl(this, Notification.SET, RosPackage.PARAMETER_ARRAY_TYPE__DEFAULT, newDefault, newDefault));
 	}
 
-    /**
+	/**
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-    @Override
-    public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+	@Override
+	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
 			case RosPackage.PARAMETER_ARRAY_TYPE__TYPE:
 				return basicSetType(null, msgs);
@@ -175,13 +175,13 @@ public class ParameterArrayTypeImpl extends ParameterTypeImpl implements Paramet
 		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
-    /**
+	/**
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-    @Override
-    public Object eGet(int featureID, boolean resolve, boolean coreType) {
+	@Override
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
 			case RosPackage.PARAMETER_ARRAY_TYPE__TYPE:
 				return getType();
@@ -191,13 +191,13 @@ public class ParameterArrayTypeImpl extends ParameterTypeImpl implements Paramet
 		return super.eGet(featureID, resolve, coreType);
 	}
 
-    /**
+	/**
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-    @Override
-    public void eSet(int featureID, Object newValue) {
+	@Override
+	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
 			case RosPackage.PARAMETER_ARRAY_TYPE__TYPE:
 				setType((ParameterType)newValue);
@@ -209,13 +209,13 @@ public class ParameterArrayTypeImpl extends ParameterTypeImpl implements Paramet
 		super.eSet(featureID, newValue);
 	}
 
-    /**
+	/**
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-    @Override
-    public void eUnset(int featureID) {
+	@Override
+	public void eUnset(int featureID) {
 		switch (featureID) {
 			case RosPackage.PARAMETER_ARRAY_TYPE__TYPE:
 				setType((ParameterType)null);
@@ -227,13 +227,13 @@ public class ParameterArrayTypeImpl extends ParameterTypeImpl implements Paramet
 		super.eUnset(featureID);
 	}
 
-    /**
+	/**
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-    @Override
-    public boolean eIsSet(int featureID) {
+	@Override
+	public boolean eIsSet(int featureID) {
 		switch (featureID) {
 			case RosPackage.PARAMETER_ARRAY_TYPE__TYPE:
 				return type != null;

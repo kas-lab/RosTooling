@@ -30,71 +30,71 @@ import ros.RosPackage;
  * @generated
  */
 public class ActionSpecImpl extends SpecBaseImpl implements ActionSpec {
-    /**
+	/**
 	 * The cached value of the '{@link #getGoal() <em>Goal</em>}' containment reference.
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @see #getGoal()
 	 * @generated
 	 * @ordered
 	 */
-    protected MessageDefinition goal;
+	protected MessageDefinition goal;
 
-    /**
+	/**
 	 * The cached value of the '{@link #getResult() <em>Result</em>}' containment reference.
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @see #getResult()
 	 * @generated
 	 * @ordered
 	 */
-    protected MessageDefinition result;
+	protected MessageDefinition result;
 
-    /**
+	/**
 	 * The cached value of the '{@link #getFeedback() <em>Feedback</em>}' containment reference.
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @see #getFeedback()
 	 * @generated
 	 * @ordered
 	 */
-    protected MessageDefinition feedback;
+	protected MessageDefinition feedback;
 
-    /**
+	/**
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-    protected ActionSpecImpl() {
+	protected ActionSpecImpl() {
 		super();
 	}
 
-    /**
+	/**
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-    @Override
-    protected EClass eStaticClass() {
+	@Override
+	protected EClass eStaticClass() {
 		return RosPackage.Literals.ACTION_SPEC;
 	}
 
-    /**
+	/**
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-    @Override
-    public MessageDefinition getGoal() {
+	@Override
+	public MessageDefinition getGoal() {
 		return goal;
 	}
 
-    /**
+	/**
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-    public NotificationChain basicSetGoal(MessageDefinition newGoal, NotificationChain msgs) {
+	public NotificationChain basicSetGoal(MessageDefinition newGoal, NotificationChain msgs) {
 		MessageDefinition oldGoal = goal;
 		goal = newGoal;
 		if (eNotificationRequired()) {
@@ -104,13 +104,13 @@ public class ActionSpecImpl extends SpecBaseImpl implements ActionSpec {
 		return msgs;
 	}
 
-    /**
+	/**
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-    @Override
-    public void setGoal(MessageDefinition newGoal) {
+	@Override
+	public void setGoal(MessageDefinition newGoal) {
 		if (newGoal != goal) {
 			NotificationChain msgs = null;
 			if (goal != null)
@@ -124,22 +124,22 @@ public class ActionSpecImpl extends SpecBaseImpl implements ActionSpec {
 			eNotify(new ENotificationImpl(this, Notification.SET, RosPackage.ACTION_SPEC__GOAL, newGoal, newGoal));
 	}
 
-    /**
+	/**
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-    @Override
-    public MessageDefinition getResult() {
+	@Override
+	public MessageDefinition getResult() {
 		return result;
 	}
 
-    /**
+	/**
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-    public NotificationChain basicSetResult(MessageDefinition newResult, NotificationChain msgs) {
+	public NotificationChain basicSetResult(MessageDefinition newResult, NotificationChain msgs) {
 		MessageDefinition oldResult = result;
 		result = newResult;
 		if (eNotificationRequired()) {
@@ -149,13 +149,13 @@ public class ActionSpecImpl extends SpecBaseImpl implements ActionSpec {
 		return msgs;
 	}
 
-    /**
+	/**
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-    @Override
-    public void setResult(MessageDefinition newResult) {
+	@Override
+	public void setResult(MessageDefinition newResult) {
 		if (newResult != result) {
 			NotificationChain msgs = null;
 			if (result != null)
@@ -169,22 +169,22 @@ public class ActionSpecImpl extends SpecBaseImpl implements ActionSpec {
 			eNotify(new ENotificationImpl(this, Notification.SET, RosPackage.ACTION_SPEC__RESULT, newResult, newResult));
 	}
 
-    /**
+	/**
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-    @Override
-    public MessageDefinition getFeedback() {
+	@Override
+	public MessageDefinition getFeedback() {
 		return feedback;
 	}
 
-    /**
+	/**
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-    public NotificationChain basicSetFeedback(MessageDefinition newFeedback, NotificationChain msgs) {
+	public NotificationChain basicSetFeedback(MessageDefinition newFeedback, NotificationChain msgs) {
 		MessageDefinition oldFeedback = feedback;
 		feedback = newFeedback;
 		if (eNotificationRequired()) {
@@ -194,13 +194,13 @@ public class ActionSpecImpl extends SpecBaseImpl implements ActionSpec {
 		return msgs;
 	}
 
-    /**
+	/**
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-    @Override
-    public void setFeedback(MessageDefinition newFeedback) {
+	@Override
+	public void setFeedback(MessageDefinition newFeedback) {
 		if (newFeedback != feedback) {
 			NotificationChain msgs = null;
 			if (feedback != null)
@@ -214,13 +214,13 @@ public class ActionSpecImpl extends SpecBaseImpl implements ActionSpec {
 			eNotify(new ENotificationImpl(this, Notification.SET, RosPackage.ACTION_SPEC__FEEDBACK, newFeedback, newFeedback));
 	}
 
-    /**
+	/**
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-    @Override
-    public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+	@Override
+	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
 			case RosPackage.ACTION_SPEC__GOAL:
 				return basicSetGoal(null, msgs);
@@ -232,13 +232,13 @@ public class ActionSpecImpl extends SpecBaseImpl implements ActionSpec {
 		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
-    /**
+	/**
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-    @Override
-    public Object eGet(int featureID, boolean resolve, boolean coreType) {
+	@Override
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
 			case RosPackage.ACTION_SPEC__GOAL:
 				return getGoal();
@@ -250,13 +250,13 @@ public class ActionSpecImpl extends SpecBaseImpl implements ActionSpec {
 		return super.eGet(featureID, resolve, coreType);
 	}
 
-    /**
+	/**
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-    @Override
-    public void eSet(int featureID, Object newValue) {
+	@Override
+	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
 			case RosPackage.ACTION_SPEC__GOAL:
 				setGoal((MessageDefinition)newValue);
@@ -271,13 +271,13 @@ public class ActionSpecImpl extends SpecBaseImpl implements ActionSpec {
 		super.eSet(featureID, newValue);
 	}
 
-    /**
+	/**
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-    @Override
-    public void eUnset(int featureID) {
+	@Override
+	public void eUnset(int featureID) {
 		switch (featureID) {
 			case RosPackage.ACTION_SPEC__GOAL:
 				setGoal((MessageDefinition)null);
@@ -292,13 +292,13 @@ public class ActionSpecImpl extends SpecBaseImpl implements ActionSpec {
 		super.eUnset(featureID);
 	}
 
-    /**
+	/**
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-    @Override
-    public boolean eIsSet(int featureID) {
+	@Override
+	public boolean eIsSet(int featureID) {
 		switch (featureID) {
 			case RosPackage.ACTION_SPEC__GOAL:
 				return goal != null;

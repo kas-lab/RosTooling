@@ -29,61 +29,61 @@ import ros.ServiceSpec;
  * @generated
  */
 public class ServiceSpecImpl extends SpecBaseImpl implements ServiceSpec {
-    /**
+	/**
 	 * The cached value of the '{@link #getRequest() <em>Request</em>}' containment reference.
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @see #getRequest()
 	 * @generated
 	 * @ordered
 	 */
-    protected MessageDefinition request;
+	protected MessageDefinition request;
 
-    /**
+	/**
 	 * The cached value of the '{@link #getResponse() <em>Response</em>}' containment reference.
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @see #getResponse()
 	 * @generated
 	 * @ordered
 	 */
-    protected MessageDefinition response;
+	protected MessageDefinition response;
 
-    /**
+	/**
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-    protected ServiceSpecImpl() {
+	protected ServiceSpecImpl() {
 		super();
 	}
 
-    /**
+	/**
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-    @Override
-    protected EClass eStaticClass() {
+	@Override
+	protected EClass eStaticClass() {
 		return RosPackage.Literals.SERVICE_SPEC;
 	}
 
-    /**
+	/**
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-    @Override
-    public MessageDefinition getRequest() {
+	@Override
+	public MessageDefinition getRequest() {
 		return request;
 	}
 
-    /**
+	/**
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-    public NotificationChain basicSetRequest(MessageDefinition newRequest, NotificationChain msgs) {
+	public NotificationChain basicSetRequest(MessageDefinition newRequest, NotificationChain msgs) {
 		MessageDefinition oldRequest = request;
 		request = newRequest;
 		if (eNotificationRequired()) {
@@ -93,13 +93,13 @@ public class ServiceSpecImpl extends SpecBaseImpl implements ServiceSpec {
 		return msgs;
 	}
 
-    /**
+	/**
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-    @Override
-    public void setRequest(MessageDefinition newRequest) {
+	@Override
+	public void setRequest(MessageDefinition newRequest) {
 		if (newRequest != request) {
 			NotificationChain msgs = null;
 			if (request != null)
@@ -113,22 +113,22 @@ public class ServiceSpecImpl extends SpecBaseImpl implements ServiceSpec {
 			eNotify(new ENotificationImpl(this, Notification.SET, RosPackage.SERVICE_SPEC__REQUEST, newRequest, newRequest));
 	}
 
-    /**
+	/**
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-    @Override
-    public MessageDefinition getResponse() {
+	@Override
+	public MessageDefinition getResponse() {
 		return response;
 	}
 
-    /**
+	/**
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-    public NotificationChain basicSetResponse(MessageDefinition newResponse, NotificationChain msgs) {
+	public NotificationChain basicSetResponse(MessageDefinition newResponse, NotificationChain msgs) {
 		MessageDefinition oldResponse = response;
 		response = newResponse;
 		if (eNotificationRequired()) {
@@ -138,13 +138,13 @@ public class ServiceSpecImpl extends SpecBaseImpl implements ServiceSpec {
 		return msgs;
 	}
 
-    /**
+	/**
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-    @Override
-    public void setResponse(MessageDefinition newResponse) {
+	@Override
+	public void setResponse(MessageDefinition newResponse) {
 		if (newResponse != response) {
 			NotificationChain msgs = null;
 			if (response != null)
@@ -158,13 +158,13 @@ public class ServiceSpecImpl extends SpecBaseImpl implements ServiceSpec {
 			eNotify(new ENotificationImpl(this, Notification.SET, RosPackage.SERVICE_SPEC__RESPONSE, newResponse, newResponse));
 	}
 
-    /**
+	/**
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-    @Override
-    public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+	@Override
+	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
 			case RosPackage.SERVICE_SPEC__REQUEST:
 				return basicSetRequest(null, msgs);
@@ -174,13 +174,13 @@ public class ServiceSpecImpl extends SpecBaseImpl implements ServiceSpec {
 		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
-    /**
+	/**
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-    @Override
-    public Object eGet(int featureID, boolean resolve, boolean coreType) {
+	@Override
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
 			case RosPackage.SERVICE_SPEC__REQUEST:
 				return getRequest();
@@ -190,13 +190,13 @@ public class ServiceSpecImpl extends SpecBaseImpl implements ServiceSpec {
 		return super.eGet(featureID, resolve, coreType);
 	}
 
-    /**
+	/**
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-    @Override
-    public void eSet(int featureID, Object newValue) {
+	@Override
+	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
 			case RosPackage.SERVICE_SPEC__REQUEST:
 				setRequest((MessageDefinition)newValue);
@@ -208,13 +208,13 @@ public class ServiceSpecImpl extends SpecBaseImpl implements ServiceSpec {
 		super.eSet(featureID, newValue);
 	}
 
-    /**
+	/**
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-    @Override
-    public void eUnset(int featureID) {
+	@Override
+	public void eUnset(int featureID) {
 		switch (featureID) {
 			case RosPackage.SERVICE_SPEC__REQUEST:
 				setRequest((MessageDefinition)null);
@@ -226,13 +226,13 @@ public class ServiceSpecImpl extends SpecBaseImpl implements ServiceSpec {
 		super.eUnset(featureID);
 	}
 
-    /**
+	/**
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-    @Override
-    public boolean eIsSet(int featureID) {
+	@Override
+	public boolean eIsSet(int featureID) {
 		switch (featureID) {
 			case RosPackage.SERVICE_SPEC__REQUEST:
 				return request != null;

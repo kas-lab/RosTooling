@@ -3,6 +3,7 @@
 package primitives.impl;
 
 import org.eclipse.emf.ecore.EClass;
+
 import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
 
 import primitives.AbstractType;
@@ -16,22 +17,22 @@ import primitives.PrimitivesPackage;
  * @generated
  */
 public abstract class AbstractTypeImpl extends MinimalEObjectImpl.Container implements AbstractType {
-    /**
+	/**
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-    protected AbstractTypeImpl() {
+	protected AbstractTypeImpl() {
 		super();
 	}
 
-    /**
+	/**
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-    @Override
-    protected EClass eStaticClass() {
+	@Override
+	protected EClass eStaticClass() {
 		return PrimitivesPackage.Literals.ABSTRACT_TYPE;
 	}
 
