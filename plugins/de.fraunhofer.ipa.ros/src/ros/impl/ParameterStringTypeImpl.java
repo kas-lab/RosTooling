@@ -41,9 +41,9 @@ public class ParameterStringTypeImpl extends ParameterTypeImpl implements Parame
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
+	 * @generated NOT
 	 */
-	protected ParameterStringTypeImpl() {
+	public ParameterStringTypeImpl() {
 		super();
 	}
 

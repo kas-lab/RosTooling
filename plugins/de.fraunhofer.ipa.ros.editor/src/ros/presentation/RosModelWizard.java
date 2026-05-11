@@ -3,6 +3,7 @@
 package ros.presentation;
 
 
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collection;
@@ -69,8 +70,14 @@ import org.eclipse.ui.dialogs.WizardNewFileCreationPage;
 import org.eclipse.ui.part.FileEditorInput;
 import org.eclipse.ui.part.ISetSelectionTarget;
 
+import ros.Artifact;
+import ros.CatkinPackage;
+import ros.PackageSet;
 import ros.RosFactory;
 import ros.RosPackage;
+import ros.impl.ArtifactImpl;
+import ros.impl.CatkinPackageImpl;
+import ros.impl.PackageSetImpl;
 import ros.provider.RosEditPlugin;
 
 
@@ -215,96 +222,100 @@ public class RosModelWizard extends Wizard implements INewWizard {
 	}
 
 	/**
-	 * Do the work after everything is specified.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean performFinish() {
-		try {
-			// Remember the file.
-			//
-			final IFile modelFile = getModelFile();
+     * Do the work after everything is specified.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated NOT
+     */
+    @Override
+    public boolean performFinish() {
+        try {
+            // Remember the file.
+            //
+            final IFile modelFile = getModelFile();
+            final String ModelName = newFileCreationPage.getFileName().replace(".ros", "");
+            IProject project = modelFile.getProject();
+            // Do the work within an operation.
+            //
+            WorkspaceModifyOperation operation =
+                new WorkspaceModifyOperation() {
+                    @Override
+                    protected void execute(IProgressMonitor progressMonitor) {
+                        try {
+                            // Create a resource set
+                            //
+                            ResourceSet resourceSet = new ResourceSetImpl();
+                            Resource resource = resourceSet.createResource(URI.createPlatformResourceURI(modelFile.getFullPath().toOSString(),true));
+                            EObject PackageSetRootObject = RosFactory.eINSTANCE.createPackageSet();
 
-			// Do the work within an operation.
-			//
-			WorkspaceModifyOperation operation =
-				new WorkspaceModifyOperation() {
-					@Override
-					protected void execute(IProgressMonitor progressMonitor) {
-						try {
-							// Create a resource set
-							//
-							ResourceSet resourceSet = new ResourceSetImpl();
+                            if (PackageSetRootObject != null) {
+                                resource.getContents().add(PackageSetRootObject);
+                            }
+                            PackageSet packageSet_model = (PackageSetImpl) resource.getContents().get(0);
 
-							// Get the URI of the model file.
-							//
-							URI fileURI = URI.createPlatformResourceURI(modelFile.getFullPath().toString(), true);
+                            CatkinPackage pkg = new CatkinPackageImpl();
+                            Artifact artifact = new ArtifactImpl();
+                            artifact.setName(project.getName());
+                            pkg.setName(project.getName());
+                            pkg.getArtifact().add(artifact);
+                            packageSet_model.getPackage().add(pkg);
+                            try {
+                                resource.save(null);
+                            } catch (IOException e) {
+                                // TODO Auto-generated catch block
+                                e.printStackTrace();
+                            }
 
-							// Create a resource for this file.
-							//
-							Resource resource = resourceSet.createResource(fileURI);
+                            /**byte[] bytes = ("PackageSet {\n" +"  CatkinPackage " +project.getName()+ " {\n" +"       Artifact  "+project.getName()+" {}}}").getBytes();
+                            InputStream source = new ByteArrayInputStream(bytes);
+                            modelFile.create(source, IResource.NONE, null);*/
 
-							// Add the initial model object to the contents.
-							//
-							EObject rootObject = createInitialModel();
-							if (rootObject != null) {
-								resource.getContents().add(rootObject);
-							}
+                        }
+                        catch (Exception exception) {
+                            RosEditorPlugin.INSTANCE.log(exception);
+                        }
+                        finally {
+                            progressMonitor.done();
+                        }
+                    }
+                };
 
-							// Save the contents of the resource to the file system.
-							//
-							Map<Object, Object> options = new HashMap<Object, Object>();
-							options.put(XMLResource.OPTION_ENCODING, initialObjectCreationPage.getEncoding());
-							resource.save(options);
-						}
-						catch (Exception exception) {
-							RosEditorPlugin.INSTANCE.log(exception);
-						}
-						finally {
-							progressMonitor.done();
-						}
-					}
-				};
+            getContainer().run(false, false, operation);
 
-			getContainer().run(false, false, operation);
+            // Select the new file resource in the current view.
+            //
+            IWorkbenchWindow workbenchWindow = workbench.getActiveWorkbenchWindow();
+            IWorkbenchPage page = workbenchWindow.getActivePage();
+            final IWorkbenchPart activePart = page.getActivePart();
+            if (activePart instanceof ISetSelectionTarget) {
+                final ISelection targetSelection = new StructuredSelection(modelFile);
+                getShell().getDisplay().asyncExec
+                    (new Runnable() {
+                         public void run() {
+                             ((ISetSelectionTarget)activePart).selectReveal(targetSelection);
+                         }
+                     });
+            }
 
-			// Select the new file resource in the current view.
-			//
-			IWorkbenchWindow workbenchWindow = workbench.getActiveWorkbenchWindow();
-			IWorkbenchPage page = workbenchWindow.getActivePage();
-			final IWorkbenchPart activePart = page.getActivePart();
-			if (activePart instanceof ISetSelectionTarget) {
-				final ISelection targetSelection = new StructuredSelection(modelFile);
-				getShell().getDisplay().asyncExec
-					(new Runnable() {
-						 @Override
-						 public void run() {
-							 ((ISetSelectionTarget)activePart).selectReveal(targetSelection);
-						 }
-					 });
-			}
+            // Open an editor on the new file.
+            //
+            try {
+                page.openEditor
+                    (new FileEditorInput(modelFile),
+                     workbench.getEditorRegistry().getDefaultEditor(modelFile.getFullPath().toString()).getId());
+            }
+            catch (PartInitException exception) {
+                MessageDialog.openError(workbenchWindow.getShell(), RosEditorPlugin.INSTANCE.getString("_UI_OpenEditorError_label"), exception.getMessage());
+                return false;
+            }
 
-			// Open an editor on the new file.
-			//
-			try {
-				page.openEditor
-					(new FileEditorInput(modelFile),
-					 workbench.getEditorRegistry().getDefaultEditor(modelFile.getFullPath().toString()).getId());					 	 
-			}
-			catch (PartInitException exception) {
-				MessageDialog.openError(workbenchWindow.getShell(), RosEditorPlugin.INSTANCE.getString("_UI_OpenEditorError_label"), exception.getMessage());
-				return false;
-			}
-
-			return true;
-		}
-		catch (Exception exception) {
-			RosEditorPlugin.INSTANCE.log(exception);
-			return false;
-		}
-	}
+            return true;
+        }
+        catch (Exception exception) {
+            RosEditorPlugin.INSTANCE.log(exception);
+            return false;
+        }
+    }
 
 	/**
 	 * This is the one page of the wizard.

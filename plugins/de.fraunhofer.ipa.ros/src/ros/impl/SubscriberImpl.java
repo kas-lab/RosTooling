@@ -40,9 +40,9 @@ public class SubscriberImpl extends InterfaceTypeImpl implements Subscriber {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
+	 * @generated NOT
 	 */
-	protected SubscriberImpl() {
+	public SubscriberImpl() {
 		super();
 	}
 

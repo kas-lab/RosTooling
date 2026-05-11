@@ -41,9 +41,9 @@ public class ParameterIntegerTypeImpl extends ParameterTypeImpl implements Param
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
+	 * @generated NOT
 	 */
-	protected ParameterIntegerTypeImpl() {
+	public ParameterIntegerTypeImpl() {
 		super();
 	}
 

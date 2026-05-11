@@ -41,9 +41,9 @@ public class ParameterBooleanTypeImpl extends ParameterTypeImpl implements Param
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
+	 * @generated NOT
 	 */
-	protected ParameterBooleanTypeImpl() {
+	public ParameterBooleanTypeImpl() {
 		super();
 	}
 
