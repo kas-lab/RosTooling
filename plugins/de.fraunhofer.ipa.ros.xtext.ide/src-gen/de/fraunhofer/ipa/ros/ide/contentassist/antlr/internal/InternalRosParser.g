@@ -2847,6 +2847,12 @@ rule__KEYWORD__Alternatives
 		Time
 		{ after(grammarAccess.getKEYWORDAccess().getTimeKeyword_10()); }
 	)
+	|
+	(
+		{ before(grammarAccess.getKEYWORDAccess().getNodeKeyword_11()); }
+		Node
+		{ after(grammarAccess.getKEYWORDAccess().getNodeKeyword_11()); }
+	)
 ;
 finally {
 	restoreStackSize(stackSize);

@@ -3105,6 +3105,12 @@ ruleKEYWORD returns [AntlrDatatypeRuleToken current=new AntlrDatatypeRuleToken()
 			$current.merge(kw);
 			newLeafNode(kw, grammarAccess.getKEYWORDAccess().getTimeKeyword_10());
 		}
+		    |
+		kw=Node
+		{
+			$current.merge(kw);
+			newLeafNode(kw, grammarAccess.getKEYWORDAccess().getNodeKeyword_11());
+		}
 	)
 ;
 

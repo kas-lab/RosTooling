@@ -374,7 +374,7 @@ ArraySpecRef returns ArrayTopicSpecMsgRef:
     Reference=[TopicSpec|EString]'[]'
 ;
 
-KEYWORD: 'goal' | 'message' | 'result' | 'feedback' | 'name' | 'value' | 'service' | 'type' | 'action' | 'duration' | 'time'  ;
+KEYWORD: 'goal' | 'message' | 'result' | 'feedback' | 'name' | 'value' | 'service' | 'type' | 'action' | 'duration' | 'time' | 'node'  ;
 
 ///////////////////
 // YAML format

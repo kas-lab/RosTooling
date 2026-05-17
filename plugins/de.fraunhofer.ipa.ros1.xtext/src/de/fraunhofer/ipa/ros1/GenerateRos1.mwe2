@@ -1,11 +1,17 @@
 module de.fraunhofer.ipa.ros1.GenerateRos1
 
+import org.eclipse.emf.mwe.utils.*
 import org.eclipse.xtext.xtext.generator.*
 import org.eclipse.xtext.xtext.generator.model.project.*
 
 var rootPath = ".."
 
 Workflow {
+
+    bean = StandaloneSetup {
+        platformUri = rootPath
+        scanClassPath = true
+    }
 
     component = XtextGenerator {
         configuration = {
@@ -37,6 +43,8 @@ Workflow {
         language = StandardLanguage {
             name = "de.fraunhofer.ipa.ros1.Ros1"
             fileExtensions = "ros1"
+            referencedResource = "platform:/resource/de.fraunhofer.ipa.ros.xtext/src/de/fraunhofer/ipa/ros/Basics.xtext"
+            referencedResource = "platform:/resource/de.fraunhofer.ipa.ros.xtext/src/de/fraunhofer/ipa/ros/Ros.xtext"
             referencedResource = "platform:/resource/de.fraunhofer.ipa.ros/model/ros.genmodel"
 
             fragment = ecore2xtext.Ecore2XtextValueConverterServiceFragment2 auto-inject {}

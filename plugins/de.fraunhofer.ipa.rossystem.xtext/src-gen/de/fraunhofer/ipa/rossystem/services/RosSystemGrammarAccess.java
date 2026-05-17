@@ -2483,7 +2483,7 @@ public class RosSystemGrammarAccess extends AbstractElementFinder.AbstractGramma
 		return getArraySpecRefAccess().getRule();
 	}
 	
-	//KEYWORD: 'goal' | 'message' | 'result' | 'feedback' | 'name' | 'value' | 'service' | 'type' | 'action' | 'duration' | 'time'  ;
+	//KEYWORD: 'goal' | 'message' | 'result' | 'feedback' | 'name' | 'value' | 'service' | 'type' | 'action' | 'duration' | 'time' | 'node'  ;
 	public BasicsGrammarAccess.KEYWORDElements getKEYWORDAccess() {
 		return gaBasics.getKEYWORDAccess();
 	}

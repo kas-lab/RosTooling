@@ -2174,11 +2174,12 @@ public class BasicsGrammarAccess extends AbstractElementFinder.AbstractGrammarEl
 		private final Keyword cActionKeyword_8 = (Keyword)cAlternatives.eContents().get(8);
 		private final Keyword cDurationKeyword_9 = (Keyword)cAlternatives.eContents().get(9);
 		private final Keyword cTimeKeyword_10 = (Keyword)cAlternatives.eContents().get(10);
+		private final Keyword cNodeKeyword_11 = (Keyword)cAlternatives.eContents().get(11);
 		
-		//KEYWORD: 'goal' | 'message' | 'result' | 'feedback' | 'name' | 'value' | 'service' | 'type' | 'action' | 'duration' | 'time'  ;
+		//KEYWORD: 'goal' | 'message' | 'result' | 'feedback' | 'name' | 'value' | 'service' | 'type' | 'action' | 'duration' | 'time' | 'node'  ;
 		@Override public ParserRule getRule() { return rule; }
 		
-		//'goal' | 'message' | 'result' | 'feedback' | 'name' | 'value' | 'service' | 'type' | 'action' | 'duration' | 'time'
+		//'goal' | 'message' | 'result' | 'feedback' | 'name' | 'value' | 'service' | 'type' | 'action' | 'duration' | 'time' | 'node'
 		public Alternatives getAlternatives() { return cAlternatives; }
 		
 		//'goal'
@@ -2213,6 +2214,9 @@ public class BasicsGrammarAccess extends AbstractElementFinder.AbstractGrammarEl
 		
 		//'time'
 		public Keyword getTimeKeyword_10() { return cTimeKeyword_10; }
+		
+		//'node'
+		public Keyword getNodeKeyword_11() { return cNodeKeyword_11; }
 	}
 	public class EStringElements extends AbstractParserRuleElementFinder {
 		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "de.fraunhofer.ipa.ros.Basics.EString");
@@ -3383,7 +3387,7 @@ public class BasicsGrammarAccess extends AbstractElementFinder.AbstractGrammarEl
 		return getArraySpecRefAccess().getRule();
 	}
 	
-	//KEYWORD: 'goal' | 'message' | 'result' | 'feedback' | 'name' | 'value' | 'service' | 'type' | 'action' | 'duration' | 'time'  ;
+	//KEYWORD: 'goal' | 'message' | 'result' | 'feedback' | 'name' | 'value' | 'service' | 'type' | 'action' | 'duration' | 'time' | 'node'  ;
 	public KEYWORDElements getKEYWORDAccess() {
 		return pKEYWORD;
 	}

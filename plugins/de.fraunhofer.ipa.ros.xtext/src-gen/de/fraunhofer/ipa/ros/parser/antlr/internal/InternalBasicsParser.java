@@ -8351,7 +8351,7 @@ public class InternalBasicsParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "ruleKEYWORD"
-    // InternalBasicsParser.g:3035:1: ruleKEYWORD returns [AntlrDatatypeRuleToken current=new AntlrDatatypeRuleToken()] : (kw= Goal | kw= Message | kw= Result | kw= Feedback | kw= Name | kw= Value | kw= Service | kw= Type | kw= Action | kw= Duration | kw= Time ) ;
+    // InternalBasicsParser.g:3035:1: ruleKEYWORD returns [AntlrDatatypeRuleToken current=new AntlrDatatypeRuleToken()] : (kw= Goal | kw= Message | kw= Result | kw= Feedback | kw= Name | kw= Value | kw= Service | kw= Type | kw= Action | kw= Duration | kw= Time | kw= Node ) ;
     public final AntlrDatatypeRuleToken ruleKEYWORD() throws RecognitionException {
         AntlrDatatypeRuleToken current = new AntlrDatatypeRuleToken();
 
@@ -8361,11 +8361,11 @@ public class InternalBasicsParser extends AbstractInternalAntlrParser {
         	enterRule();
 
         try {
-            // InternalBasicsParser.g:3041:2: ( (kw= Goal | kw= Message | kw= Result | kw= Feedback | kw= Name | kw= Value | kw= Service | kw= Type | kw= Action | kw= Duration | kw= Time ) )
-            // InternalBasicsParser.g:3042:2: (kw= Goal | kw= Message | kw= Result | kw= Feedback | kw= Name | kw= Value | kw= Service | kw= Type | kw= Action | kw= Duration | kw= Time )
+            // InternalBasicsParser.g:3041:2: ( (kw= Goal | kw= Message | kw= Result | kw= Feedback | kw= Name | kw= Value | kw= Service | kw= Type | kw= Action | kw= Duration | kw= Time | kw= Node ) )
+            // InternalBasicsParser.g:3042:2: (kw= Goal | kw= Message | kw= Result | kw= Feedback | kw= Name | kw= Value | kw= Service | kw= Type | kw= Action | kw= Duration | kw= Time | kw= Node )
             {
-            // InternalBasicsParser.g:3042:2: (kw= Goal | kw= Message | kw= Result | kw= Feedback | kw= Name | kw= Value | kw= Service | kw= Type | kw= Action | kw= Duration | kw= Time )
-            int alt23=11;
+            // InternalBasicsParser.g:3042:2: (kw= Goal | kw= Message | kw= Result | kw= Feedback | kw= Name | kw= Value | kw= Service | kw= Type | kw= Action | kw= Duration | kw= Time | kw= Node )
+            int alt23=12;
             switch ( input.LA(1) ) {
             case Goal:
                 {
@@ -8420,6 +8420,11 @@ public class InternalBasicsParser extends AbstractInternalAntlrParser {
             case Time:
                 {
                 alt23=11;
+                }
+                break;
+            case Node:
+                {
+                alt23=12;
                 }
                 break;
             default:
@@ -8551,6 +8556,17 @@ public class InternalBasicsParser extends AbstractInternalAntlrParser {
 
                     }
                     break;
+                case 12 :
+                    // InternalBasicsParser.g:3109:3: kw= Node
+                    {
+                    kw=(Token)match(input,Node,FOLLOW_2); 
+
+                    			current.merge(kw);
+                    			newLeafNode(kw, grammarAccess.getKEYWORDAccess().getNodeKeyword_11());
+                    		
+
+                    }
+                    break;
 
             }
 
@@ -8574,7 +8590,7 @@ public class InternalBasicsParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "entryRuleEString"
-    // InternalBasicsParser.g:3112:1: entryRuleEString returns [String current=null] : iv_ruleEString= ruleEString EOF ;
+    // InternalBasicsParser.g:3118:1: entryRuleEString returns [String current=null] : iv_ruleEString= ruleEString EOF ;
     public final String entryRuleEString() throws RecognitionException {
         String current = null;
 
@@ -8582,8 +8598,8 @@ public class InternalBasicsParser extends AbstractInternalAntlrParser {
 
 
         try {
-            // InternalBasicsParser.g:3112:47: (iv_ruleEString= ruleEString EOF )
-            // InternalBasicsParser.g:3113:2: iv_ruleEString= ruleEString EOF
+            // InternalBasicsParser.g:3118:47: (iv_ruleEString= ruleEString EOF )
+            // InternalBasicsParser.g:3119:2: iv_ruleEString= ruleEString EOF
             {
              newCompositeNode(grammarAccess.getEStringRule()); 
             pushFollow(FOLLOW_1);
@@ -8610,7 +8626,7 @@ public class InternalBasicsParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "ruleEString"
-    // InternalBasicsParser.g:3119:1: ruleEString returns [AntlrDatatypeRuleToken current=new AntlrDatatypeRuleToken()] : (this_STRING_0= RULE_STRING | this_ID_1= RULE_ID ) ;
+    // InternalBasicsParser.g:3125:1: ruleEString returns [AntlrDatatypeRuleToken current=new AntlrDatatypeRuleToken()] : (this_STRING_0= RULE_STRING | this_ID_1= RULE_ID ) ;
     public final AntlrDatatypeRuleToken ruleEString() throws RecognitionException {
         AntlrDatatypeRuleToken current = new AntlrDatatypeRuleToken();
 
@@ -8621,10 +8637,10 @@ public class InternalBasicsParser extends AbstractInternalAntlrParser {
         	enterRule();
 
         try {
-            // InternalBasicsParser.g:3125:2: ( (this_STRING_0= RULE_STRING | this_ID_1= RULE_ID ) )
-            // InternalBasicsParser.g:3126:2: (this_STRING_0= RULE_STRING | this_ID_1= RULE_ID )
+            // InternalBasicsParser.g:3131:2: ( (this_STRING_0= RULE_STRING | this_ID_1= RULE_ID ) )
+            // InternalBasicsParser.g:3132:2: (this_STRING_0= RULE_STRING | this_ID_1= RULE_ID )
             {
-            // InternalBasicsParser.g:3126:2: (this_STRING_0= RULE_STRING | this_ID_1= RULE_ID )
+            // InternalBasicsParser.g:3132:2: (this_STRING_0= RULE_STRING | this_ID_1= RULE_ID )
             int alt24=2;
             int LA24_0 = input.LA(1);
 
@@ -8642,7 +8658,7 @@ public class InternalBasicsParser extends AbstractInternalAntlrParser {
             }
             switch (alt24) {
                 case 1 :
-                    // InternalBasicsParser.g:3127:3: this_STRING_0= RULE_STRING
+                    // InternalBasicsParser.g:3133:3: this_STRING_0= RULE_STRING
                     {
                     this_STRING_0=(Token)match(input,RULE_STRING,FOLLOW_2); 
 
@@ -8655,7 +8671,7 @@ public class InternalBasicsParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 2 :
-                    // InternalBasicsParser.g:3135:3: this_ID_1= RULE_ID
+                    // InternalBasicsParser.g:3141:3: this_ID_1= RULE_ID
                     {
                     this_ID_1=(Token)match(input,RULE_ID,FOLLOW_2); 
 

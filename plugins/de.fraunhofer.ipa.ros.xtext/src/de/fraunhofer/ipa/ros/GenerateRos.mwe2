@@ -1,12 +1,18 @@
 module de.fraunhofer.ipa.ros.GenerateRos
 
 import Basics.xtext
+import org.eclipse.emf.mwe.utils.*
 import org.eclipse.xtext.xtext.generator.*
 import org.eclipse.xtext.xtext.generator.model.project.*
 
 var rootPath = ".."
 
 Workflow {
+
+    bean = StandaloneSetup {
+        platformUri = rootPath
+        scanClassPath = true
+    }
 
     component = XtextGenerator {
         configuration = {
