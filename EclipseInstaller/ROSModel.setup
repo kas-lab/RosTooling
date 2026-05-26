@@ -60,10 +60,12 @@
         name="org.eclipse.sirius.specifier.feature.group"/>
     <requirement
         name="org.eclipse.cdt.feature.group"/>
-      <requirement
-          name="org.eclipse.sdk.feature.group"/>
-      <requirement
-          name="org.eclipse.m2e.feature.feature.group"/>
+    <requirement
+        name="org.eclipse.sdk.feature.group"/>
+    <requirement
+        name="org.eclipse.m2e.feature.feature.group"/>
+    <requirement
+        name="org.apache.commons.commons-logging"/>
     <description>Install the tools needed in the IDE to work with the source code for ${scope.project.label}</description>
   </setupTask>
   <setupTask
@@ -77,6 +79,8 @@
           name="org.eclipse.sirius.specifier.feature.group"/>
       <requirement
           name="org.eclipse.egit.feature.group"/>
+      <requirement
+          name="org.apache.commons.commons-logging"/>
       <repositoryList
           name="2025-12">
         <repository
@@ -161,6 +165,8 @@
           activeRepositoryList="${eclipse.target.platform}">
         <requirement
             name="*"/>
+        <requirement
+            name="org.apache.commons.commons-logging"/>
         <sourceLocator
             rootFolder="${ros-model.location}/plugins/">
           <excludedPath>.</excludedPath>
