@@ -50,7 +50,7 @@
   <setupTask
       xsi:type="setup:VariableTask"
       name="eclipse.target.platform"
-      defaultValue="2025-12"
+      defaultValue="2026-03"
       storageURI="scope://Workspace"/>
   <setupTask
       xsi:type="setup.p2:P2Task">
@@ -81,6 +81,19 @@
           name="org.eclipse.egit.feature.group"/>
       <requirement
           name="org.apache.commons.commons-logging"/>
+      <repositoryList
+          name="2026-03">
+        <repository
+            url="https://download.eclipse.org/releases/2026-03"/>
+        <repository
+            url="https://download.eclipse.org/eclipse/updates/4.39"/>
+        <repository
+            url="https://download.eclipse.org/modeling/tmf/xtext/updates/releases/2.42.0/"/>
+        <repository
+            url="https://download.eclipse.org/modeling/emft/mwe/updates/releases/"/>
+        <repository
+            url="https://download.eclipse.org/tools/orbit/simrel/orbit-aggregation/2026-03/"/>
+      </repositoryList>
       <repositoryList
           name="2025-12">
         <repository
@@ -136,11 +149,17 @@
       </workingSet>
     </setupTask>
     <setupTask
+        xsi:type="setup:VariableTask"
+        name="ros.model.branch"
+        defaultValue="main"
+        label="ROS Model branch"
+        description="The branch to check out from the ROS Model repository"/>
+    <setupTask
         xsi:type="git:GitCloneTask"
         id="ros-model"
         filter=""
-        remoteURI="ipa320/ros-model"
-        checkoutBranch="main">
+        remoteURI="ipa320/RosTooling"
+        checkoutBranch="${ros.model.branch}">
       <annotation
           source="http://www.eclipse.org/oomph/setup/InducedChoices">
         <detail
@@ -178,6 +197,19 @@
           <excludedPath>de.fraunhofer.ipa.ros.xtext.tests</excludedPath>
           <excludedPath>de.fraunhofer.ipa.rossystem.xtext.tests</excludedPath>
         </sourceLocator>
+        <repositoryList
+            name="2026-03">
+          <repository
+            url="https://download.eclipse.org/releases/2026-03"/>
+          <repository
+            url="https://download.eclipse.org/eclipse/updates/4.39"/>
+          <repository
+            url="https://download.eclipse.org/modeling/tmf/xtext/updates/releases/2.42.0/"/>
+          <repository
+            url="https://download.eclipse.org/modeling/emft/mwe/updates/releases/"/>
+          <repository
+            url="https://download.eclipse.org/tools/orbit/simrel/orbit-aggregation/2026-03/"/>
+        </repositoryList>
         <repositoryList
             name="2025-12">
           <repository
