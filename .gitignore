@@ -1,10 +1,10 @@
 bin/
 target
-xtend-gen/
+xtend-gen/*
+!xtend-gen/.gitkeep
 .metadata
 .recommenders
 *.xtendbin
-xtend-gen/
 *.pyc
 plugin.xml_gen
 .antlr-generator-3.2.0-patch.jar
