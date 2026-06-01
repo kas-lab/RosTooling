@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<site>
+  <category-def name="de.fraunhofer.ipa.ros.category" label="RosTooling"/>
+  <feature id="de.fraunhofer.ipa.ros.feature" version="0.0.0">
+    <category name="de.fraunhofer.ipa.ros.category"/>
+  </feature>
+</site>
