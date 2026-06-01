@@ -154,13 +154,6 @@
       </menuContribution>
    </extension-->
 
-   <extension point="org.eclipse.ui.handlers">
-      <handler
-            class="model.spec.check.ImportCommObjectsHandler"
-            commandId="de.fraunhofer.ipa.ros.editor.newCheck">
-      </handler>
-   </extension>
-
    <extension point="org.eclipse.ui.commands">
       <command
          defaultHandler="ros.presentation.ImportCommObjectsHandler"
@@ -168,7 +161,7 @@
          id="de.fraunhofer.ipa.ros.editor.ImportCommObjects"
          name="Import Common ROS Objects">
          <defaultHandler
-               class="de.fraunhofer.ipa.ros.editor.Handler1">
+               class="ros.presentation.ImportCommObjectsHandler">
             <parameter
                   name="de.fraunhofer.ipa.ros.editor.parameter1"
                   value="de.fraunhofer.ipa.ros.editor.parameter1">
