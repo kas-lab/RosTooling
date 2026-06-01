@@ -1,5 +1,6 @@
 Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
+Automatic-Module-Name: de.fraunhofer.ipa.roscode.generator
 Bundle-Name: %pluginName
 Bundle-SymbolicName: de.fraunhofer.ipa.roscode.generator;singleton:=true
 Bundle-Version: 3.1.0.rc1
