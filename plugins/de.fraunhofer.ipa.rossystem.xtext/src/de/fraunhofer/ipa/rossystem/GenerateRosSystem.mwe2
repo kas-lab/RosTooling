@@ -11,6 +11,11 @@ Workflow {
     bean = StandaloneSetup {
         platformUri = rootPath
         scanClassPath = true
+        registerGeneratedEPackage = "ros.RosPackage"
+        registerGeneratedEPackage = "primitives.PrimitivesPackage"
+        registerGeneratedEPackage = "system.RossystemPackage"
+        registerGenModelFile = "platform:/resource/de.fraunhofer.ipa.ros/model/ros.genmodel"
+        registerGenModelFile = "platform:/resource/de.fraunhofer.ipa.rossystem/model/rossystem.genmodel"
     }
 
     component = XtextGenerator {
@@ -44,7 +49,6 @@ Workflow {
             name = "de.fraunhofer.ipa.rossystem.RosSystem"
             fileExtensions = "rossystem"
             referencedResource = "platform:/resource/de.fraunhofer.ipa.ros.xtext/src/de/fraunhofer/ipa/ros/Basics.xtext"
-            referencedResource = "platform:/resource/de.fraunhofer.ipa.rossystem/model/rossystem.genmodel"
 
             fragment = ecore2xtext.Ecore2XtextValueConverterServiceFragment2 auto-inject {}
 

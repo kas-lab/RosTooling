@@ -16,20 +16,15 @@ import ros.impl.ParameterStructMemberImpl
 import system.RosNode
 import system.SubSystem
 import system.System
-import system.RosInterface
 import system.RosSystemConnection
 import system.RosPublisherReference
 import system.RosServiceServerReference
-import system.RosActionServerReference
 import system.RosSubscriberReference
 import system.RosServiceClientReference
-import system.RosActionClientReference
 import org.eclipse.emf.ecore.EObject
 import java.util.Arrays
 
 class GeneratorHelpers {
-
-    boolean PackageSet
 
     AmentPackageImpl package_impl
     List<CharSequence> PkgsList
@@ -44,9 +39,7 @@ class GeneratorHelpers {
     String ros1_bridge_type
     List<EObject> Ros1Ports
 
-
-    def void init_pkg(){
-        PackageSet=false
+    def void init_pkg() {
     }
 
     def boolean generate_yaml(RosNode component){
@@ -369,51 +362,4 @@ class GeneratorHelpers {
     }
         return input
     }
-    //Launch files generators
-//  def check_ns(ComponentInterface component){
-//      if (component.hasNS){
-//          return component.get_ns();
-//      }else {
-//          return "";
-//      }
-//  }
-//  def boolean hasNS(ComponentInterface component){
-//      if(!component.nameSpace.nullOrEmpty){
-//          return true;
-//      }else{
-//          return false
-//      }
-//  }
-//  def String get_ns(ComponentInterface component){
-//      return component.nameSpace.replaceFirst("/","");
-//  }
-//
-//  def compile_pkg_type(ComponentInterface component)
-//'''«IF !(component.fromRosNode===null) »«component.fromRosNode.getPackageType_node»«ELSEIF !PackageSet && !component.rospublisher.empty»«FOR Rospublisher:component.rospublisher»«IF !PackageSet»«Rospublisher.publisher.getPackageType_pub()»«ENDIF»«ENDFOR»«ELSEIF !PackageSet && !component.rossubscriber.empty»«FOR Rossubscriber:component.rossubscriber»«IF !PackageSet»«Rossubscriber.subscriber.getPackageType_sub()»«ENDIF»«ENDFOR»«ELSEIF !PackageSet && !component.rosserviceserver.empty»«FOR Rosserviceserver:component.rosserviceserver»«IF !PackageSet»«Rosserviceserver.srvserver.getPackageType_srvserv()»«ENDIF»«ENDFOR»«ELSEIF !PackageSet && !component.rosserviceclient.empty»«FOR Rosserviceclient:component.rosserviceclient»«IF !PackageSet»«Rosserviceclient.srvclient.getPackageType_srvcli()»«ENDIF»«ENDFOR»«ELSEIF !PackageSet && !component.rosparameter.empty»«FOR Rosparameter:component.rosparameter»«IF !PackageSet»«Rosparameter.parameter.getPackageType_rosparam()»«ENDIF»«ENDFOR»«ELSEIF !PackageSet && !component.rosactionserver.empty»«FOR RosActionSever:component.rosactionserver»«IF !PackageSet»«RosActionSever.actserver.getPackageType_actserver()»«ENDIF»«ENDFOR»«ELSEIF !PackageSet && !component.rosactionclient.empty»«FOR RosActionClient:component.rosactionclient»«IF !PackageSet»«RosActionClient.actclient.getPackageType_actclient()»«ENDIF»«ENDFOR»«ENDIF»'''
-//
-//  def getPackageType_pub(Publisher publisher){
-//      return publisher.eContainer.eContainer.eContainer as PackageImpl;
-//  }
-//  def getPackageType_sub(Subscriber subscriber){
-//      return subscriber.eContainer.eContainer.eContainer as PackageImpl;
-//  }
-//  def getPackageType_srvserv(ServiceServer serviceserver){
-//      return serviceserver.eContainer.eContainer.eContainer as PackageImpl;
-//  }
-//  def getPackageType_srvcli(ServiceClient serviceclient){
-//      return serviceclient.eContainer.eContainer.eContainer as PackageImpl;
-//  }
-//  def getPackageType_actserver(ActionServer actionserver){
-//      return actionserver.eContainer.eContainer.eContainer as PackageImpl;
-//  }
-//  def getPackageType_actclient(ActionClient actionclient){
-//      return actionclient.eContainer.eContainer.eContainer as PackageImpl;
-//  }
-//  def getPackageType_rosparam (Parameter param){
-//      return param.eContainer.eContainer.eContainer as PackageImpl;
-//  }
-//  def getPackageType_node (Node node){
-//      return node.eContainer.eContainer as PackageImpl;
-//  }
-
 }

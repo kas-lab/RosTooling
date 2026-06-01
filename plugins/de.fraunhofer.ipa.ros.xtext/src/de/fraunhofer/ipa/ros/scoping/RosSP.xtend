@@ -7,7 +7,6 @@ import org.eclipse.xtext.scoping.Scopes
 import org.eclipse.xtext.scoping.impl.AbstractDeclarativeScopeProvider
 import ros.RosPackage
 import ros.SpecBase
-import ros.Node
 
 class RosSP extends AbstractDeclarativeScopeProvider {
 

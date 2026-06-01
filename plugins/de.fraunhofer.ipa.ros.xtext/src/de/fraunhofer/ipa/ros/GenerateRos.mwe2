@@ -12,6 +12,8 @@ Workflow {
     bean = StandaloneSetup {
         platformUri = rootPath
         scanClassPath = true
+        registerEcoreFile = "platform:/resource/de.fraunhofer.ipa.ros/model/ros.ecore"
+        registerEcoreFile = "platform:/resource/de.fraunhofer.ipa.ros/model/PrimitivesTypes.ecore"
     }
 
     component = XtextGenerator {

@@ -8,9 +8,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collection;
 import java.util.Collections;
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 import java.util.MissingResourceException;
 import java.util.StringTokenizer;
 
@@ -27,8 +25,6 @@ import org.eclipse.emf.ecore.resource.ResourceSet;
 import org.eclipse.emf.ecore.resource.impl.ResourceSetImpl;
 
 import org.eclipse.emf.ecore.EObject;
-
-import org.eclipse.emf.ecore.xmi.XMLResource;
 
 import org.eclipse.emf.edit.ui.provider.ExtendedImageRegistry;
 
@@ -233,7 +229,6 @@ public class RosModelWizard extends Wizard implements INewWizard {
             // Remember the file.
             //
             final IFile modelFile = getModelFile();
-            final String ModelName = newFileCreationPage.getFileName().replace(".ros", "");
             IProject project = modelFile.getProject();
             // Do the work within an operation.
             //

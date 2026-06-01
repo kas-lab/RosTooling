@@ -2,7 +2,6 @@ package de.fraunhofer.ipa.rossystem.generator
 
 import com.google.inject.Inject
 import system.RosNode
-import system.RosParameter
 
 class YamlFileCompiler_ROS2 {
 

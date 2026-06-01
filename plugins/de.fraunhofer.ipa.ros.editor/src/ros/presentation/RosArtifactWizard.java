@@ -31,12 +31,8 @@ import org.eclipse.ui.INewWizard;
 import org.eclipse.ui.IWorkbench;
 import org.eclipse.ui.IWorkbenchWizard;
 
-import ros.Artifact;
-import ros.PackageSet;
 import ros.RosFactory;
 import ros.impl.AmentPackageImpl;
-import ros.impl.ArtifactImpl;
-import ros.impl.PackageSetImpl;
 
 /**
  * This is a sample new wizard. Its role is to create a new file

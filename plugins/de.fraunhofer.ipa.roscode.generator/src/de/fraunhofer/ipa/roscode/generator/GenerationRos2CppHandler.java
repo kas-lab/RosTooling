@@ -26,8 +26,6 @@ import org.eclipse.xtext.ui.resource.IResourceSetProvider;
 import com.google.inject.Inject;
 import com.google.inject.Provider;
 
-import de.fraunhofer.ipa.roscode.generator.RosCodeGenerator;;
-
 public class GenerationRos2CppHandler extends AbstractHandler implements IHandler {
 
       @Inject

@@ -3,16 +3,12 @@
  */
 package de.fraunhofer.ipa.ros.formatting2
 
-import com.google.inject.Inject
-import de.fraunhofer.ipa.ros.services.BasicsGrammarAccess
 import org.eclipse.xtext.formatting2.AbstractFormatter2
 import org.eclipse.xtext.formatting2.IFormattableDocument
 import ros.Parameter
 import ros.ParameterListType
 
 class BasicsFormatter extends AbstractFormatter2 {
-
-    @Inject extension BasicsGrammarAccess
 
     def dispatch void format(Parameter parameter, extension IFormattableDocument document) {
         // TODO: format HiddenRegions around keywords, attributes, cross references, etc.

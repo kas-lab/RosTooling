@@ -120,13 +120,13 @@
       </handler>
    </extension>
 
-   <!--extension point="org.eclipse.ui.commands">
+   <extension point="org.eclipse.ui.commands">
       <command
          description="Import Ros model"
          id="de.fraunhofer.ipa.ros.ImportRosModel"
          name="Import Ros model">
       </command>
-   </extension-->
+   </extension>
 
    <!--extension point="org.eclipse.ui.menus">
       <menuContribution

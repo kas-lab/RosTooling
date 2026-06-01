@@ -10,7 +10,6 @@ import system.impl.RosServiceClientReferenceImpl
 import system.impl.RosServiceServerReferenceImpl
 import system.impl.RosSubscriberReferenceImpl
 import com.google.inject.Inject
-import ros.Parameter
 
 class READMECompiler {
 

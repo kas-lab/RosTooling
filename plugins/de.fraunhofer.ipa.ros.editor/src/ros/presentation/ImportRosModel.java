@@ -113,8 +113,13 @@ public class ImportRosModel extends Wizard implements INewWizard {
 
                             workspace_path = getHAROSConfigurationPage.getWorkspacePath();
                             workspace_path = workspace_path.replace("build/compile_commands.json", "devel/setup.bash");
-                            String args = workspace_path+" "+package_name+" "+node_name+" "+download_folder+"/ros_model_extractor.py";
-                            Process p = Runtime.getRuntime().exec("bash "+download_folder+"/haros_call.sh"+" "+args);
+                            Process p = new ProcessBuilder(
+                                    "bash",
+                                    download_folder + "/haros_call.sh",
+                                    workspace_path,
+                                    package_name,
+                                    node_name,
+                                    download_folder + "/ros_model_extractor.py").start();
                             BufferedReader in = new BufferedReader(new InputStreamReader(p.getInputStream()));
                             p.waitFor();
                             StringBuilder builder = new StringBuilder();

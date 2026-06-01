@@ -9,7 +9,6 @@ import org.eclipse.xtext.generator.AbstractGenerator
 import org.eclipse.xtext.generator.IFileSystemAccess2
 import org.eclipse.xtext.generator.IGeneratorContext
 import ros.Package
-import ros.impl.ParameterStructTypeImpl
 import ros.Node
 
 /**
@@ -20,26 +19,9 @@ import ros.Node
 class Ros2PythonCodeGenerator extends AbstractGenerator {
 
     String resourcepath
-    String import_msgs
-    int char_i
     Node node
     List<String> PkgsList
     Set<String> set
-    ParameterGeneratorHelpers parameter_helper = new ParameterGeneratorHelpers() {
-
-        override get_param_declaration_str(String param_type, String param_name, String delim, Boolean has_value) {
-            var struct_str = "";
-            struct_str += "this->declare_parameter";
-            if (has_value) {
-                struct_str += "<" + param_type + ">";
-            }
-            struct_str += "(\"" + param_name + "\");\n";
-            struct_str += "this->get_parameter(\"" + param_name + "\", " + param_name.replace(delim, "_") + "_);\n\n";
-
-            return struct_str;
-        }
-
-    };
 
     override void doGenerate(Resource resource, IFileSystemAccess2 fsa, IGeneratorContext context) {
         resourcepath = resource.URI.toString();

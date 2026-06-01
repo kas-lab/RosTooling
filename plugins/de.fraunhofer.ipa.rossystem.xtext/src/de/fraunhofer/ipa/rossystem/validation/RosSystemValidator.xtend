@@ -8,12 +8,8 @@ import system.Process
 import system.System
 import system.RosNode
 import system.Component
-import system.impl.RosNodeImpl
 import system.Connection
 import system.RosInterface
-import system.impl.ConnectionImpl
-import system.RosConnection
-import system.RosSystemConnection
 import system.impl.RosSystemConnectionImpl
 import java.util.List
 import system.RosPublisherReference
@@ -22,7 +18,6 @@ import system.RosServiceClientReference
 import system.RosActionServerReference
 import system.RosSubscriberReference
 import system.RosActionClientReference
-import system.InterfaceReference
 import system.SubSystem
 import org.eclipse.emf.ecore.EObject
 import java.util.ArrayList
@@ -127,7 +122,6 @@ class RosSystemValidator extends AbstractRosSystemValidator {
   @Check
   def checkPortPatterns(Connection connection) {
       var List<String> validFromType = newArrayList('RosPublisherReference','RosServiceServerReference','RosActionServerReference')
-      var List<String> validToType = newArrayList('RosSubscriberReference','RosServiceClientReference','RosActionClientReference')
       var connection_def = connection as RosSystemConnectionImpl
       var from_connection = connection_def.from
       var to_connection = connection_def.to

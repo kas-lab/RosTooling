@@ -1,8 +1,6 @@
 package ros.presentation;
 
-import java.util.Collection;
 import java.util.MissingResourceException;
-import java.util.StringTokenizer;
 
 import org.eclipse.jface.viewers.ISelection;
 import org.eclipse.jface.wizard.WizardPage;

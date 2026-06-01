@@ -8,8 +8,6 @@ import ros.impl.ParameterDoubleTypeImpl
 import ros.impl.ParameterDoubleImpl
 import ros.impl.ParameterBooleanTypeImpl
 import ros.impl.ParameterBooleanImpl
-import ros.impl.ParameterBase64TypeImpl
-import ros.impl.ParameterBase64Impl
 import ros.impl.ParameterListTypeImpl
 import org.eclipse.emf.common.util.EList
 import ros.ParameterType

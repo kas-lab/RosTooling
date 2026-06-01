@@ -18,7 +18,7 @@ public class AddRosNodeHandler extends AbstractHandler {
         WizardDialog dialog = new WizardDialog(activeShell,wizard);
         dialog.create();
         dialog.getShell().setText(wizard.getWindowTitle());
-        int result = dialog.open();
+        dialog.open();
         return null;
     }
 
