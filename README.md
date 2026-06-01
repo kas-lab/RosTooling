@@ -35,7 +35,15 @@ Publications:
 - Journal Paper: Bootstrapping MDE development from ROS manual code - Part 2: Model generation and leveraging models at runtime and  [SoSym paper](https://link.springer.com/article/10.1007/s10270-021-00873-2)
 - Paper: Lifting ROS to Model-Driven Development: Lessons Learned from a bottom-up approach [RoSE paper](https://awortmann.github.io/downloads/preprints/2023/Lifting_ROS_to_Model-Driven_Development_-_Lessons_Learned_from_a_bottom-up_approach.pdf)
 
+## Generate jars
 
+Run maven:
+
+```Bash
+mvn -B clean verify -f plugins/de.fraunhofer.ipa.ros.parent/pom.xml
+```
+
+The jar files will be stored in `plugins/de.fraunhofer.ipa.ros.repository/target/repository/plugins`
 
 <!--
 ---------------------------------------------------------
