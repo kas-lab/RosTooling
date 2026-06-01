@@ -76,9 +76,17 @@
       <requirement
           name="org.eclipse.sdk.feature.group"/>
       <requirement
+          name="org.eclipse.xtext.sdk.feature.group"/>
+      <requirement
           name="org.eclipse.sirius.specifier.feature.group"/>
       <requirement
           name="org.eclipse.egit.feature.group"/>
+      <requirement
+          name="org.eclipse.cdt.feature.group"/>
+      <requirement
+          name="org.eclipse.m2e.feature.feature.group"/>
+      <requirement
+          name="org.eclipse.emf.mwe2.launch"/>
       <requirement
           name="org.apache.commons.commons-logging"/>
       <repositoryList
