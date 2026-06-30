@@ -4,7 +4,7 @@
     <parent>
         <groupId>de.fraunhofer.ipa.ros</groupId>
         <artifactId>de.fraunhofer.ipa.ros.parent</artifactId>
-        <version>3.0.0-SNAPSHOT</version>
+        <version>3.1.0.rc2</version>
         <relativePath>../de.fraunhofer.ipa.ros.parent/pom.xml</relativePath>
     </parent>
     <artifactId>de.fraunhofer.ipa.ros.feature</artifactId>
@@ -12,13 +12,13 @@
     
     
   <properties>
-        <xtextVersion>2.30.0</xtextVersion>
+        <xtextVersion>2.42.0</xtextVersion>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <maven.compiler.source>11</maven.compiler.source>
-        <maven.compiler.target>11</maven.compiler.target>
+        <maven.compiler.source>21</maven.compiler.source>
+        <maven.compiler.target>21</maven.compiler.target>
         <!-- Tycho settings -->
-        <tycho-version>3.0.5</tycho-version>
+        <tycho-version>4.0.12</tycho-version>
         <tycho.disableP2Mirrors>true</tycho.disableP2Mirrors>
-        <mwe2Version>2.14.0</mwe2Version>
+        <mwe2Version>2.22.0</mwe2Version>
     </properties>
 </project>

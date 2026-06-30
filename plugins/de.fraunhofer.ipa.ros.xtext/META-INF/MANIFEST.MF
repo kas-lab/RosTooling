@@ -3,18 +3,18 @@ Automatic-Module-Name: de.fraunhofer.ipa.ros.xtext
 Bundle-ManifestVersion: 2
 Bundle-Name: de.fraunhofer.ipa.ros.xtext
 Bundle-Vendor: Fraunhofer IPA
-Bundle-Version: 3.0.0.qualifier
+Bundle-Version: 3.1.0.rc2
 Bundle-SymbolicName: de.fraunhofer.ipa.ros.xtext; singleton:=true
 Bundle-ActivationPolicy: lazy
 Require-Bundle: de.fraunhofer.ipa.ros,
  org.eclipse.xtext,
  org.eclipse.xtext.xbase,
  org.eclipse.equinox.common;bundle-version="3.17.0",
- org.eclipse.xtext.xbase.lib;bundle-version="2.30.0",
+ org.eclipse.xtext.xbase.lib;bundle-version="2.39.0",
  org.eclipse.xtext.util,
- org.antlr.runtime;bundle-version="4.7.2",
- org.eclipse.xtend.lib;bundle-version="2.30.0"
-Bundle-RequiredExecutionEnvironment: JavaSE-19
+ org.antlr.runtime;bundle-version="[3.2.0,3.2.1)",
+ org.eclipse.xtend.lib;bundle-version="2.39.0"
+Bundle-RequiredExecutionEnvironment: JavaSE-21
 Export-Package: de.fraunhofer.ipa.ros.validation,
  de.fraunhofer.ipa.ros.parser.antlr.lexer,
  de.fraunhofer.ipa.ros.formatting2,
