@@ -17,6 +17,15 @@
         <tycho.disableP2Mirrors>true</tycho.disableP2Mirrors>
         <mwe2Version>2.22.0</mwe2Version>
     </properties>
+
+    <distributionManagement>
+        <repository>
+            <id>github</id>
+            <name>GitHub kas-lab RosTooling Packages</name>
+            <url>https://maven.pkg.github.com/kas-lab/RosTooling</url>
+        </repository>
+	</distributionManagement>
+
     <modules>
         <module>../de.fraunhofer.ipa.ros</module>
         <module>../de.fraunhofer.ipa.ros.xtext</module>
