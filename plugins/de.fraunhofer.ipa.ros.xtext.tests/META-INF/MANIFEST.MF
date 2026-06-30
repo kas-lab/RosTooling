@@ -3,14 +3,14 @@ Automatic-Module-Name: de.fraunhofer.ipa.ros.xtext.tests
 Bundle-ManifestVersion: 2
 Bundle-Name: de.fraunhofer.ipa.ros.xtext.tests
 Bundle-Vendor: Fraunhofer IPA
-Bundle-Version: 3.0.0.qualifier
+Bundle-Version: 3.1.0.rc2
 Bundle-SymbolicName: de.fraunhofer.ipa.ros.xtext.tests; singleton:=true
 Bundle-ActivationPolicy: lazy
 Require-Bundle: de.fraunhofer.ipa.ros.xtext,
  de.fraunhofer.ipa.ros,
  org.eclipse.xtext.testing,
  org.eclipse.xtext.xbase.testing,
- org.eclipse.xtext.xbase.lib;bundle-version="2.14.0",
+ org.eclipse.xtext.xbase.lib;bundle-version="2.39.0",
  org.junit,
  org.hamcrest.core,
  org.opentest4j,
@@ -35,5 +35,5 @@ Import-Package: org.apache.log4j,
  org.junit.platform.engine;version="[1.0.0,2.0.0)",
  org.junit.platform.runner;version="[1.0.0,2.0.0)",
  org.junit.platform.suite.api;version="[1.0.0,2.0.0)"
-Bundle-RequiredExecutionEnvironment: JavaSE-19
+Bundle-RequiredExecutionEnvironment: JavaSE-21
 Export-Package: de.fraunhofer.ipa.ros.tests;x-internal=true

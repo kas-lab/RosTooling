@@ -3,20 +3,29 @@
     xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <groupId>de.fraunhofer.ipa.ros</groupId>
-    <version>3.0.0-SNAPSHOT</version>
+    <version>3.1.0.rc2</version>
     <artifactId>de.fraunhofer.ipa.ros.parent</artifactId>
     <packaging>pom</packaging>
 
     <properties>
-        <xtextVersion>2.30.0</xtextVersion>
+        <xtextVersion>2.42.0</xtextVersion>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <maven.compiler.source>11</maven.compiler.source>
-        <maven.compiler.target>11</maven.compiler.target>
+        <maven.compiler.source>21</maven.compiler.source>
+        <maven.compiler.target>21</maven.compiler.target>
         <!-- Tycho settings -->
-        <tycho-version>3.0.5</tycho-version>
+        <tycho-version>4.0.12</tycho-version>
         <tycho.disableP2Mirrors>true</tycho.disableP2Mirrors>
-        <mwe2Version>2.14.0</mwe2Version>
+        <mwe2Version>2.22.0</mwe2Version>
     </properties>
+
+    <distributionManagement>
+        <repository>
+            <id>github</id>
+            <name>GitHub kas-lab RosTooling Packages</name>
+            <url>https://maven.pkg.github.com/kas-lab/RosTooling</url>
+        </repository>
+	</distributionManagement>
+
     <modules>
         <module>../de.fraunhofer.ipa.ros</module>
         <module>../de.fraunhofer.ipa.ros.xtext</module>
@@ -48,6 +57,7 @@
         <module>../de.fraunhofer.ipa.ros.plugin</module>
         <module>../de.fraunhofer.ipa.ros.sirius</module>
         <module>../de.fraunhofer.ipa.ros.feature</module>
+        <module>../de.fraunhofer.ipa.ros.repository</module>
     </modules>
 
 
@@ -55,12 +65,17 @@
         <repository>
             <id>eclipse</id>
             <layout>p2</layout>
-            <url>https://download.eclipse.org/releases/2022-12/</url>
+            <url>https://download.eclipse.org/releases/2025-12/</url>
         </repository>
         <repository>
             <id>Xtext Update Site</id>
             <layout>p2</layout>
             <url>https://download.eclipse.org/modeling/tmf/xtext/updates/releases/${xtextVersion}/</url>
+        </repository>
+        <repository>
+            <id>orbit-2025-12</id>
+            <layout>p2</layout>
+            <url>https://download.eclipse.org/tools/orbit/simrel/orbit-aggregation/2025-12/</url>
         </repository>
         <repository>
             <id>codehaus-snapshots</id>
@@ -155,6 +170,7 @@
                 <artifactId>target-platform-configuration</artifactId>
                 <version>${tycho-version}</version>
                 <configuration>
+                    <executionEnvironment>JavaSE-21</executionEnvironment>
                     <environments>
                         <environment>
                             <os>macosx</os>

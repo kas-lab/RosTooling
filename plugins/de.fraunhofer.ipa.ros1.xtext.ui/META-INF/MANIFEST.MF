@@ -3,7 +3,7 @@ Automatic-Module-Name: de.fraunhofer.ipa.ros1.xtext.ui
 Bundle-ManifestVersion: 2
 Bundle-Name: de.fraunhofer.ipa.ros1.xtext.ui
 Bundle-Vendor: Fraunhofer IPA
-Bundle-Version: 3.0.0.qualifier
+Bundle-Version: 3.1.0.rc2
 Bundle-SymbolicName: de.fraunhofer.ipa.ros1.xtext.ui; singleton:=true
 Bundle-ActivationPolicy: lazy
 Require-Bundle: de.fraunhofer.ipa.ros1.xtext,
@@ -19,10 +19,10 @@ Require-Bundle: de.fraunhofer.ipa.ros1.xtext,
  org.eclipse.xtext.builder,
  de.fraunhofer.ipa.ros.xtext,
  de.fraunhofer.ipa.ros.xtext.ui,
- org.eclipse.xtext.xbase.lib;bundle-version="2.14.0",
- org.eclipse.xtend.lib;bundle-version="2.14.0";resolution:=optional
+ org.eclipse.xtext.xbase.lib;bundle-version="2.39.0",
+ org.eclipse.xtend.lib;bundle-version="2.39.0";resolution:=optional
 Import-Package: org.apache.log4j
-Bundle-RequiredExecutionEnvironment: JavaSE-19
+Bundle-RequiredExecutionEnvironment: JavaSE-21
 Export-Package: de.fraunhofer.ipa.ros1.xtext.ui.internal,
  de.fraunhofer.ipa.ros1.ui.quickfix,
  de.fraunhofer.ipa.ros1.ui.contentassist
